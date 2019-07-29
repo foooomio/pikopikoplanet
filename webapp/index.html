@@ -1,0 +1,11 @@
+<form action="/sample/query?force-accept=text%2Fplain">
+  <textarea name="query" cols="80" rows="20">
+SELECT ?subject ?predicate ?object
+WHERE {
+  ?subject ?predicate ?object
+}
+LIMIT 25
+  </textarea>
+  <br/>
+  <input type="submit">
+</form>

@@ -1,3 +1,17 @@
+jar
+lib
+bin
+
+run/backups
+run/configuration
+run/system
+run/system_files
+run/logs
+run/templates
+run/databases/*
+!run/databases/.keep
+
+#### Gradle
 .gradle
 /build/
 

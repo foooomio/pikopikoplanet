@@ -1,0 +1,67 @@
+def JENA_VERSION='3.12.0'
+def DATASET_FILES='dataset/*'
+def TDB_LOCATION='run/databases/dataset'
+
+configurations {
+  jenaServer
+  jenaTdbLoader
+}
+
+repositories {
+  jcenter()
+}
+dependencies {
+  jenaServer "org.apache.jena:jena-fuseki-fulljar:$JENA_VERSION"
+  jenaTdbLoader "org.apache.jena:jena-cmds:$JENA_VERSION"
+}
+
+task clean {
+  doLast {
+    delete {
+      delete "jar", "lib", "$TDB_LOCATION"
+    }
+  }
+}
+
+task download() {
+  mustRunAfter clean
+  doLast {
+    // download jena standalone server
+    copy {
+      from configurations.jenaServer
+      into 'jar'
+    }
+
+    // download tdbloader command
+    copy {
+      from configurations.jenaTdbLoader
+      into 'lib'
+    }
+    def binDir = new File("bin")
+    binDir.mkdirs()
+    for (f in ['tdbloader2', 'tdbloader2common', 'tdbloader2data', 'tdbloader2index']) {
+      exec {
+        executable "sh"
+        args "-c", "curl --silent https://raw.githubusercontent.com/apache/jena/jena-$JENA_VERSION/apache-jena/bin/$f > bin/$f"
+      }
+    }
+    exec {
+      executable "sh"
+      args "-c", "chmod +x bin/tdbloader2*"
+    }
+  }
+}
+
+task tdbload() {
+  mustRunAfter clean, download
+  doLast {
+    exec{
+      executable "sh"
+      args "-c", "bin/tdbloader2 --loc $TDB_LOCATION $DATASET_FILES"
+    }
+  }
+}
+
+task stage() {
+  dependsOn download, tdbload
+}

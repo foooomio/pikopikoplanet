@@ -1,0 +1,23 @@
+## Fuseki Server configuration file.
+
+@prefix :        <#> .
+@prefix fuseki:  <http://jena.apache.org/fuseki#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ja:      <http://jena.hpl.hp.com/2005/11/Assembler#> .
+@prefix tdb:     <http://jena.hpl.hp.com/2008/tdb#> .
+
+<#service> rdf:type fuseki:Service ;
+  fuseki:name                     "/sample" ;   # http://host:port/ds-ro
+  fuseki:serviceQuery             "query" ;    # SPARQL query service
+  fuseki:serviceReadGraphStore    "data" ;     # SPARQL Graph store protocol (read only)
+  fuseki:dataset           <#dataset> ;
+  .
+
+<#dataset> rdf:type      tdb:DatasetTDB ;
+  tdb:location "run/databases/dataset" ;
+  # Query timeout on this dataset (1s, 1000 milliseconds)
+  ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "1000" ] ;
+  # Make the default graph be the union of all named graphs.
+  ## tdb:unionDefaultGraph true ;
+  .
