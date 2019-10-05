@@ -1,28 +1,15 @@
-jar
-lib
-bin
+fuseki/jar
+fuseki/lib
+fuseki/bin
 
-run/backups
-run/configuration
-run/system
-run/system_files
-run/logs
-run/templates
-run/databases/*
-!run/databases/.keep
+fuseki/run/backups
+fuseki/run/configuration
+fuseki/run/system
+fuseki/run/system_files
+fuseki/run/logs
+fuseki/run/templates
+fuseki/run/databases/*
+!fuseki/run/databases/.keep
 
 #### Gradle
 .gradle
-/build/
-
-# Ignore Gradle GUI config
-gradle-app.setting
-
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
-
-# Cache of project
-.gradletasknamecache
-
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties

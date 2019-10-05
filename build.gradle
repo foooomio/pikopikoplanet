@@ -1,6 +1,6 @@
-def JENA_VERSION='3.12.0'
-def DATASET_FILES='dataset/*'
-def TDB_LOCATION='run/databases/dataset'
+def JENA_VERSION='3.13.0'
+def DATASET_FILES='$(find dataset/* -type f)'
+def TDB_LOCATION='fuseki/run/databases/dataset'
 
 configurations {
   jenaServer
@@ -18,7 +18,7 @@ dependencies {
 task clean {
   doLast {
     delete {
-      delete "jar", "lib", "$TDB_LOCATION"
+      delete "fuseki/jar", "fuseki/lib", "$TDB_LOCATION"
     }
   }
 }
@@ -29,25 +29,25 @@ task download() {
     // download jena standalone server
     copy {
       from configurations.jenaServer
-      into 'jar'
+      into 'fuseki/jar'
     }
 
     // download tdbloader command
     copy {
       from configurations.jenaTdbLoader
-      into 'lib'
+      into 'fuseki/lib'
     }
-    def binDir = new File("bin")
+    def binDir = new File("fuseki/bin")
     binDir.mkdirs()
     for (f in ['tdbloader2', 'tdbloader2common', 'tdbloader2data', 'tdbloader2index']) {
       exec {
         executable "sh"
-        args "-c", "curl --silent https://raw.githubusercontent.com/apache/jena/jena-$JENA_VERSION/apache-jena/bin/$f > bin/$f"
+        args "-c", "curl --silent https://raw.githubusercontent.com/apache/jena/jena-$JENA_VERSION/apache-jena/bin/$f > fuseki/bin/$f"
       }
     }
     exec {
       executable "sh"
-      args "-c", "chmod +x bin/tdbloader2*"
+      args "-c", "chmod +x fuseki/bin/tdbloader2*"
     }
   }
 }
@@ -55,9 +55,12 @@ task download() {
 task tdbload() {
   mustRunAfter clean, download
   doLast {
+    delete {
+      delete "$TDB_LOCATION"
+    }
     exec{
       executable "sh"
-      args "-c", "bin/tdbloader2 --loc $TDB_LOCATION $DATASET_FILES"
+      args "-c", "fuseki/bin/tdbloader2 --loc $TDB_LOCATION $DATASET_FILES"
     }
   }
 }
