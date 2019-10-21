@@ -1,0 +1,114 @@
+BASE <https://mltd.pikopikopla.net/resource/>
+PREFIX mltd: <https://mltd.pikopikopla.net/mltd-schema#>
+PREFIX : <http://schema.org/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<アーツビジョン> a mltd:TalentAgency ;
+    :name "アーツビジョン" ;
+    :legalName "株式会社アーツビジョン" ;
+    :url <https://www.artsvision.co.jp/> .
+
+<EARLY_WING> a mltd:TalentAgency ;
+    :name "EARLY WING" ;
+    :legalName "株式会社EARLY WING" ;
+    :url <http://www.earlywing.co.jp/> .
+
+<アイムエンタープライズ> a mltd:TalentAgency ;
+    :name "アイムエンタープライズ" ;
+    :legalName "株式会社アイムエンタープライズ" ;
+    :url <https://www.imenterprise.jp/> .
+
+<フォレストリンク> a mltd:TalentAgency ;
+    :name "フォレストリンク" ;
+    :legalName "株式会社フォレストリンク" ;
+    :url <http://forestlink.co.jp/> .
+
+<ホリプロ> a mltd:TalentAgency ;
+    :name "ホリプロ" ;
+    :legalName "株式会社ホリプロ" ;
+    :url <https://www.horipro.co.jp/> .
+
+<大沢事務所> a mltd:TalentAgency ;
+    :name "大沢事務所" ;
+    :legalName "株式会社大沢事務所" ;
+    :url <https://osawa-inc.co.jp/> .
+
+<スペースクラフト> a mltd:TalentAgency ;
+    :name "スペースクラフト" ;
+    :legalName "株式会社スペースクラフト" ;
+    :url <http://www.spacecraft.co.jp/home.html> .
+
+<青二プロダクション> a mltd:TalentAgency ;
+    :name "青二プロダクション" ;
+    :legalName "株式会社青二プロダクション" ;
+    :url <https://www.aoni.co.jp/> .
+
+<ミュージックレイン> a mltd:TalentAgency ;
+    :name "ミュージックレイン" ;
+    :legalName "株式会社ミュージックレイン" ;
+    :url <https://musicrayn.com/> .
+
+<賢プロダクション> a mltd:TalentAgency ;
+    :name "賢プロダクション" ;
+    :legalName "株式会社賢プロダクション" ;
+    :url <http://www.kenproduction.co.jp/> .
+
+<スタイルキューブ> a mltd:TalentAgency ;
+    :name "スタイルキューブ" ;
+    :legalName "株式会社スタイルキューブ" ;
+    :url <http://stylecube.jp/> .
+
+<俳協> a mltd:TalentAgency ;
+    :name "俳協" ;
+    :legalName "東京俳優生活協同組合" ;
+    :url <https://haikyo.co.jp/> .
+
+<81プロデュース> a mltd:TalentAgency ;
+    :name "81プロデュース" ;
+    :legalName "株式会社エイティワンプロデュース" ;
+    :url <https://www.81produce.co.jp/> .
+
+<ピアレスガーベラ> a mltd:TalentAgency ;
+    :name "ピアレスガーベラ" ;
+    :legalName "株式会社ピアレスガーベラ" ;
+    :url <http://pg-wcf.co.jp/> .
+
+<ケンユウオフィス> a mltd:TalentAgency ;
+    :name "ケンユウオフィス" ;
+    :legalName "株式会社ケンユウオフィス" ;
+    :url <http://kenyu-office.com/> .
+
+<ダンデライオン> a mltd:TalentAgency ;
+    :name "ダンデライオン" ;
+    :legalName "株式会社フォーチュレスト ダンデライオン事業部" ;
+    :url <http://ddl-ltd.co.jp/> .
+
+<Rush_Style> a mltd:TalentAgency ;
+    :name "Rush Style" ;
+    :legalName "株式会社Rush Style" ;
+    :url <http://rushstyle.net/> .
+
+<ヴィムス> a mltd:TalentAgency ;
+    :name "ヴィムス" ;
+    :legalName "株式会社ヴィムス" ;
+    :url <https://www.vims.co.jp/> .
+
+<サンミュージック> a mltd:TalentAgency ;
+    :name "サンミュージック" ;
+    :legalName "株式会社サンミュージックプロダクション" ;
+    :url <https://www.sunmusic.org/> .
+
+<クレイジーボックス> a mltd:TalentAgency ;
+    :name "クレイジーボックス" ;
+    :legalName "株式会社クレイジーボックス" ;
+    :url <https://crazy-box.co.jp/> .
+
+<響> a mltd:TalentAgency ;
+    :name "響" ;
+    :legalName "株式会社響" ;
+    :url <https://hibiki-cast.jp/> .

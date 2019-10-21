@@ -1,0 +1,4709 @@
+BASE <https://mltd.pikopikopla.net/resource/>
+PREFIX mltd: <https://mltd.pikopikopla.net/mltd-schema#>
+PREFIX : <http://schema.org/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# NOTE:
+# :MusicRecording の :position は文字列である場合がある。
+# これは 2 枚組 CD のディスク番号を表すために、
+# "1-01" のように表記しているためである。(要検討)
+
+# NOTE:
+# 空白ノードを用いずに、それぞれ URI を与えるべきかもしれない。(要検討)
+
+# NOTE:
+# 楽曲とアルバムは N 対 N の関係であるため、
+# 関係を表すために :MusicRecording を用いている。
+# ただし、オリジナルのアーティストがわからなくなるなど弊害もある。(要検討)
+
+# NOTE:
+# 配信のみの楽曲の場合、アルバムを持たないので扱いづらい問題がある。(要検討)
+
+# NOTE:
+# :albumRelease は複数の :MusicRelease を持つことがある。
+# 『U・N・M・E・Iライブ』や『ターンオンタイム！』など。
+
+# NOTE:
+# Off Vocal やドラマパートは現状未実装。
+
+<LTP_Series> a :CreativeWorkSeries ;
+    :name "THE IDOLM@STER LIVE THE@TER PERFORMANCE" ;
+    :startDate "2013-04-24"^^xsd:date ;
+    :endDate "2014-04-30"^^xsd:date ;
+    :hasPart
+        <LTP_01> ,
+        <LTP_02> ,
+        <LTP_03> ,
+        <LTP_04> ,
+        <LTP_05> ,
+        <LTP_06> ,
+        <LTP_07> ,
+        <LTP_08> ,
+        <LTP_09> ,
+        <LTP_10> ,
+        <LTP_11> ,
+        <LTP_12> ,
+        <LTP_13> .
+
+<LTP_01> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER PERFORMANCE 01" ;
+    :numTracks 4 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Thank_You> ;
+        :byArtist <765_MILLIONSTARS> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Thank_You> ;
+        :byArtist <765PRO_ALLSTARS> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Thank_You> ;
+        :byArtist <765THEATER_ALLSTARS> ;
+        :position 3
+    ];
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14080.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0011s_0012_LTP01_H1.png> ;
+        :catalogNumber "LACM-14080" ;
+        :datePublished "2013-04-24"^^xsd:date
+    ] ;
+    :isPartOf <LTP_Series> .
+
+<LTP_02> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER PERFORMANCE 02" ;
+    :numTracks 13 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <キラメキ進行形> ;
+        :byArtist <天海春香> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <透明なプロローグ> ;
+        :byArtist <七尾百合子> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <トキメキの音符になって> ;
+        :byArtist <箱崎星梨花> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Maria_Trap> ;
+        :byArtist <天空橋朋花> ;
+        :position 8
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Precious_Grain> ;
+        :byArtist <最上静香> ;
+        :position 10
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Legend_Girls> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <天海春香> ,
+                <天空橋朋花> ,
+                <七尾百合子> ,
+                <箱崎星梨花> ,
+                <最上静香>
+        ] ;
+        :position 12
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15300.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0011s_0011_LTP02_H1.png> ;
+        :catalogNumber "LACA-15300" ;
+        :datePublished "2013-05-29"^^xsd:date
+    ] ;
+    :isPartOf <LTP_Series> .
+
+<LTP_03> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER PERFORMANCE 03" ;
+    :numTracks 13 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <素敵なキセキ> ;
+        :byArtist <春日未来> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ハッピー☆ラッキー☆ジェットマシーン> ;
+        :byArtist <横山奈緒> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Happy_Darling> ;
+        :byArtist <望月杏奈> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <オレンジの空の下> ;
+        :byArtist <豊川風花> ;
+        :position 8
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Rebellion> ;
+        :byArtist <我那覇響> ;
+        :position 10
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <PRETTY_DREAMER> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <我那覇響> ,
+                <春日未来> ,
+                <豊川風花> ,
+                <望月杏奈> ,
+                <横山奈緒>
+        ] ;
+        :position 12
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15313.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0011s_0010_LTP03_H1.png> ;
+        :catalogNumber "LACA-15313" ;
+        :datePublished "2013-06-26"^^xsd:date
+    ] ;
+    :isPartOf <LTP_Series> .
+
+<LTP_04> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER PERFORMANCE 04" ;
+    :numTracks 12 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <アフタースクールパーリータイム> ;
+        :byArtist <所恵美> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <朝焼けのクレッシェンド> ;
+        :byArtist <田中琴葉> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ライアー・ルージュ> ;
+        :byArtist <北沢志保> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Snow_White> ;
+        :byArtist <如月千早> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Blue_Symphony> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <如月千早> ,
+                <北沢志保> ,
+                <田中琴葉> ,
+                <所恵美>
+        ] ;
+        :position 11
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15314.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0011s_0009_LTP04_H1.png> ;
+        :catalogNumber "LACA-15314" ;
+        :datePublished "2013-07-31"^^xsd:date
+    ] ;
+    :isPartOf <LTP_Series> .
+
+<LTP_05> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER PERFORMANCE 05" ;
+    :numTracks 12 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <微笑み日和> ;
+        :byArtist <エミリー> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <POKER_POKER> ;
+        :byArtist <真壁瑞希> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Be_My_Boy> ;
+        :byArtist <百瀬莉緒> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <プライヴェイト・ロードショウ_playback_Weekday> ;
+        :byArtist <水瀬伊織> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Sentimental_Venus> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <水瀬伊織> ,
+                <エミリー> ,
+                <真壁瑞希> ,
+                <百瀬莉緒>
+        ] ;
+        :position 11
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15315.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0011s_0008_LTP05_H1.png> ;
+        :catalogNumber "LACA-15315" ;
+        :datePublished "2013-08-28"^^xsd:date
+    ] ;
+    :isPartOf <LTP_Series> .
+
+<LTP_06> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER PERFORMANCE 06" ;
+    :numTracks 12 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <恋のLesson初級編> ;
+        :byArtist <伊吹翼> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <FIND_YOUR_WIND> ;
+        :byArtist <北上麗花> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <追憶のサンドグラス> ;
+        :byArtist <星井美希> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <流星群> ;
+        :byArtist <ジュリア> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Marionetteは眠らない> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <星井美希> ,
+                <伊吹翼> ,
+                <北上麗花> ,
+                <ジュリア>
+        ] ;
+        :position 11
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15316.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0011s_0007_LTP06_H1.png> ;
+        :catalogNumber "LACA-15316" ;
+        :datePublished "2013-09-25"^^xsd:date
+    ] ;
+    :isPartOf <LTP_Series> .
+
+<LTP_07> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER PERFORMANCE 07" ;
+    :numTracks 12 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <マイペース☆マイウェイ> ;
+        :byArtist <福田のり子> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <君想いBirthday> ;
+        :byArtist <高山紗代子> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ちいさな恋の足音> ;
+        :byArtist <篠宮可憐> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <嘆きのFRACTION> ;
+        :byArtist <三浦あずさ> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <カワラナイモノ> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <三浦あずさ> ,
+                <篠宮可憐> ,
+                <高山紗代子> ,
+                <福田のり子>
+        ] ;
+        :position 11
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15317.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0011s_0006_LTP07_H1.png>;
+        :catalogNumber "LACA-15317" ;
+        :datePublished "2013-10-30"^^xsd:date
+    ] ;
+    :isPartOf <LTP_Series> .
+
+<LTP_08> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER PERFORMANCE 08" ;
+    :numTracks 12 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <ホップ♪ステップ♪レインボウ> ;
+        :byArtist <大神環> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <グッデイ・サンシャイン> ;
+        :byArtist <中谷育> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <オリジナル声になって> ;
+        :byArtist <矢吹可奈> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ハートウォーミング> ;
+        :byArtist <高槻やよい> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Good-Sleep_Baby♡> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <高槻やよい> ,
+                <大神環> ,
+                <中谷育> ,
+                <矢吹可奈>
+        ] ;
+        :position 11
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15318.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0011s_0005_LTP08_H1.png>;
+        :catalogNumber "LACA-15318" ;
+        :datePublished "2013-11-27"^^xsd:date
+    ] ;
+    :isPartOf <LTP_Series> .
+
+<LTP_09> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER PERFORMANCE 09" ;
+    :numTracks 12 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Helloコンチェルト> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <秋月律子> ,
+                <木下ひなた> ,
+                <佐竹美奈子> ,
+                <松田亜利沙>
+        ] ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <スマイルいちばん> ;
+        :byArtist <佐竹美奈子> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <あのね、聞いてほしいことがあるんだ> ;
+        :byArtist <木下ひなた> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <チョー↑元気Show☆アイドルchang> ;
+        :byArtist <松田亜利沙> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <GREEDY_GIRL> ;
+        :byArtist <秋月律子> ;
+        :position 11
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15319.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0011s_0004_LTP09_H1.png> ;
+        :catalogNumber "LACA-15319" ;
+        :datePublished "2013-12-25"^^xsd:date
+    ] ;
+    :isPartOf <LTP_Series> .
+
+<LTP_10> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER PERFORMANCE 10" ;
+    :numTracks 12 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <フェスタ・イルミネーション> ;
+        :byArtist <徳川まつり> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ココロ☆エクササイズ> ;
+        :byArtist <高坂海美> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ハッピ〜_エフェクト> ;
+        :byArtist <宮尾美也> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <恋花> ;
+        :byArtist <四条貴音> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <瞳の中のシリウス> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <四条貴音> ,
+                <高坂海美> ,
+                <徳川まつり> ,
+                <宮尾美也>
+        ] ;
+        :position 11
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15320.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0011s_0003_LTP10_H1.png> ;
+        :catalogNumber "LACA-15320" ;
+        :datePublished "2014-01-29"^^xsd:date
+    ] ;
+    :isPartOf <LTP_Series> .
+
+<LTP_11> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER PERFORMANCE 11" ;
+    :numTracks 12 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <想いはCarnaval> ;
+        :byArtist <島原エレナ> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Get_My_Shinin> ;
+        :byArtist <舞浜歩> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <FLY_TO_EVERYWHERE> ;
+        :byArtist <菊地真> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <DETECTIVE_HIGH_〜恋探偵物語〜> ;
+        :byArtist <双海真美> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Fu-Wa-Du-Wa> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <菊地真> ,
+                <双海真美> ,
+                <島原エレナ> ,
+                <舞浜歩>
+        ] ;
+        :position 11
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15321.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0011s_0002_LTP11_H1.png> ;
+        :catalogNumber "LACA-15321" ;
+        :datePublished "2014-02-26"^^xsd:date
+    ] ;
+    :isPartOf <LTP_Series> .
+
+<LTP_12> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER PERFORMANCE 12" ;
+    :numTracks 12 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <IMPRESSION→LOCOMOTION> ;
+        :byArtist <ロコ> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <恋心マスカレード> ;
+        :byArtist <二階堂千鶴> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ハミングロード> ;
+        :byArtist <萩原雪歩> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <デコレーション・ドリ〜ミンッ♪> ;
+        :byArtist <周防桃子> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ココロがかえる場所> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <萩原雪歩> ,
+                <周防桃子> ,
+                <二階堂千鶴> ,
+                <ロコ>
+        ] ;
+        :position 11
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15322.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0011s_0001_LTP12_H1.png> ;
+        :catalogNumber "LACA-15322" ;
+        :datePublished "2014-03-26"^^xsd:date
+    ] ;
+    :isPartOf <LTP_Series> .
+
+<LTP_13> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER PERFORMANCE 13" ;
+    :numTracks 13 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Heart♡・デイズ・Night☆> ;
+        :byArtist <野々原茜> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <微笑んだから、気づいたんだ。> ;
+        :byArtist <双海亜美> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <dear> ;
+        :byArtist <馬場このみ> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ビギナーズ☆ストライク> ;
+        :byArtist <永吉昴> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Bigバルーン◎> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <双海亜美> ,
+                <永吉昴> ,
+                <野々原茜> ,
+                <馬場このみ>
+        ] ;
+        :position 11
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Thank_You> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <春日未来> ,
+                <最上静香> ,
+                <伊吹翼>
+        ] ;
+        :position 13
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15323.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0011s_0000_LTP13_H1.png> ;
+        :catalogNumber "LACA-15323" ;
+        :datePublished "2014-04-30"^^xsd:date
+    ] ;
+    :isPartOf <LTP_Series> .
+
+<LTH_Series> a :CreativeWorkSeries ;
+    :name "THE IDOLM@STER LIVE THE@TER HARMONY" ;
+    :startDate "2014-07-30"^^xsd:date ;
+    :endDate "2015-03-25"^^xsd:date ;
+    :hasPart
+        <LTH_01> ,
+        <LTH_02> ,
+        <LTH_03> ,
+        <LTH_04> ,
+        <LTH_05> ,
+        <LTH_06> ,
+        <LTH_07> ,
+        <LTH_08> ,
+        <LTH_09> ,
+        <LTH_10> .
+
+<LTH_01> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER HARMONY 01" ;
+    :numTracks 7 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <合言葉はスタートアップ> ;
+        :byArtist <レジェンドデイズ> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <地球ミラーボウル> ;
+        :byArtist <水瀬伊織> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ストロベリー・キューピッド> ;
+        :byArtist <高槻やよい> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Liars_good_bye> ;
+        :byArtist <秋月律子> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <タイムマシンに飛び乗って> ;
+        :byArtist <双海亜美> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <smiley_days> ;
+        :byArtist <我那覇響> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Welcome> ;
+        :byArtist <レジェンドデイズ> ;
+        :position 7
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15431.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0010s_0009_LTH01_H1.png> ;
+        :catalogNumber "LACA-15431" ;
+        :datePublished "2014-07-30"^^xsd:date
+    ] ;
+    :isPartOf <LTH_Series> .
+
+<LTH_02> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER HARMONY 02" ;
+    :numTracks 7 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Growing_Storm> ;
+        :byArtist <乙女ストーム> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <In_The_Name_Of。LOVE> ;
+        :byArtist <真壁瑞希> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <VIVID_イマジネーション> ;
+        :byArtist <望月杏奈> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <空想文学少女> ;
+        :byArtist <七尾百合子> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Believe_my_change> ;
+        :byArtist <伊吹翼> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <未来飛行> ;
+        :byArtist <春日未来> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Welcome> ;
+        :byArtist <乙女ストーム> ;
+        :position 7
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15432.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0010s_0008_LTH02_H1.png> ;
+        :catalogNumber "LACA-15432" ;
+        :datePublished "2014-07-30"^^xsd:date
+    ] ;
+    :isPartOf <LTH_Series> .
+
+<LTH_03> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER HARMONY 03" ;
+    :numTracks 7 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Shooting_Stars> ;
+        :byArtist <クレシェンドブルー> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <夢色トレイン> ;
+        :byArtist <箱崎星梨花> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <サマ☆トリ_〜Summer_trip〜> ;
+        :byArtist <北上麗花> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <プリティ〜〜〜ッ→ニャンニャンッ> ;
+        :byArtist <野々原茜> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <絵本> ;
+        :byArtist <北沢志保> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Catch_my_dream> ;
+        :byArtist <最上静香> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Welcome> ;
+        :byArtist <クレシェンドブルー> ;
+        :position 7
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15433.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0010s_0007_LTH03_H1.png> ;
+        :catalogNumber "LACA-15433" ;
+        :datePublished "2014-09-24"^^xsd:date
+    ] ;
+    :isPartOf <LTH_Series> .
+
+<LTH_04> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER HARMONY 04" ;
+    :numTracks 7 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Eternal_Harmony> ;
+        :byArtist <エターナルハーモニー> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <カーニヴァル・ジャパネスク> ;
+        :byArtist <徳川まつり> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <プラリネ> ;
+        :byArtist <ジュリア> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <bitter_sweet> ;
+        :byArtist <豊川風花> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <君だけの欠片> ;
+        :byArtist <エミリー> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Just_be_myself> ;
+        :byArtist <如月千早> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Welcome> ;
+        :byArtist <エターナルハーモニー> ;
+        :position 7
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15434.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0010s_0006_LTH04_H1.png> ;
+        :catalogNumber "LACA-15434" ;
+        :datePublished "2014-09-24"^^xsd:date
+    ] ;
+    :isPartOf <LTH_Series> .
+
+<LTH_05> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER HARMONY 05" ;
+    :numTracks 7 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <HOME_SWEET_FRIENDSHIP> ;
+        :byArtist <リコッタ> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <MY_STYLE_OUR_STYLE> ;
+        :byArtist <周防桃子> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Super_Lover> ;
+        :byArtist <横山奈緒> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <求ム_VS_マイ・フューチャー> ;
+        :byArtist <福田のり子> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Up_10sion♪Pleeeeeeeeease> ;
+        :byArtist <松田亜利沙> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <キミがいて夢になる> ;
+        :byArtist <天海春香> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Welcome> ;
+        :byArtist <リコッタ> ;
+        :position 7
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15435.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0010s_0005_LTH05_H1.png> ;
+        :catalogNumber "LACA-15435" ;
+        :datePublished "2014-11-26"^^xsd:date
+    ] ;
+    :isPartOf <LTH_Series> .
+
+<LTH_06> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER HARMONY 06" ;
+    :numTracks 7 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <ジレるハートに火をつけて> ;
+        :byArtist <灼熱少女> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <恋愛ロードランナー> ;
+        :byArtist <高坂海美> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <BOUNCING♪_SMILE> ;
+        :byArtist <大神環> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <初恋バタフライ> ;
+        :byArtist <宮尾美也> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <フローズン・ワード> ;
+        :byArtist <所恵美> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ホントウノワタシ> ;
+        :byArtist <田中琴葉> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Welcome> ;
+        :byArtist <灼熱少女> ;
+        :position 7
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15436.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0010s_0004_lth06_h1.png> ;
+        :catalogNumber "LACA-15436" ;
+        :datePublished "2014-11-26"^^xsd:date
+    ] ;
+    :isPartOf <LTH_Series> .
+
+<LTH_07> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER HARMONY 07" ;
+    :numTracks 7 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Birth_of_Color> ;
+        :byArtist <BIRTH> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <WORLD_WIDE_DANCE> ;
+        :byArtist <菊地真> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ユニゾン☆ビート> ;
+        :byArtist <舞浜歩> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <月のほとりで> ;
+        :byArtist <三浦あずさ> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Impervious_Resolution> ;
+        :byArtist <萩原雪歩> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <おまじない> ;
+        :byArtist <矢吹可奈> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Welcome> ;
+        :byArtist <BIRTH> ;
+        :position 7
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15437.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0010s_0003_lth07_H1.png> ;
+        :catalogNumber "LACA-15437" ;
+        :datePublished "2015-01-28"^^xsd:date
+    ] ;
+    :isPartOf <LTH_Series> .
+
+<LTH_08> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER HARMONY 08" ;
+    :numTracks 7 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <ドリームトラベラー> ;
+        :byArtist <ミックスナッツ> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <SUPER_SIZE_LOVE> ;
+        :byArtist <佐竹美奈子> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <アニマル☆ステイション> ;
+        :byArtist <中谷育> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <りんごのマーチ> ;
+        :byArtist <木下ひなた> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <WOW_I_NEED_〜シンギングモンキー_歌唱拳〜> ;
+        :byArtist <双海真美> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <水中キャンディ> ;
+        :byArtist <馬場このみ> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Welcome> ;
+        :byArtist <ミックスナッツ> ;
+        :position 7
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15438.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0010s_0002_LTH08_H1.png> ;
+        :catalogNumber "LACA-15438" ;
+        :datePublished "2015-01-28"^^xsd:date
+    ] ;
+    :isPartOf <LTH_Series> .
+
+<LTH_09> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER HARMONY 09" ;
+    :numTracks 7 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <星屑のシンフォニア> ;
+        :byArtist <ミルキーウェイ> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <FAKE_SELF×TRUE_SELF> ;
+        :byArtist <星井美希> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <恋の音色ライン> ;
+        :byArtist <二階堂千鶴> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Day_After_“Yesterday”> ;
+        :byArtist <永吉昴> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <鳥籠スクリプチュア> ;
+        :byArtist <天空橋朋花> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <vivid_color> ;
+        :byArtist <高山紗代子> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Welcome> ;
+        :byArtist <ミルキーウェイ> ;
+        :position 7
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15439.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0010s_0001_LTH09_H1.png> ;
+        :catalogNumber "LACA-15439" ;
+        :datePublished "2015-03-25"^^xsd:date
+    ] ;
+    :isPartOf <LTH_Series> .
+
+<LTH_10> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER HARMONY 10" ;
+    :numTracks 7 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <STANDING_ALIVE> ;
+        :byArtist <ARRIVE> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ファンタジスタ・カーニバル> ;
+        :byArtist <島原エレナ> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <WHY> ;
+        :byArtist <百瀬莉緒> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <STEREOPHONIC_ISOTONIC> ;
+        :byArtist <ロコ> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <addicted> ;
+        :byArtist <四条貴音> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <夕風のメロディー> ;
+        :byArtist <篠宮可憐> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Welcome> ;
+        :byArtist <ARRIVE> ;
+        :position 7
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15440.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0010s_0000_LTH10_H1.png> ;
+        :catalogNumber "LACA-15440" ;
+        :datePublished "2015-03-25"^^xsd:date
+    ] ;
+    :isPartOf <LTH_Series> .
+
+<LTD_Series> a :CreativeWorkSeries ;
+    :name "THE IDOLM@STER LIVE THE@TER DREAMERS" ;
+    :startDate "2015-09-30"^^xsd:date ;
+    :endDate "2016-03-23"^^xsd:date ;
+    :hasPart
+        <LTD_01> ,
+        <LTD_02> ,
+        <LTD_03> ,
+        <LTD_04> ,
+        <LTD_05> ,
+        <LTD_06> .
+
+<LTD_01> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER DREAMERS 01 Dreaming!" ;
+    :numTracks 4 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Dreaming> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <春日未来> ,
+                <最上静香> ,
+                <伊吹翼>
+        ] ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Welcome> ;
+        :byArtist <MILLION_ALLSTARS> ;
+        :position 2
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :name "通常版" ;
+        :url <https://www.lantis.jp/imas/release_LACM-14411.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0009s_0003_LTD01_H1_default.png> ;
+        :catalogNumber "LACM-14411" ;
+        :datePublished "2015-09-30"^^xsd:date
+    ] , [
+        a :MusicRelease ;
+        :name "初回限定盤" ;
+        :url <https://www.lantis.jp/imas/release_LACM-34411.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0009s_0004_LTD01_H1_special.png> ;
+        :catalogNumber "LACM-34411" ;
+        :datePublished "2015-09-30"^^xsd:date
+    ] ;
+    :isPartOf <LTD_Series> .
+
+<LTD_02> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER DREAMERS 02" ;
+    :numTracks 9 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Dreaming> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <天海春香> ,
+                <春日未来> ,
+                <北上麗花> ,
+                <北沢志保> ,
+                <ジュリア> ,
+                <高槻やよい> ,
+                <所恵美> ,
+                <七尾百合子> ,
+                <望月杏奈> ,
+                <矢吹可奈>
+        ] ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ハルカナミライ> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <天海春香> ,
+                <春日未来>
+        ] ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <成長Chu→LOVER> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <望月杏奈> ,
+                <七尾百合子>
+        ] ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <エスケープ> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <ジュリア> ,
+                <所恵美>
+        ] ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Eternal_Spiral> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <高槻やよい> ,
+                <矢吹可奈>
+        ] ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <piece_of_cake> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <北上麗花> ,
+                <北沢志保>
+        ] ;
+        :position 8
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15522.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0009s_0002_LTD02_H1.png> ;
+        :catalogNumber "LACA-15522" ;
+        :datePublished "2015-10-28"^^xsd:date
+    ] ;
+    :isPartOf <LTD_Series> .
+
+<LTD_03> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER DREAMERS 03" ;
+    :numTracks 9 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Dreaming> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <如月千早> ,
+                <周防桃子> ,
+                <徳川まつり> ,
+                <二階堂千鶴> ,
+                <萩原雪歩> ,
+                <箱崎星梨花> ,
+                <馬場このみ> ,
+                <真壁瑞希> ,
+                <宮尾美也> ,
+                <最上静香>
+        ] ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <アライブファクター> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <如月千早> ,
+                <最上静香>
+        ] ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Persona_Voice> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <二階堂千鶴> ,
+                <萩原雪歩>
+        ] ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Cut_Cut_Cut> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <周防桃子> ,
+                <真壁瑞希>
+        ] ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Smiling_Crescent> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <箱崎星梨花> ,
+                <宮尾美也>
+        ] ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Decided> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <徳川まつり> ,
+                <馬場このみ>
+        ] ;
+        :position 8
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15523.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0009s_0006_LTD03_H1.png> ;
+        :catalogNumber "LACA-15523" ;
+        :datePublished "2015-12-02"^^xsd:date
+    ] ;
+    :isPartOf <LTD_Series> .
+
+<LTD_04> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER DREAMERS 04" ;
+    :numTracks 9 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Dreaming> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <秋月律子> ,
+                <伊吹翼> ,
+                <エミリー> ,
+                <我那覇響> ,
+                <佐竹美奈子> ,
+                <篠宮可憐> ,
+                <高山紗代子> ,
+                <天空橋朋花> ,
+                <中谷育> ,
+                <水瀬伊織>
+        ] ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <深層マーメイド> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <伊吹翼> ,
+                <我那覇響>
+        ] ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <HELLO_YOUR_ANGEL♪> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <天空橋朋花> ,
+                <中谷育>
+        ] ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <G♡F> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <秋月律子> ,
+                <篠宮可憐>
+        ] ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <little_trip_around_the_world> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <エミリー> ,
+                <水瀬伊織>
+        ] ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Melody_in_scape> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <佐竹美奈子> ,
+                <高山紗代子>
+        ] ;
+        :position 8
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15524.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0009s_0001_LTD04_H1.png> ;
+        :catalogNumber "LACA-15524" ;
+        :datePublished "2015-12-23"^^xsd:date
+    ] ;
+    :isPartOf <LTD_Series> .
+
+<LTD_05> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER DREAMERS 05" ;
+    :numTracks 10 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Dreaming> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <木下ひなた> ,
+                <四条貴音> ,
+                <豊川風花> ,
+                <野々原茜> ,
+                <双海亜美> ,
+                <松田亜利沙> ,
+                <三浦あずさ> ,
+                <百瀬莉緒> ,
+                <横山奈緒> ,
+                <ロコ>
+        ] ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <“Your”_HOME_TOWN> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <木下ひなた> ,
+                <双海亜美>
+        ] ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <fruity_love> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <野々原茜> ,
+                <ロコ>
+        ] ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <夜に輝く星座のように> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <松田亜利沙> ,
+                <横山奈緒>
+        ] ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <秘密のメモリーズ> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <四条貴音> ,
+                <豊川風花>
+        ] ;
+        :position 8
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <たしかな足跡> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <三浦あずさ> ,
+                <百瀬莉緒>
+        ] ;
+        :position 9
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15525.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0009s_0005_LTD05_H1.png> ;
+        :catalogNumber "LACA-15525" ;
+        :datePublished "2016-01-27"^^xsd:date
+    ] ;
+    :isPartOf <LTD_Series> .
+
+<LTD_06> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER DREAMERS 06" ;
+    :numTracks 9 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Dreaming> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <大神環> ,
+                <菊地真> ,
+                <高坂海美> ,
+                <島原エレナ> ,
+                <田中琴葉> ,
+                <永吉昴> ,
+                <福田のり子> ,
+                <双海真美> ,
+                <星井美希> ,
+                <舞浜歩>
+        ] ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Understand_Understand> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <高坂海美> ,
+                <田中琴葉>
+        ] ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ジャングル☆パーティー> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <大神環> ,
+                <双海真美>
+        ] ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Beat_the_World> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <菊地真> ,
+                <舞浜歩>
+        ] ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Emergence_Vibe> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <島原エレナ> ,
+                <星井美希>
+        ] ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Dreamscape> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <永吉昴> ,
+                <福田のり子>
+        ] ;
+        :position 8
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15526.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0009s_0000_LTD06_H1.png> ;
+        :catalogNumber "LACA-15526" ;
+        :datePublished "2016-03-23"^^xsd:date
+    ] ;
+    :isPartOf <LTD_Series> .
+
+<TA_Series> a :CreativeWorkSeries ;
+    :name "THE IDOLM@STER THE@TER ACTIVITIES" ;
+    :startDate "2016-09-07"^^xsd:date ;
+    :endDate "2016-11-09"^^xsd:date ;
+    :hasPart
+        <TA_01> ,
+        <TA_02> ,
+        <TA_03> .
+
+<TA_01> a :MusicAlbum ;
+    :name "THE IDOLM@STER THE@TER ACTIVITIES 01" ;
+    :numTracks 6 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <創造は始まりの風を連れて> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <七尾百合子> ,
+                <天空橋朋花> ,
+                <箱崎星梨花> ,
+                <松田亜利沙> ,
+                <ロコ>
+        ] ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <DIAMOND_DAYS> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <七尾百合子> ,
+                <天空橋朋花> ,
+                <箱崎星梨花> ,
+                <松田亜利沙> ,
+                <ロコ>
+        ] ;
+        :position 6
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14531.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0008s_0002_TA01_H1.png> ;
+        :catalogNumber "LACM-14531" ;
+        :datePublished "2016-09-07"^^xsd:date
+    ] ;
+    :isPartOf <TA_Series> .
+
+<TA_02> a :MusicAlbum ;
+    :name "THE IDOLM@STER THE@TER ACTIVITIES 02" ;
+    :numTracks 6 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <俠気乱舞> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <ジュリア> ,
+                <周防桃子> ,
+                <大神環> ,
+                <木下ひなた> ,
+                <福田のり子>
+        ] ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <DIAMOND_DAYS> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <ジュリア> ,
+                <周防桃子> ,
+                <大神環> ,
+                <木下ひなた> ,
+                <福田のり子>
+        ] ;
+        :position 6
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14532.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0008s_0001_TA02_H1.png> ;
+        :catalogNumber "LACM-14532" ;
+        :datePublished "2016-10-12"^^xsd:date
+    ] ;
+    :isPartOf <TA_Series> .
+
+<TA_03> a :MusicAlbum ;
+    :name "THE IDOLM@STER THE@TER ACTIVITIES 03" ;
+    :numTracks 6 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <赤い世界が消える頃> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <矢吹可奈> ,
+                <佐竹美奈子> ,
+                <篠宮可憐> ,
+                <真壁瑞希> ,
+                <北上麗花>
+        ] ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <DIAMOND_DAYS> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <矢吹可奈> ,
+                <佐竹美奈子> ,
+                <篠宮可憐> ,
+                <真壁瑞希> ,
+                <北上麗花>
+        ] ;
+        :position 6
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14533.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0008s_0000_TA03_H1.png> ;
+        :catalogNumber "LACM-14533" ;
+        :datePublished "2016-11-09"^^xsd:date
+    ] ;
+    :isPartOf <TA_Series> .
+
+<LTF_Series> a :CreativeWorkSeries ;
+    :name "THE IDOLM@STER LIVE THE@TER FORWARD" ;
+    :startDate "2016-12-07"^^xsd:date ;
+    :endDate "2017-02-15"^^xsd:date ;
+    :hasPart
+        <LTF_01> ,
+        <LTF_02> ,
+        <LTF_03> .
+
+<LTF_01> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER FORWARD 01 Sunshine Rhythm" ;
+    :numTracks 11 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <ランニング・ハイッ> ;
+        :byArtist <キャンサー> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ゲキテキ_ムテキ_恋したい> ;
+        :byArtist <レオ> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Bonnes_Bonnes_Vacances> ;
+        :byArtist <リブラ> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <NO_CURRY_NO_LIFE> ;
+        :byArtist <カプリコーン> ;
+        :position 8
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <サンリズム・オーケストラ♪> ;
+        :byArtist <Sunshine_Rhythm> ;
+        :position 10
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15611.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0007s_0002_LTF01_H1.png> ;
+        :catalogNumber "LACA-15611" ;
+        :datePublished "2016-12-07"^^xsd:date
+    ] ;
+    :isPartOf <LTF_Series> .
+
+<LTF_02> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER FORWARD 02 BlueMoon Harmony" ;
+    :numTracks 11 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Raise_the_FLAG> ;
+        :byArtist <サジタリアス> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <PS_I_Love_You> ;
+        :byArtist <ピスケス> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <プリムラ> ;
+        :byArtist <ウィルゴ> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <待ちぼうけのLacrima> ;
+        :byArtist <アクアリウス> ;
+        :position 8
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <brave_HARMONY> ;
+        :byArtist <BlueMoon_Harmony> ;
+        :position 10
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15612.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0007s_0001_LTF02_H1.png> ;
+        :catalogNumber "LACA-15612" ;
+        :datePublished "2017-01-11"^^xsd:date
+    ] ;
+    :isPartOf <LTF_Series> .
+
+<LTF_03> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER FORWARD 03 Starlight Melody" ;
+    :numTracks 11 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <リフレインキス> ;
+        :byArtist <スコーピオ> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Sweet_Sweet_Soul> ;
+        :byArtist <アリエス> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <メメント_モメント♪ルルルルル☆> ;
+        :byArtist <タウラス> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <永遠の花> ;
+        :byArtist <ジェミニ> ;
+        :position 8
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Starry_Melody> ;
+        :byArtist <Starlight_Melody> ;
+        :position 10
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15613.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0007s_0000_LTF03_H1.png> ;
+        :catalogNumber "LACA-15613" ;
+        :datePublished "2017-02-15"^^xsd:date
+    ] ;
+    :isPartOf <LTF_Series> .
+
+<MTG_Series> a :CreativeWorkSeries ;
+    :name "THE IDOLM@STER MILLION THE@TER GENERATION" ;
+    :startDate "2017-07-26"^^xsd:date ;
+    :endDate "2019-06-26"^^xsd:date ;
+    :hasPart
+        <MTG_01> ,
+        <MTG_02> ,
+        <MTG_03> ,
+        <MTG_04> ,
+        <MTG_05> ,
+        <MTG_06> ,
+        <MTG_07> ,
+        <MTG_08> ,
+        <MTG_09> ,
+        <MTG_10> ,
+        <MTG_11> ,
+        <MTG_12> ,
+        <MTG_13> ,
+        <MTG_14> ,
+        <MTG_15> ,
+        <MTG_16> ,
+        <MTG_17> ,
+        <MTG_18> .
+
+<MTG_01> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER GENERATION 01 Brand New Theater!" ;
+    :numTracks 3 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Brand_New_Theater> ;
+        :byArtist <765_MILLION_ALLSTARS> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Dreaming> ;
+        :byArtist <765_MILLION_ALLSTARS> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <インヴィンシブル・ジャスティス> ;
+        :byArtist <マイティーセーラーズ> ;
+        :position 3
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14631.html> ;
+        :image <https://www.lantis.jp/imas/img/MTG01_H1_Full.jpg> ;
+        :catalogNumber "LACM-14631" ;
+        :datePublished "2017-07-26"^^xsd:date
+    ] ;
+    :isPartOf <MTG_Series> .
+
+<MTG_02> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER GENERATION 02 フェアリースターズ" ;
+    :numTracks 3 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <FairyTaleじゃいられない> ;
+        :byArtist <フェアリースターズ_FairyTaleじゃいられない> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Brand_New_Theater> ;
+        :byArtist <フェアリースターズ> ;
+        :position 2
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14632.html> ;
+        :image <https://www.lantis.jp/imas/img/MTG02_H1.jpg> ;
+        :catalogNumber "LACM-14632" ;
+        :datePublished "2017-11-22"^^xsd:date
+    ] ;
+    :isPartOf <MTG_Series> .
+
+<MTG_03> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER GENERATION 03 エンジェルスターズ" ;
+    :numTracks 3 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Angelic_Parade♪> ;
+        :byArtist <エンジェルスターズ_Angelic_Parade♪> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Brand_New_Theater> ;
+        :byArtist <エンジェルスターズ> ;
+        :position 2
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14633.html> ;
+        :image <https://www.lantis.jp/imas/img/MTG03_H1.jpg> ;
+        :catalogNumber "LACM-14633" ;
+        :datePublished "2017-12-27"^^xsd:date
+    ] ;
+    :isPartOf <MTG_Series> .
+
+<MTG_04> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER GENERATION 04 プリンセススターズ" ;
+    :numTracks 4 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Princess_Be_Ambitious> ;
+        :byArtist <プリンセススターズ_Princess_Be_Ambitious> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Brand_New_Theater> ;
+        :byArtist <プリンセススターズ> ;
+        :position 2
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14634.html> ;
+        :image <https://www.lantis.jp/imas/img/MTG04_H1.jpg> ;
+        :catalogNumber "LACM-14634" ;
+        :datePublished "2018-01-31"^^xsd:date
+    ] ;
+    :isPartOf <MTG_Series> .
+
+<MTG_05> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER GENERATION 05 夜想令嬢 -GRAC&E NOCTURNE-" ;
+    :numTracks 8 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <昏き星、遠い月> ;
+        :byArtist <夜想令嬢_-GRACE_NOCTURNE-> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Everlasting> ;
+        :byArtist <夜想令嬢_-GRACE_NOCTURNE-> ;
+        :position 7
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14635.html> ;
+        :image <https://www.lantis.jp/imas/img/MTG05_H1.jpg> ;
+        :catalogNumber "LACM-14635" ;
+        :datePublished "2018-02-28"^^xsd:date
+    ] ;
+    :isPartOf <MTG_Series> .
+
+<MTG_06> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER GENERATION 06 Cleasky" ;
+    :numTracks 7 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <虹色letters> ;
+        :byArtist <Cleasky> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <想い出はクリアスカイ> ;
+        :byArtist <Cleasky> ;
+        :position 6
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14636.html> ;
+        :image <https://www.lantis.jp/imas/img/MTG06_H1.jpg> ;
+        :catalogNumber "LACM-14636" ;
+        :datePublished "2018-03-28"^^xsd:date
+    ] ;
+    :isPartOf <MTG_Series> .
+
+<MTG_07> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER GENERATION 07 トゥインクルリズム" ;
+    :numTracks 7 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <ZETTAI_×_BREAK_トゥインクルリズム> ;
+        :byArtist <トゥインクルリズム> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Tomorrow_Program> ;
+        :byArtist <トゥインクルリズム> ;
+        :position 6
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14637.html> ;
+        :image <https://www.lantis.jp/imas/img/MTG07_H1.jpg> ;
+        :catalogNumber "LACM-14637" ;
+        :datePublished "2018-04-25"^^xsd:date
+    ] ;
+    :isPartOf <MTG_Series> .
+
+<MTG_08> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER GENERATION 08 EScape" ;
+    :numTracks 6 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Melty_Fantasia> ;
+        :byArtist <EScape> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ID_〜EScape_from_Utopia〜> ;
+        :byArtist <EScape> ;
+        :position 6
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14638.html> ;
+        :image <https://www.lantis.jp/imas/img/MTG08_H1.jpg> ;
+        :catalogNumber "LACM-14638" ;
+        :datePublished "2018-05-30"^^xsd:date
+    ] ;
+    :isPartOf <MTG_Series> .
+
+<MTG_09> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER GENERATION 09 4 Luxury" ;
+    :numTracks 6 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <花ざかりWeekend✿> ;
+        :byArtist <4_Luxury> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <RED_ZONE> ;
+        :byArtist <4_Luxury> ;
+        :position 5
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14639.html> ;
+        :image <https://www.lantis.jp/imas/img/MTG09_H1.jpg> ;
+        :catalogNumber "LACM-14639" ;
+        :datePublished "2018-06-27"^^xsd:date
+    ] ;
+    :isPartOf <MTG_Series> .
+
+<MTG_10> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER GENERATION 10 閃光☆HANABI団" ;
+    :numTracks 6 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <咲くは浮世の君花火> ;
+        :byArtist <閃光☆HANABI団> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <BORN_ON_DREAM_〜HANABI☆NIGHT〜> ;
+        :byArtist <閃光☆HANABI団> ;
+        :position 5
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14640.html> ;
+        :image <https://www.lantis.jp/imas/img/MTG10_H1.jpg> ;
+        :catalogNumber "LACM-14640" ;
+        :datePublished "2018-07-25"^^xsd:date
+    ] ;
+    :isPartOf <MTG_Series> .
+
+<MTG_11> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER GENERATION 11 UNION!!" ;
+    :numTracks 4 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <UNION> ;
+        :byArtist <765_MILLION_ALLSTARS> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Welcome> ;
+        :byArtist <765_MILLION_ALLSTARS> ;
+        :position 2
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14641.html> ;
+        :image <https://www.lantis.jp/imas/img/MTG11_H1.jpg> ;
+        :catalogNumber "LACM-14641" ;
+        :datePublished "2018-08-29"^^xsd:date
+    ] ;
+    :isPartOf <MTG_Series> .
+
+<MTG_12> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER GENERATION 12 D/Zeal" ;
+    :numTracks 9 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <ハーモニクス> ;
+        :byArtist <D_Zeal> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <餞の鳥> ;
+        :byArtist <D_Zeal> ;
+        :position 7
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14642.html> ;
+        :image <https://www.lantis.jp/imas/img/MTG12_H1.jpg> ;
+        :catalogNumber "LACM-14642" ;
+        :datePublished "2018-12-26"^^xsd:date
+    ] ;
+    :isPartOf <MTG_Series> .
+
+<MTG_13> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER GENERATION 13 りるきゃん 〜3 little candy〜" ;
+    :numTracks 7 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <ハルマチ女子> ;
+        :byArtist <りるきゃん_〜3_little_candy〜> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <彼氏になってよ。> ;
+        :byArtist <りるきゃん_〜3_little_candy〜> ;
+        :position 6
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14823.html> ;
+        :image <https://www.lantis.jp/imas/img/MTG13_H1.jpg> ;
+        :catalogNumber "LACM-14823" ;
+        :datePublished "2019-01-30"^^xsd:date
+    ] ;
+    :isPartOf <MTG_Series> .
+
+<MTG_14> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER GENERATION 14 Charlotte・Charlotte" ;
+    :numTracks 6 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <だってあなたはプリンセス> ;
+        :byArtist <Charlotte・Charlotte> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ミラージュ・ミラー> ;
+        :byArtist <Charlotte・Charlotte> ;
+        :position 5
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14824.html> ;
+        :image <https://www.lantis.jp/imas/img/MTG14_H1.jpg> ;
+        :catalogNumber "LACM-14824" ;
+        :datePublished "2019-02-27"^^xsd:date
+    ] ;
+    :isPartOf <MTG_Series> .
+
+<MTG_15> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER GENERATION 15 Jelly PoP Beans" ;
+    :numTracks 7 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <月曜日のクリームソーダ> ;
+        :byArtist <Jelly_PoP_Beans> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <I_did_I_will> ;
+        :byArtist <Jelly_PoP_Beans> ;
+        :position 6
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14825.html> ;
+        :image <https://www.lantis.jp/imas/img/MTG15_H1.jpg> ;
+        :catalogNumber "LACM-14825" ;
+        :datePublished "2019-03-27"^^xsd:date
+    ] ;
+    :isPartOf <MTG_Series> .
+
+<MTG_16> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER GENERATION 16 ピコピコプラネッツ" ;
+    :numTracks 8 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <ピコピコIIKO_インベーダー> ;
+        :byArtist <ピコピコプラネッツ> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Get_lol_Get_lol_SONG> ;
+        :byArtist <ピコピコプラネッツ> ;
+        :position 7
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14826.html> ;
+        :image <https://www.lantis.jp/imas/img/MTG16_H1.jpg> ;
+        :catalogNumber "LACM-14826" ;
+        :datePublished "2019-04-24"^^xsd:date
+    ] ;
+    :isPartOf <MTG_Series> .
+
+<MTG_17> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER GENERATION 17 STAR ELEMENTS" ;
+    :numTracks 7 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Episode_Tiara> ;
+        :byArtist <STAR_ELEMENTS> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ギブミーメタファー> ;
+        :byArtist <STAR_ELEMENTS> ;
+        :position 6
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14827.html> ;
+        :image <https://www.lantis.jp/imas/img/MTG17_H1.jpg> ;
+        :catalogNumber "LACM-14827" ;
+        :datePublished "2019-05-29"^^xsd:date
+    ] ;
+    :isPartOf <MTG_Series> .
+
+<MTG_18> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER GENERATION 18 765PRO ALLSTARS" ;
+    :numTracks 7 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <LEADER> ;
+        :byArtist <765PRO_ALLSTARS> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Brand_New_Theater> ;
+        :byArtist <765PRO_ALLSTARS> ;
+        :position 7
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14828.html> ;
+        :image <https://www.lantis.jp/imas/img/MTG18_H1.jpg> ;
+        :catalogNumber "LACM-14828" ;
+        :datePublished "2019-06-26"^^xsd:date
+    ] ;
+    :isPartOf <MTG_Series> .
+
+<MS_Series> a :CreativeWorkSeries ;
+    :name "THE IDOLM@STER MILLION LIVE! M@STER SPARKLE" ;
+    :startDate "2017-08-23"^^xsd:date ;
+    :endDate "2018-04-04"^^xsd:date ;
+    :hasPart
+        <MS_01> ,
+        <MS_02> ,
+        <MS_03> ,
+        <MS_04> ,
+        <MS_05> ,
+        <MS_06> ,
+        <MS_07> ,
+        <MS_08> .
+
+<MS_01> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION LIVE! M@STER SPARKLE 01" ;
+    :numTracks 5 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <ローリング△さんかく> ;
+        :byArtist <周防桃子> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <地球儀にない国> ;
+        :byArtist <七尾百合子> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <祈りの羽根> ;
+        :byArtist <豊川風花> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <瑠璃色金魚と花菖蒲> ;
+        :byArtist <白石紬> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <未来系ドリーマー> ;
+        :byArtist <春日未来> ;
+        :position 5
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15671.html> ;
+        :image <https://www.lantis.jp/imas/img/LACA-15671.jpg> ;
+        :catalogNumber "LACA-15671" ;
+        :datePublished "2017-08-23"^^xsd:date
+    ] ;
+    :isPartOf <MS_Series> .
+
+<MS_02> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION LIVE! M@STER SPARKLE 02" ;
+    :numTracks 5 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <プリンセス・アラモード> ;
+        :byArtist <徳川まつり> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <HOME_RUN_SONG♪> ;
+        :byArtist <永吉昴> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ロケットスター☆> ;
+        :byArtist <伊吹翼> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <CAT_CROSSING> ;
+        :byArtist <北沢志保> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ハミングバード> ;
+        :byArtist <桜守歌織> ;
+        :position 5
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15672.html> ;
+        :image <https://www.lantis.jp/imas/img/LACA-15672.jpg> ;
+        :catalogNumber "LACA-15672" ;
+        :datePublished "2017-09-20"^^xsd:date
+    ] ;
+    :isPartOf <MS_Series> .
+
+<MS_03> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION LIVE! M@STER SPARKLE 03" ;
+    :numTracks 5 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Come_on_a_Tea_Party> ;
+        :byArtist <箱崎星梨花> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <満腹至極フルコォス> ;
+        :byArtist <佐竹美奈子> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Only_One_Second> ;
+        :byArtist <高山紗代子> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <To> ;
+        :byArtist <馬場このみ> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <SING_MY_SONG> ;
+        :byArtist <最上静香> ;
+        :position 5
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15673.html> ;
+        :image <https://www.lantis.jp/imas/img/LACA-15673.jpg> ;
+        :catalogNumber "LACA-15673" ;
+        :datePublished "2017-10-25"^^xsd:date
+    ] ;
+    :isPartOf <MS_Series> .
+
+<MS_04> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION LIVE! M@STER SPARKLE 04" ;
+    :numTracks 5 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <AIKANE> ;
+        :byArtist <野々原茜> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <スポーツ_スポーツ_スポーツ> ;
+        :byArtist <高坂海美> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ART_NEEDS_HEART_BEATS> ;
+        :byArtist <ロコ> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ENTER→PLEASURE> ;
+        :byArtist <望月杏奈> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <あめにうたおう♪> ;
+        :byArtist <矢吹可奈> ;
+        :position 5
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15674.html> ;
+        :image <https://www.lantis.jp/imas/img/LACA-15674.jpg> ;
+        :catalogNumber "LACA-15674" ;
+        :datePublished "2017-12-06"^^xsd:date
+    ] ;
+    :isPartOf <MS_Series> .
+
+<MS_05> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION LIVE! M@STER SPARKLE 05" ;
+    :numTracks 5 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Border_LINE→→→♡> ;
+        :byArtist <百瀬莉緒> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ふわりずむ> ;
+        :byArtist <宮尾美也> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <たんけんぼうけん☆ハイホー隊> ;
+        :byArtist <大神環> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Silent_Joker> ;
+        :byArtist <真壁瑞希> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <はなしらべ> ;
+        :byArtist <エミリー> ;
+        :position 5
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15675.html> ;
+        :image <https://www.lantis.jp/imas/img/LACA-15675.jpg> ;
+        :catalogNumber "LACA-15675" ;
+        :datePublished "2018-01-10"^^xsd:date
+    ] ;
+    :isPartOf <MS_Series> .
+
+<MS_06> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION LIVE! M@STER SPARKLE 06" ;
+    :numTracks 5 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <WE_ARE_ONE> ;
+        :byArtist <福田のり子> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Home_is_a_coming_now> ;
+        :byArtist <横山奈緒> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Oli_Oli_DISCO> ;
+        :byArtist <舞浜歩> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ムーンゴールド> ;
+        :byArtist <二階堂千鶴> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <スタートリップ> ;
+        :byArtist <ジュリア> ;
+        :position 5
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15676.html> ;
+        :image <https://www.lantis.jp/imas/img/LACA-15676.jpg> ;
+        :catalogNumber "LACA-15676" ;
+        :datePublished "2018-02-07"^^xsd:date
+    ] ;
+    :isPartOf <MS_Series> .
+
+<MS_07> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION LIVE! M@STER SPARKLE 07" ;
+    :numTracks 5 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Take_3_2_1_→S・P・A・C・E↑↑> ;
+        :byArtist <松田亜利沙> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ときどきシーソー> ;
+        :byArtist <中谷育> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <スノウレター> ;
+        :byArtist <木下ひなた> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <教えてlast_note> ;
+        :byArtist <篠宮可憐> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Hearty> ;
+        :byArtist <所恵美> ;
+        :position 5
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15677.html> ;
+        :image <https://www.lantis.jp/imas/img/LACA-15677.jpg> ;
+        :catalogNumber "LACA-15677" ;
+        :datePublished "2018-03-07"^^xsd:date
+    ] ;
+    :isPartOf <MS_Series> .
+
+<MS_08> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION LIVE! M@STER SPARKLE 08" ;
+    :numTracks 5 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <シャクネツのパレード> ;
+        :byArtist <島原エレナ> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <空に手が触れる場所> ;
+        :byArtist <北上麗花> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Sister> ;
+        :byArtist <天空橋朋花> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <シルエット> ;
+        :byArtist <田中琴葉> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Brand_New_Theater> ;
+        :byArtist <765_MILLION_ALLSTARS> ;
+        :position 5
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-15678.html> ;
+        :image <https://www.lantis.jp/imas/img/LACA-15678.jpg> ;
+        :catalogNumber "LACA-15678" ;
+        :datePublished "2018-04-04"^^xsd:date
+    ] ;
+    :isPartOf <MS_Series> .
+
+<TB_Series> a :CreativeWorkSeries ;
+    :name "THE IDOLM@STER THE@TER BOOST" ;
+    :startDate "2018-09-26"^^xsd:date ;
+    :endDate "2018-11-28"^^xsd:date ;
+    :hasPart
+        <TB_01> ,
+        <TB_02> ,
+        <TB_03> .
+
+<TB_01> a :MusicAlbum ;
+    :name "THE IDOLM@STER THE@TER BOOST 01" ;
+    :numTracks 4 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <ビッグバンズバリボー> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <高坂海美> ,
+                <所恵美> ,
+                <高山紗代子> ,
+                <豊川風花> ,
+                <横山奈緒>
+        ] ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <DIAMOND_DAYS> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <高坂海美> ,
+                <所恵美> ,
+                <高山紗代子> ,
+                <豊川風花> ,
+                <横山奈緒>
+        ] ;
+        :position 4
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14811.html> ;
+        :image <https://www.lantis.jp/imas/img/TB01_H1.jpg> ;
+        :catalogNumber "LACM-14811" ;
+        :datePublished "2018-09-26"^^xsd:date
+    ] ;
+    :isPartOf <TB_Series> .
+
+<TB_02> a :MusicAlbum ;
+    :name "THE IDOLM@STER THE@TER BOOST 02" ;
+    :numTracks 6 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <オーディナリィ・クローバー> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <桜守歌織> ,
+                <最上静香> ,
+                <望月杏奈> ,
+                <百瀬莉緒> ,
+                <宮尾美也>
+        ] ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <DIAMOND_DAYS> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <桜守歌織> ,
+                <最上静香> ,
+                <望月杏奈> ,
+                <百瀬莉緒> ,
+                <宮尾美也>
+        ] ;
+        :position 5
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14812.html> ;
+        :image <https://www.lantis.jp/imas/img/TB02_H1.jpg> ;
+        :catalogNumber "LACM-14812" ;
+        :datePublished "2018-10-24"^^xsd:date
+    ] ;
+    :isPartOf <TB_Series> .
+
+<TB_03> a :MusicAlbum ;
+    :name "THE IDOLM@STER THE@TER BOOST 03" ;
+    :numTracks 5 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <ラスト・アクトレス> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <田中琴葉> ,
+                <周防桃子> ,
+                <馬場このみ> ,
+                <真壁瑞希> ,
+                <白石紬>
+        ] ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <DIAMOND_DAYS> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <田中琴葉> ,
+                <周防桃子> ,
+                <馬場このみ> ,
+                <真壁瑞希> ,
+                <白石紬>
+        ] ;
+        :position 5
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14813.html> ;
+        :image <https://www.lantis.jp/imas/img/TB03_H1.jpg> ;
+        :catalogNumber "LACM-14813" ;
+        :datePublished "2018-11-28"^^xsd:date
+    ] ;
+    :isPartOf <TB_Series> .
+
+<MTW_Series> a :CreativeWorkSeries ;
+    :name "THE IDOLM@STER MILLION THE@TER WAVE" ;
+    :startDate "2019-07-24"^^xsd:date ;
+    :hasPart
+        <MTW_01> ,
+        <MTW_02> ,
+        <MTW_03> .
+
+<MTW_01> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER WAVE 01 Flyers!!!" ;
+    :numTracks 3 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Flyers> ;
+        :byArtist <765_MILLION_ALLSTARS> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Justice_OR_Voice> ;
+        :byArtist <ジェネシス×ネメシス> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <White_Vows> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member <豊川風花> ;
+            :member <馬場このみ> ;
+            :member <百瀬莉緒> ;
+            :member <桜守歌織> ;
+            :member <二階堂千鶴> ;
+        ] ;
+        :position 3
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14891.html> ;
+        :image <https://www.lantis.jp/imas/img/MTW01_H1.jpg> ;
+        :catalogNumber "LACM-14891" ;
+        :datePublished "2019-07-24"^^xsd:date
+    ] ;
+    :isPartOf <MTG_Series> .
+
+<MTW_02> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER WAVE 02 Chrono-Lexica" ;
+    :numTracks 6 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <dans_lobscurité> ;
+        :byArtist <Chrono-Lexica> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <囚われのTeaTime> ;
+        :byArtist <Chrono-Lexica> ;
+        :position 5
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14892.html> ;
+        :image <https://www.lantis.jp/imas/img/MTW02_H1.jpg> ;
+        :catalogNumber "LACM-14892" ;
+        :datePublished "2019-08-28"^^xsd:date
+    ] ;
+    :isPartOf <MTG_Series> .
+
+<MTW_03> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER WAVE 03 Xs" ;
+    :numTracks 7 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <ラビットファー> ;
+        :byArtist <Xs>
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Dreamy_Dream> ;
+        :byArtist <Xs>
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14893.html> ;
+        :image <https://www.lantis.jp/imas/img/MTW03_H1.jpg> ;
+        :catalogNumber "LACM-14893" ;
+        :datePublished "2019-09-25"^^xsd:date
+    ] ;
+    :isPartOf <MTG_Series> .
+
+# SOLO COLLECTION
+<LTSC_Series> a :CreativeWorkSeries ;
+    :name "THE IDOLM@STER LIVE THE@TER SOLO COLLECTION" ;
+    :startDate "2015-04-04"^^xsd:date ;
+    :hasPart
+        <LTSC_01> ,
+        <LTSC_02> ,
+        <LTSC_03_Vocal> ,
+        <LTSC_03_Dance> ,
+        <LTSC_03_Visual> ,
+        <LTSC_04_Sunshine> ,
+        <LTSC_04_BlueMoon> ,
+        <LTSC_04_Starlight> ,
+        <LTSC_05> ,
+        <LTSC_06_Princess> ,
+        <LTSC_06_Fairy> ,
+        <LTSC_06_Angel> ,
+        <LTSC_07_Princess> ,
+        <LTSC_07_Fairy> ,
+        <LTSC_07_Angel> .
+
+<LTSC_01> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER SOLO COLLECTION Vol.01" ;
+    :numTracks 21 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Thank_You_-MR_remix-> ;
+        :byArtist <箱崎星梨花> ;
+        :position "1-01"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Legend_Girls> ;
+        :byArtist <七尾百合子> ;
+        :position "1-02"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <PRETTY_DREAMER> ;
+        :byArtist <望月杏奈> ;
+        :position "1-03"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Blue_Symphony> ;
+        :byArtist <北沢志保> ;
+        :position "1-04"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Sentimental_Venus> ;
+        :byArtist <百瀬莉緒> ;
+        :position "1-05"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Marionetteは眠らない> ;
+        :byArtist <ジュリア> ;
+        :position "1-06"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <カワラナイモノ> ;
+        :byArtist <高山紗代子> ;
+        :position "1-07"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Helloコンチェルト> ;
+        :byArtist <松田亜利沙> ;
+        :position "1-08"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <瞳の中のシリウス> ;
+        :byArtist <高坂海美> ;
+        :position "1-09"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Fu-Wa-Du-Wa> ;
+        :byArtist <舞浜歩> ;
+        :position "1-10"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Bigバルーン◎> ;
+        :byArtist <馬場このみ> ;
+        :position "1-11"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Growing_Storm> ;
+        :byArtist <春日未来> ;
+        :position "2-01"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Shooting_Stars> ;
+        :byArtist <最上静香> ;
+        :position "2-02"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Eternal_Harmony> ;
+        :byArtist <豊川風花> ;
+        :position "2-03"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <HOME_SWEET_FRIENDSHIP> ;
+        :byArtist <横山奈緒> ;
+        :position "2-04"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ジレるハートに火をつけて> ;
+        :byArtist <所恵美> ;
+        :position "2-05"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Birth_of_Color> ;
+        :byArtist <矢吹可奈> ;
+        :position "2-06"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ドリームトラベラー> ;
+        :byArtist <佐竹美奈子> ;
+        :position "2-07"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <星屑のシンフォニア> ;
+        :byArtist <天空橋朋花> ;
+        :position "2-08"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <STANDING_ALIVE> ;
+        :byArtist <篠宮可憐> ;
+        :position "2-09"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Welcome> ;
+        :byArtist <伊吹翼> ;
+        :position "2-10"
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://idolmaster.jp/blog/?p=11575> ;
+        :catalogNumber "LZM-2124〜5" ;
+        :datePublished "2015-04-04"^^xsd:date
+    ] ;
+    :isPartOf <LTSC_Series> .
+
+<LTSC_02> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER SOLO COLLECTION Vol.02" ;
+    :numTracks 22 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Thank_You> ;
+        :byArtist <如月千早> ;
+        :position "1-01"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Legend_Girls> ;
+        :byArtist <最上静香> ;
+        :position "1-02"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <PRETTY_DREAMER> ;
+        :byArtist <横山奈緒> ;
+        :position "1-03"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Blue_Symphony> ;
+        :byArtist <所恵美> ;
+        :position "1-04"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Sentimental_Venus> ;
+        :byArtist <水瀬伊織> ;
+        :position "1-05"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Marionetteは眠らない> ;
+        :byArtist <伊吹翼> ;
+        :position "1-06"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <カワラナイモノ> ;
+        :byArtist <三浦あずさ> ;
+        :position "1-07"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Good-Sleep_Baby♡> ;
+        :byArtist <矢吹可奈> ;
+        :position "1-08"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ココロがかえる場所> ;
+        :byArtist <萩原雪歩> ;
+        :position "1-09"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Bigバルーン◎> ;
+        :byArtist <双海亜美> ;
+        :position "1-10"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <U・N・M・E・I_ライブ> ;
+        :byArtist <箱崎星梨花> ;
+        :position "1-11"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Thank_You_-MR_remix-> ;
+        :byArtist <春日未来> ;
+        :position "2-01"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <合言葉はスタートアップ> ;
+        :byArtist <我那覇響> ;
+        :position "2-02"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Growing_Storm> ;
+        :byArtist <望月杏奈> ;
+        :position "2-03"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Shooting_Stars> ;
+        :byArtist <北沢志保> ;
+        :position "2-04"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Eternal_Harmony> ;
+        :byArtist <ジュリア> ;
+        :position "2-05"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <HOME_SWEET_FRIENDSHIP> ;
+        :byArtist <天海春香> ;
+        :position "2-06"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ジレるハートに火をつけて> ;
+        :byArtist <高坂海美> ;
+        :position "2-07"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Birth_of_Color> ;
+        :byArtist <菊地真> ;
+        :position "2-08"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ドリームトラベラー> ;
+        :byArtist <双海真美> ;
+        :position "2-09"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <STANDING_ALIVE> ;
+        :byArtist <四条貴音> ;
+        :position "2-10"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Welcome> ;
+        :byArtist <七尾百合子> ;
+        :position "2-11"
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://idolmaster.jp/blog/?p=14001> ;
+        :catalogNumber "LZM-2130〜1" ;
+        :datePublished "2015-07-17"^^xsd:date
+    ] ;
+    :isPartOf <LTSC_Series> .
+
+<LTSC_03_Vocal> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER SOLO COLLECTION Vol.03 Vocal Edition" ;
+    :numTracks 11 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Dreaming> ;
+        :byArtist <ジュリア> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Legend_Girls> ;
+        :byArtist <箱崎星梨花> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Blue_Symphony> ;
+        :byArtist <田中琴葉> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <HOME_SWEET_FRIENDSHIP> ;
+        :byArtist <松田亜利沙> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ドリームトラベラー> ;
+        :byArtist <木下ひなた> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <星屑のシンフォニア> ;
+        :byArtist <高山紗代子> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ハルカナミライ> ;
+        :byArtist <春日未来> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Eternal_Spiral> ;
+        :byArtist <矢吹可奈> ;
+        :position 8
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <成長Chu→LOVER> ;
+        :byArtist <望月杏奈> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <アライブファクター> ;
+        :byArtist <最上静香> ;
+        :position 10
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <HELLO_YOUR_ANGEL♪> ;
+        :byArtist <天空橋朋花> ;
+        :position 11
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://idolmaster.jp/blog/?p=17979> ;
+        :catalogNumber "LZM-2141" ;
+        :datePublished "2016-01-31"^^xsd:date
+    ] ;
+    :isPartOf <LTSC_Series> .
+
+<LTSC_03_Dance> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER SOLO COLLECTION Vol.03 Dance Edition" ;
+    :numTracks 14 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Welcome> ;
+        :byArtist <高坂海美> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Marionetteは眠らない> ;
+        :byArtist <北上麗花> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <カワラナイモノ> ;
+        :byArtist <福田のり子> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Helloコンチェルト> ;
+        :byArtist <佐竹美奈子> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Fu-Wa-Du-Wa> ;
+        :byArtist <島原エレナ> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Bigバルーン◎> ;
+        :byArtist <永吉昴> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Shooting_Stars> ;
+        :byArtist <野々原茜> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ジレるハートに火をつけて> ;
+        :byArtist <大神環> ;
+        :position 8
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Birth_of_Color> ;
+        :byArtist <舞浜歩> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        a :MusicRecording ;
+        :recordingOf <STANDING_ALIVE> ;
+        :byArtist <百瀬莉緒> ;
+        :position 10
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Decided> ;
+        :byArtist <馬場このみ> ;
+        :position 11
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Cut_Cut_Cut> ;
+        :byArtist <真壁瑞希> ;
+        :position 12
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <little_trip_around_the_world> ;
+        :byArtist <エミリー> ;
+        :position 13
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <夜に輝く星座のように> ;
+        :byArtist <横山奈緒> ;
+        :position 14
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://idolmaster.jp/blog/?p=17979> ;
+        :catalogNumber "LZM-2142" ;
+        :datePublished "2016-01-31"^^xsd:date
+    ] ;
+    :isPartOf <LTSC_Series> .
+
+<LTSC_03_Visual> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER SOLO COLLECTION Vol.03 Visual Edition" ;
+    :numTracks 12 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <PRETTY_DREAMER> ;
+        :byArtist <豊川風花> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Good-Sleep_Baby♡> ;
+        :byArtist <中谷育> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <瞳の中のシリウス> ;
+        :byArtist <徳川まつり> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ココロがかえる場所> ;
+        :byArtist <周防桃子> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Growing_Storm> ;
+        :byArtist <七尾百合子> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <エスケープ> ;
+        :byArtist <所恵美> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <piece_of_cake> ;
+        :byArtist <北沢志保> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Persona_Voice> ;
+        :byArtist <二階堂千鶴> ;
+        :position 8
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Smiling_Crescent> ;
+        :byArtist <宮尾美也> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <深層マーメイド> ;
+        :byArtist <伊吹翼> ;
+        :position 10
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <G♡F> ;
+        :byArtist <篠宮可憐> ;
+        :position 11
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <fruity_love> ;
+        :byArtist <ロコ> ;
+        :position 12
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://idolmaster.jp/blog/?p=17979> ;
+        :catalogNumber "LZM-2143" ;
+        :datePublished "2016-01-31"^^xsd:date
+    ] ;
+    :isPartOf <LTSC_Series> .
+
+<LTSC_04_Sunshine> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER SOLO COLLECTION 04 Sunshine Theater" ;
+    :numTracks 12 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Growing_Storm> ;
+        :byArtist <伊吹翼> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Eternal_Harmony> ;
+        :byArtist <エミリー> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <HOME_SWEET_FRIENDSHIP> ;
+        :byArtist <福田のり子> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <STANDING_ALIVE> ;
+        :byArtist <ロコ> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <HELLO_YOUR_ANGEL♪> ;
+        :byArtist <中谷育> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <“Your”_HOME_TOWN> ;
+        :byArtist <木下ひなた> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <たしかな足跡> ;
+        :byArtist <百瀬莉緒> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <DIAMOND_DAYS> ;
+        :byArtist <矢吹可奈> ;
+        :position 8
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ランニング・ハイッ> ;
+        :byArtist <横山奈緒> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ゲキテキ_ムテキ_恋したい> ;
+        :byArtist <島原エレナ> ;
+        :position 10
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Bonnes_Bonnes_Vacances> ;
+        :byArtist <佐竹美奈子> ;
+        :position 11
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <NO_CURRY_NO_LIFE> ;
+        :byArtist <望月杏奈> ;
+        :position 12
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://idolmaster.jp/blog/?p=27600> ;
+        :catalogNumber "LZM-2155" ;
+        :datePublished "2017-03-09"^^xsd:date
+    ] ;
+    :isPartOf <LTSC_Series> .
+
+<LTSC_04_BlueMoon> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER SOLO COLLECTION 04 BlueMoon Theater" ;
+    :numTracks 12 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Legend_Girls> ;
+        :byArtist <天空橋朋花> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Sentimental_Venus> ;
+        :byArtist <真壁瑞希> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <カワラナイモノ> ;
+        :byArtist <篠宮可憐> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <星屑のシンフォニア> ;
+        :byArtist <二階堂千鶴> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Beat_the_World> ;
+        :byArtist <舞浜歩> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Flooding> ;
+        :byArtist <最上静香> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <創造は始まりの風を連れて> ;
+        :byArtist <七尾百合子> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <俠気乱舞> ;
+        :byArtist <ジュリア> ;
+        :position 8
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <赤い世界が消える頃> ;
+        :byArtist <北上麗花> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Raise_the_FLAG> ;
+        :byArtist <所恵美> ;
+        :position 10
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <プリムラ> ;
+        :byArtist <永吉昴> ;
+        :position 11
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <待ちぼうけのLacrima> ;
+        :byArtist <高山紗代子> ;
+        :position 12
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://idolmaster.jp/blog/?p=27600> ;
+        :catalogNumber "LZM-2156" ;
+        :datePublished "2017-03-09"^^xsd:date
+    ] ;
+    :isPartOf <LTSC_Series> .
+
+<LTSC_04_Starlight> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER SOLO COLLECTION 04 Starlight Theater" ;
+    :numTracks 13 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <瞳の中のシリウス> ;
+        :byArtist <宮尾美也> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <U・N・M・E・I_ライブ> ;
+        :byArtist <春日未来> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ジレるハートに火をつけて> ;
+        :byArtist <田中琴葉> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Cut_Cut_Cut> ;
+        :byArtist <周防桃子> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Smiling_Crescent> ;
+        :byArtist <箱崎星梨花> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Decided> ;
+        :byArtist <徳川まつり> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <夜に輝く星座のように> ;
+        :byArtist <松田亜利沙> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <秘密のメモリーズ> ;
+        :byArtist <豊川風花> ;
+        :position 8
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Understand_Understand> ;
+        :byArtist <高坂海美> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ジャングル☆パーティー> ;
+        :byArtist <大神環> ;
+        :position 10
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <リフレインキス> ;
+        :byArtist <北沢志保> ;
+        :position 11
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Sweet_Sweet_Soul> ;
+        :byArtist <野々原茜> ;
+        :position 12
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <永遠の花> ;
+        :byArtist <馬場このみ> ;
+        :position 13
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://idolmaster.jp/blog/?p=27600> ;
+        :catalogNumber "LZM-2157" ;
+        :datePublished "2017-03-09"^^xsd:date
+    ] ;
+    :isPartOf <LTSC_Series> .
+
+<LTSC_05> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER SOLO COLLECTION 05 765PRO ALLSTARS" ;
+    :numTracks 13 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Legend_Girls> ;
+        :byArtist <天海春香> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Blue_Symphony> ;
+        :byArtist <如月千早> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Good-Sleep_Baby♡> ;
+        :byArtist <高槻やよい> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <合言葉はスタートアップ> ;
+        :byArtist <秋月律子> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <たしかな足跡> ;
+        :byArtist <三浦あずさ> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <little_trip_around_the_world> ;
+        :byArtist <水瀬伊織> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Beat_the_World> ;
+        :byArtist <菊地真> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <“Your”_HOME_TOWN> ;
+        :byArtist <双海亜美> ;
+        :position 8
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ジャングル☆パーティー> ;
+        :byArtist <双海真美> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Marionetteは眠らない> ;
+        :byArtist <星井美希> ;
+        :position 10
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <秘密のメモリーズ> ;
+        :byArtist <四条貴音> ;
+        :position 11
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <深層マーメイド> ;
+        :byArtist <我那覇響> ;
+        :position 12
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Persona_Voice> ;
+        :byArtist <萩原雪歩> ;
+        :position 13
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://idolmaster.jp/blog/?p=37275> ;
+        :catalogNumber "LZM-2165" ;
+        :datePublished "2018-01-05"^^xsd:date
+    ] ;
+    :isPartOf <LTSC_Series> .
+
+<LTSC_06_Princess> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER SOLO COLLECTION 06 プリンセススターズ" ;
+    :numTracks 13 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Thank_You> ;
+        :byArtist <松田亜利沙> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Sentimental_Venus> ;
+        :byArtist <エミリー> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Welcome> ;
+        :byArtist <横山奈緒> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Eternal_Harmony> ;
+        :byArtist <徳川まつり> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ドリームトラベラー> ;
+        :byArtist <中谷育> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Melody_in_scape> ;
+        :byArtist <高山紗代子> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Understand_Understand> ;
+        :byArtist <田中琴葉> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Dreamscape> ;
+        :byArtist <福田のり子> ;
+        :position 8
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <DIAMOND_DAYS>;
+        :byArtist <佐竹美奈子> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <赤い世界が消える頃> ;
+        :byArtist <矢吹可奈> ;
+        :position 10
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <リフレインキス> ;
+        :byArtist <高坂海美> ;
+        :position 11
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Princess_Be_Ambitious> ;
+        :byArtist <春日未来> ;
+        :position 12
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ZETTAI_×_BREAK_トゥインクルリズム> ;
+        :byArtist <七尾百合子> ;
+        :position 13
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://idolmaster.jp/blog/?p=43302> ;
+        :catalogNumber "LACZ-10002" ;
+        :datePublished "2018-06-01"^^xsd:date
+    ] ;
+    :isPartOf <LTSC_Series> .
+
+<LTSC_06_Fairy> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER SOLO COLLECTION 06 フェアリースターズ" ;
+    :numTracks 13 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <ココロがかえる場所> ;
+        :byArtist <二階堂千鶴> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Growing_Storm> ;
+        :byArtist <真壁瑞希> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <HOME_SWEET_FRIENDSHIP> ;
+        :byArtist <周防桃子> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <星屑のシンフォニア> ;
+        :byArtist <永吉昴> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Dreaming> ;
+        :byArtist <所恵美> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <エスケープ> ;
+        :byArtist <ジュリア> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Flooding> ;
+        :byArtist <北沢志保> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ターンオンタイム> ;
+        :byArtist <最上静香> ;
+        :position 8
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <創造は始まりの風を連れて> ;
+        :byArtist <天空橋朋花> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ゲキテキ_ムテキ_恋したい> ;
+        :byArtist <ロコ> ;
+        :position 10
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <NO_CURRY_NO_LIFE> ;
+        :byArtist <百瀬莉緒> ;
+        :position 11
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Raise_the_FLAG> ;
+        :byArtist <舞浜歩> ;
+        :position 12
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <FairyTaleじゃいられない> ;
+        :byArtist <白石紬> ;
+        :position 13
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://idolmaster.jp/blog/?p=43302> ;
+        :catalogNumber "LACZ-10003" ;
+        :datePublished "2018-06-01"^^xsd:date
+    ] ;
+    :isPartOf <LTSC_Series> .
+
+<LTSC_06_Angel> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER SOLO COLLECTION 06 エンジェルスターズ" ;
+    :numTracks 13 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Good-Sleep_Baby♡> ;
+        :byArtist <大神環> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Helloコンチェルト> ;
+        :byArtist <木下ひなた> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Bigバルーン◎> ;
+        :byArtist <野々原茜> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Shooting_Stars> ;
+        :byArtist <北上麗花> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Emergence_Vibe> ;
+        :byArtist <島原エレナ> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <君との明日を願うから> ;
+        :byArtist <伊吹翼> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <PS_I_Love_You> ;
+        :byArtist <篠宮可憐> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Sweet_Sweet_Soul> ;
+        :byArtist <箱崎星梨花> ;
+        :position 8
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <永遠の花> ;
+        :byArtist <豊川風花> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Brand_New_Theater> ;
+        :byArtist <望月杏奈> ;
+        :position 10
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Angelic_Parade♪> ;
+        :byArtist <桜守歌織> ;
+        :position 11
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <虹色letters> ;
+        :byArtist <宮尾美也> ;
+        :position 12
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <花ざかりWeekend✿> ;
+        :byArtist <馬場このみ> ;
+        :position 13
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://idolmaster.jp/blog/?p=43302> ;
+        :catalogNumber "LACZ-10004" ;
+        :datePublished "2018-06-01"^^xsd:date
+    ] ;
+    :isPartOf <LTSC_Series> .
+
+<LTSC_07_Princess> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER SOLO COLLECTION 07 プリンセススターズ" ;
+    :numTracks 13 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Dreaming> ;
+        :byArtist <横山奈緒> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <赤い世界が消える頃> ;
+        :byArtist <佐竹美奈子> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ゲキテキ_ムテキ_恋したい> ;
+        :byArtist <中谷育> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Bonnes_Bonnes_Vacances> ;
+        :byArtist <福田のり子> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <メメント_モメント♪ルルルルル☆> ;
+        :byArtist <徳川まつり> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Brand_New_Theater> ;
+        :byArtist <矢吹可奈> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Tomorrow_Program> ;
+        :byArtist <七尾百合子> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <咲くは浮世の君花火> ;
+        :byArtist <高山紗代子> ;
+        :position 8
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <BORN_ON_DREAM_〜HANABI☆NIGHT〜> ;
+        :byArtist <高坂海美> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <UNION> ;
+        :byArtist <松田亜利沙> ;
+        :position 10
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ラスト・アクトレス> ;
+        :byArtist <田中琴葉> ;
+        :position 11
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ミラージュ・ミラー> ;
+        :byArtist <エミリー> ;
+        :position 12
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Episode_Tiara> ;
+        :byArtist <春日未来> ;
+        :position 13
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://idolmaster.jp/blog/?p=60616> ;
+        :catalogNumber "LACZ-10020" ;
+        :datePublished "2019-04-26"^^xsd:date
+    ] ;
+    :isPartOf <LTSC_Series> .
+
+<LTSC_07_Fairy> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER SOLO COLLECTION 07 フェアリースターズ" ;
+    :numTracks 13 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Dreamscape> ;
+        :byArtist <永吉昴> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <DIAMOND_DAYS> ;
+        :byArtist <天空橋朋花> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Raise_the_FLAG> ;
+        :byArtist <真壁瑞希> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <PS_I_Love_You> ;
+        :byArtist <二階堂千鶴> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <brave_HARMONY> ;
+        :byArtist <舞浜歩> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <永遠の花> ;
+        :byArtist <周防桃子> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Melty_Fantasia> ;
+        :byArtist <北沢志保> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ID_〜EScape_from_Utopia〜> ;
+        :byArtist <白石紬> ;
+        :position 8
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ビッグバンズバリボー> ;
+        :byArtist <所恵美> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <オーディナリィ・クローバー> ;
+        :byArtist <百瀬莉緒> ;
+        :position 10
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ハーモニクス> ;
+        :byArtist <最上静香> ;
+        :position 11
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <餞の鳥> ;
+        :byArtist <ジュリア> ;
+        :position 12
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <月曜日のクリームソーダ> ;
+        :byArtist <ロコ> ;
+        :position 13
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://idolmaster.jp/blog/?p=60616> ;
+        :catalogNumber "LACZ-10021" ;
+        :datePublished "2019-04-26"^^xsd:date
+    ] ;
+    :isPartOf <LTSC_Series> .
+
+<LTSC_07_Angel> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER SOLO COLLECTION 07 エンジェルスターズ" ;
+    :numTracks 13 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <piece_of_cake> ;
+        :byArtist <北上麗花> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <fruity_love> ;
+        :byArtist <野々原茜> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <創造は始まりの風を連れて> ;
+        :byArtist <箱崎星梨花> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <俠気乱舞> ;
+        :byArtist <大神環> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ランニング・ハイッ> ;
+        :byArtist <木下ひなた> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Starry_Melody> ;
+        :byArtist <馬場このみ> ;
+        :position 6
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <虹色letters> ;
+        :byArtist <島原エレナ> ;
+        :position 7
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <想い出はクリアスカイ> ;
+        :byArtist <宮尾美也> ;
+        :position 8
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <花ざかりWeekend✿> ;
+        :byArtist <豊川風花> ;
+        :position 9
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <RED_ZONE> ;
+        :byArtist <桜守歌織> ;
+        :position 10
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ハルマチ女子> ;
+        :byArtist <伊吹翼> ;
+        :position 11
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <彼氏になってよ。> ;
+        :byArtist <篠宮可憐> ;
+        :position 12
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ピコピコIIKO_インベーダー> ;
+        :byArtist <望月杏奈> ;
+        :position 13
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://idolmaster.jp/blog/?p=60616> ;
+        :catalogNumber "LACZ-10022" ;
+        :datePublished "2019-04-26"^^xsd:date
+    ] ;
+    :isPartOf <LTSC_Series> .
+
+<LTC_01> a :MusicAlbum ;
+    :name "THE IDOLM@STER 765PRO LIVE THE@TER COLLECTION Vol.1" ;
+    :numTracks 28 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Thank_You> ;
+        :byArtist <765PRO_ALLSTARS> ;
+        :position "1-01"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <キラメキ進行形> ;
+        :byArtist <天海春香> ;
+        :position "1-02"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Rebellion> ;
+        :byArtist <我那覇響> ;
+        :position "1-03"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Snow_White> ;
+        :byArtist <如月千早> ;
+        :position "1-04"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <プライヴェイト・ロードショウ_playback_Weekday> ;
+        :byArtist <水瀬伊織> ;
+        :position "1-05"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <追憶のサンドグラス> ;
+        :byArtist <星井美希> ;
+        :position "1-06"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <嘆きのFRACTION> ;
+        :byArtist <三浦あずさ> ;
+        :position "1-07"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ハートウォーミング> ;
+        :byArtist <高槻やよい> ;
+        :position "1-08"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <GREEDY_GIRL> ;
+        :byArtist <秋月律子> ;
+        :position "1-09"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <恋花> ;
+        :byArtist <四条貴音> ;
+        :position "1-10"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <FLY_TO_EVERYWHERE> ;
+        :byArtist <菊地真> ;
+        :position "1-11"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <DETECTIVE_HIGH_〜恋探偵物語〜> ;
+        :byArtist <双海真美> ;
+        :position "1-12"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ハミングロード> ;
+        :byArtist <萩原雪歩> ;
+        :position "1-13"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <微笑んだから、気づいたんだ。> ;
+        :byArtist <双海亜美> ;
+        :position "1-14"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <地球ミラーボウル> ;
+        :byArtist <水瀬伊織> ;
+        :position "2-01"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ストロベリー・キューピッド> ;
+        :byArtist <高槻やよい> ;
+        :position "2-02"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Liars_good_bye> ;
+        :byArtist <秋月律子> ;
+        :position "2-03"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <タイムマシンに飛び乗って> ;
+        :byArtist <双海亜美> ;
+        :position "2-04"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <smiley_days> ;
+        :byArtist <我那覇響> ;
+        :position "2-05"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Just_be_myself> ;
+        :byArtist <如月千早> ;
+        :position "2-06"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <キミがいて夢になる> ;
+        :byArtist <天海春香> ;
+        :position "2-07"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <WORLD_WIDE_DANCE> ;
+        :byArtist <菊地真> ;
+        :position "2-08"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <月のほとりで> ;
+        :byArtist <三浦あずさ> ;
+        :position "2-09"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Impervious_Resolution> ;
+        :byArtist <萩原雪歩> ;
+        :position "2-10"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <WOW_I_NEED_〜シンギングモンキー_歌唱拳〜> ;
+        :byArtist <双海真美> ;
+        :position "2-11"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <FAKE_SELF×TRUE_SELF> ;
+        :byArtist <星井美希> ;
+        :position "2-12"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <addicted> ;
+        :byArtist <四条貴音> ;
+        :position "2-13"
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Welcome> ;
+        :byArtist <765PRO_ALLSTARS> ;
+        :position "2-14"
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACA-9398.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0003s_0000_LACA-9398--9.png> ;
+        :catalogNumber "LACA-9398〜9" ;
+        :datePublished "2015-06-24"^^xsd:date
+    ] .
+
+# ミリラジ
+<ミリラジ_DJCD_01> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION RADIO! DJCD Vol.01" ;
+    :numTracks 9 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Welcome_-MR_remix-> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <春日未来> ,
+                <最上静香> ,
+                <箱崎星梨花>
+        ] ;
+        :position 6
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :name "通常版" ;
+        :url <https://www.lantis.jp/imas/release_LACA-15501.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0000s_0002_MILLIONRADIO_15501B_0723.png> ;
+        :catalogNumber "LACA-15501" ;
+        :datePublished "2015-08-26"^^xsd:date
+    ] , [
+        a :MusicRelease ;
+        :name "初回限定盤A" ;
+        :url <https://www.lantis.jp/imas/release_LACA-35501.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0000s_0001_MILLIONRADIO_35501_0723.png> ;
+        :catalogNumber "LACA-35501" ;
+        :datePublished "2015-08-26"^^xsd:date
+    ] , [
+        a :MusicRelease ;
+        :name "初回限定盤B" ;
+        :url <https://www.lantis.jp/imas/release_LACA-35502.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0000s_0000_MILLIONRADIO_35502D_0723.png> ;
+        :catalogNumber "LACA-35502" ;
+        :datePublished "2015-08-26"^^xsd:date
+    ] .
+
+<ミリラジ_01> a :MusicAlbum ;
+    :name "U・N・M・E・I ライブ" ;
+    :numTracks 5 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <U・N・M・E・I_ライブ> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <春日未来> ,
+                <最上静香> ,
+                <箱崎星梨花>
+        ] ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Thank_You_-MR_remix-> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <春日未来> ,
+                <最上静香> ,
+                <箱崎星梨花>
+        ] ;
+        :position 2
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :name "通常版" ;
+        :url <https://www.lantis.jp/imas/release_LACM-14234.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0002s_0000_miriradi_t_H1.png> ;
+        :catalogNumber "LACM-14234" ;
+        :datePublished "2014-06-04"^^xsd:date
+    ] , [
+        a :MusicRelease ;
+        :name "BD付限定版A" ;
+        :url <https://www.lantis.jp/imas/release_LACM-34234.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0002s_0002_miriradi_A_H1.png> ;
+        :catalogNumber "LACM-34234" ;
+        :datePublished "2014-06-04"^^xsd:date
+    ] , [
+        a :MusicRelease ;
+        :name "BD付限定版B" ;
+        :url <https://www.lantis.jp/imas/release_LACM-34235.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0002s_0001_miriradi_B_H1.png> ;
+        :catalogNumber "LACM-34235" ;
+        :datePublished "2014-06-04"^^xsd:date
+    ] .
+
+<ミリラジ_02> a :MusicAlbum ;
+    :name "ターンオンタイム！" ;
+    :numTracks 5 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <ターンオンタイム> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <春日未来> ,
+                <最上静香> ,
+                <箱崎星梨花>
+        ] ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Dreaming_-MR_remix-> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <春日未来> ,
+                <最上静香> ,
+                <箱崎星梨花>
+        ] ;
+        :position 2
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14506.html> ;
+        :image <https://www.lantis.jp/imas/img/release_imgs__0001s_0000_million_radio_cd2_jk.png> ;
+        :catalogNumber "LACM-14506" ;
+        :datePublished "2016-08-10"^^xsd:date
+    ] .
+
+# ゲッサン_CD
+<ゲッサン_CD_Series> a :CreativeWorkSeries ;
+    :name "アイドルマスター ミリオンライブ！ オリジナル CD" ;
+    :startDate "2015-03-12"^^xsd:date ;
+    :endDate "2016-12-09"^^xsd:date ;
+    :hasPart
+        <ゲッサン_CD_01> ,
+        <ゲッサン_CD_02> ,
+        <ゲッサン_CD_03> ,
+        <ゲッサン_CD_04> ,
+        <ゲッサン_CD_05> .
+
+<ゲッサン_CD_01> a :MusicAlbum ;
+    :name "アイドルマスター ミリオンライブ！ 1 オリジナル CD" ;
+    :numTracks 7 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <青い鳥> ;
+        :byArtist <最上静香> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <GO_MY_WAY> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <春日未来> ,
+                <最上静香>
+        ] ;
+        :position 6
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://comics.shogakukan.co.jp/book?isbn=9784091592033> ;
+        :image <https://comics.shogakukan.co.jp/book-images/w400/books/9784091592033.jpg> ;
+        :datePublished "2015-03-12"^^xsd:date
+    ] ;
+    :isPartOf <ゲッサン_CD_Series> .
+
+<ゲッサン_CD_02> a :MusicAlbum ;
+    :name "アイドルマスター ミリオンライブ！ 2 オリジナル CD" ;
+    :numTracks 6 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <ビジョナリー> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <望月杏奈> ,
+                <箱崎星梨花>
+        ] ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <キミはメロディ> ;
+        :byArtist <春日未来> ;
+        :position 5
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://comics.shogakukan.co.jp/book?isbn=9784091592132> ;
+        :image <https://comics.shogakukan.co.jp/book-images/w400/books/9784091592132.jpg> ;
+        :datePublished "2015-08-12"^^xsd:date
+    ] ;
+    :isPartOf <ゲッサン_CD_Series> .
+
+<ゲッサン_CD_03> a :MusicAlbum ;
+    :name "アイドルマスター ミリオンライブ！ 3 オリジナル CD" ;
+    :numTracks 5 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <アイル> ;
+        :byArtist <伊吹翼> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <my_song> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <伊吹翼> ,
+                <ジュリア> ,
+                <真壁瑞希>
+        ] ;
+        :position 4
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://comics.shogakukan.co.jp/book?isbn=9784091592217> ;
+        :image <https://comics.shogakukan.co.jp/book-images/w400/books/9784091592217.jpg> ;
+        :datePublished "2016-01-12"^^xsd:date
+    ] ;
+    :isPartOf <ゲッサン_CD_Series> .
+
+<ゲッサン_CD_04> a :MusicAlbum ;
+    :name "アイドルマスター ミリオンライブ！ 4 オリジナル CD" ;
+    :numTracks 2 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Flooding> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <最上静香> ,
+                <北上麗花> ,
+                <北沢志保> ,
+                <野々原茜> ,
+                <箱崎星梨花>
+        ] ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Vault_That_Borderline> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <伊吹翼> ,
+                <ジュリア> ,
+                <高山紗代子> ,
+                <七尾百合子> ,
+                <真壁瑞希>
+        ] ;
+        :position 2
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://comics.shogakukan.co.jp/book?isbn=9784091592354> ;
+        :image <https://comics.shogakukan.co.jp/book-images/w400/books/9784091592354.jpg> ;
+        :datePublished "2016-07-12"^^xsd:date
+    ] ;
+    :isPartOf <ゲッサン_CD_Series> .
+
+<ゲッサン_CD_05> a :MusicAlbum ;
+    :name "アイドルマスター ミリオンライブ！ 5 オリジナル CD" ;
+    :numTracks 2 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <君との明日を願うから> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <春日未来> ,
+                <最上静香> ,
+                <伊吹翼>
+        ] ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <私はアイドル♡> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <真壁瑞希> ,
+                <所恵美> ,
+                <宮尾美也> ,
+                <周防桃子> ,
+                <徳川まつり>
+        ] ;
+        :position 2
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://comics.shogakukan.co.jp/book?isbn=9784099418847> ;
+        :image <https://comics.shogakukan.co.jp/book-images/w400/books/9784099418847.jpg> ;
+        :datePublished "2016-12-09"^^xsd:date
+    ] ;
+    :isPartOf <ゲッサン_CD_Series> .
+
+# BC_CD
+<BC_CD_Series> a :CreativeWorkSeries ;
+    :name "アイドルマスター ミリオンライブ！ Blooming Clover オリジナル CD" ;
+    :startDate "2017-11-27"^^xsd:date ;
+    :hasPart
+        <BC_CD_01> ,
+        <BC_CD_02> ,
+        <BC_CD_03> ,
+        <BC_CD_04> ,
+        <BC_CD_05> .
+
+<BC_CD_01> a :MusicAlbum ;
+    :name "アイドルマスター ミリオンライブ！ Blooming Clover 1 オリジナル CD" ;
+    :numTracks 4 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <L・O・B・M> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <矢吹可奈> ,
+                <北沢志保>
+        ] ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ゲンキトリッパー> ;
+        :byArtist <矢吹可奈> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <DREAM> ;
+        :byArtist <北沢志保> ;
+        :position 3
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.kadokawa.co.jp/product/321705000112/> ;
+        :image <https://cdn.kdkw.jp/cover_1000/321705/321705000112.jpg> ;
+        :datePublished "2017-11-27"^^xsd:date
+    ] ;
+    :isPartOf <BC_CD_Series> .
+
+<BC_CD_02> a :MusicAlbum ;
+    :name "アイドルマスター ミリオンライブ！ Blooming Clover 2 オリジナル CD" ;
+    :numTracks 4 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Do-Dai> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <箱崎星梨花> ,
+                <高坂海美>
+        ] ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <フラワーガール> ;
+        :byArtist <箱崎星梨花> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <スマイル体操> ;
+        :byArtist <高坂海美> ;
+        :position 3
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.kadokawa.co.jp/product/321705000113/> ;
+        :image <https://cdn.kdkw.jp/cover_1000/321705/321705000113.jpg> ;
+        :datePublished "2017-12-16"^^xsd:date
+    ] ;
+    :isPartOf <BC_CD_Series> .
+
+<BC_CD_03> a :MusicAlbum ;
+    :name "アイドルマスター ミリオンライブ！ Blooming Clover 3 オリジナル CD" ;
+    :numTracks 4 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <神SUMMER> ;
+        :byArtist <ダブルエース> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <ONLY_MY_NOTE> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <天海春香> ,
+                <春日未来> ,
+                <矢吹可奈>
+        ] ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <MUSIC♪> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <桜守歌織> ,
+                <高山紗代子> ,
+                <矢吹可奈>
+        ] ;
+        :position 3
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.kadokawa.co.jp/product/321712001086/> ;
+        :image <https://cdn.kdkw.jp/cover_1000/321712/321712001086.jpg> ;
+        :datePublished "2018-07-27"^^xsd:date
+    ] ;
+    :isPartOf <BC_CD_Series> .
+
+<BC_CD_04> a :MusicAlbum ;
+    :name "アイドルマスター ミリオンライブ！ Blooming Clover 4 オリジナル CD" ;
+    :numTracks 4 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <チェリー> ;
+        :byArtist <トライスタービジョン> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Dreaming> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <矢吹可奈> ,
+                <箱崎星梨花> ,
+                <高坂海美>
+        ] ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <i> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <箱崎星梨花> ,
+                <松田亜利沙>
+        ] ;
+        :position 3
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.kadokawa.co.jp/product/321806000130/> ;
+        :image <https://cdn.kdkw.jp/cover_1000/321806/321806000130.jpg> ;
+        :datePublished "2018-12-27"^^xsd:date
+    ] ;
+    :isPartOf <BC_CD_Series> .
+
+<BC_CD_05> a :MusicAlbum ;
+    :name "アイドルマスター ミリオンライブ！ Blooming Clover 5 オリジナル CD" ;
+    :numTracks 4 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Clover_Days> ;
+        :byArtist <Clover> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <キラメキラリ> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <野々原茜> ,
+                <白石紬>
+        ] ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <メリー> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <矢吹可奈> ,
+                <北沢志保>
+        ] ;
+        :position 3
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.kadokawa.co.jp/product/321811001134/> ;
+        :image <https://cdn.kdkw.jp/cover_1000/321811/321811001134.jpg> ;
+        :datePublished "2019-06-27"^^xsd:date
+    ] ;
+    :isPartOf <BC_CD_Series> .
+
+# etc
+<サンリズム・オーケストラ♪_Brand_New_Ver> a :MusicRecording ;
+    :recordingOf <サンリズム・オーケストラ♪> ;
+    :byArtist <Sunshine_Rhythm_Brand_New_Ver> .
+
+<brave_Harmony_Brand_New_Ver> a :MusicRecording ;
+    :recordingOf <brave_HARMONY> ;
+    :byArtist <BlueMoon_Harmony_Brand_New_Ver> .
+
+<Starry_Melody_Brand_New_Ver> a :MusicRecording ;
+    :recordingOf <Starry_Melody> ;
+    :byArtist <Starlight_Melody_Brand_New_Ver> .
+
+[] a :MusicRecording ;
+    :recordingOf <MUSIC_JOURNEY> ;
+    :byArtist <桜守歌織> .
+
+[] a :MusicRecording ;
+    :recordingOf <さかしまの言葉> ;
+    :byArtist <白石紬> .

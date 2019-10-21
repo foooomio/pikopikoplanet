@@ -1,0 +1,833 @@
+BASE <https://mltd.pikopikopla.net/resource/>
+PREFIX mltd: <https://mltd.pikopikopla.net/mltd-schema#>
+PREFIX : <http://schema.org/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# NOTE:
+# 琴葉は『MTG 01』の『Brand New Theater!』ではいた扱いになっているが、
+# 「スコーピオ」や「Starlight Melody」ではいなかった扱いになっている。(要検討)
+
+# Thank You!
+#   50人: 765 MILLIONSTARS
+#   13人: 765PRO ALLSTARS
+#   37人: 765THEATER ALLSTARS
+# Welcome!!
+#   50人: MILLION ALLSTARS
+#   52人: 765 MILLION ALLSTARS
+# Dreaming!
+#   52人: 765 MILLION ALLSTARS
+# Brand New Theater!
+#   51人: 765 MILLION ALLSTARS
+#   52人: 765 MILLION ALLSTARS
+# Union!!
+#   52人: 765 MILLION ALLSTARS
+# Flyers!!!
+#   52人: 765 MILLION ALLSTARS
+
+<765_MILLION_ALLSTARS> a :MusicGroup ;
+    :name "765 MILLION ALLSTARS" ;
+    :member # 52人
+        <天海春香> ,
+        <如月千早> ,
+        <星井美希> ,
+        <萩原雪歩> ,
+        <高槻やよい> ,
+        <菊地真> ,
+        <水瀬伊織> ,
+        <四条貴音> ,
+        <秋月律子> ,
+        <三浦あずさ> ,
+        <双海亜美> ,
+        <双海真美> ,
+        <我那覇響> ,
+        <春日未来> ,
+        <最上静香> ,
+        <伊吹翼> ,
+        <田中琴葉> ,
+        <島原エレナ> ,
+        <佐竹美奈子> ,
+        <所恵美> ,
+        <徳川まつり> ,
+        <箱崎星梨花> ,
+        <野々原茜> ,
+        <望月杏奈> ,
+        <ロコ> ,
+        <七尾百合子> ,
+        <高山紗代子> ,
+        <松田亜利沙> ,
+        <高坂海美> ,
+        <中谷育> ,
+        <天空橋朋花> ,
+        <エミリー> ,
+        <北沢志保> ,
+        <舞浜歩> ,
+        <木下ひなた> ,
+        <矢吹可奈> ,
+        <横山奈緒> ,
+        <二階堂千鶴> ,
+        <馬場このみ> ,
+        <大神環> ,
+        <豊川風花> ,
+        <宮尾美也> ,
+        <福田のり子> ,
+        <真壁瑞希> ,
+        <篠宮可憐> ,
+        <百瀬莉緒> ,
+        <永吉昴> ,
+        <北上麗花> ,
+        <周防桃子> ,
+        <ジュリア> ,
+        <白石紬> ,
+        <桜守歌織> .
+
+<39プロジェクト> a :MusicGroup ;
+    :name "39プロジェクト" ;
+    :member # 39人
+        <春日未来> ,
+        <最上静香> ,
+        <伊吹翼> ,
+        <田中琴葉> ,
+        <島原エレナ> ,
+        <佐竹美奈子> ,
+        <所恵美> ,
+        <徳川まつり> ,
+        <箱崎星梨花> ,
+        <野々原茜> ,
+        <望月杏奈> ,
+        <ロコ> ,
+        <七尾百合子> ,
+        <高山紗代子> ,
+        <松田亜利沙> ,
+        <高坂海美> ,
+        <中谷育> ,
+        <天空橋朋花> ,
+        <エミリー> ,
+        <北沢志保> ,
+        <舞浜歩> ,
+        <木下ひなた> ,
+        <矢吹可奈> ,
+        <横山奈緒> ,
+        <二階堂千鶴> ,
+        <馬場このみ> ,
+        <大神環> ,
+        <豊川風花> ,
+        <宮尾美也> ,
+        <福田のり子> ,
+        <真壁瑞希> ,
+        <篠宮可憐> ,
+        <百瀬莉緒> ,
+        <永吉昴> ,
+        <北上麗花> ,
+        <周防桃子> ,
+        <ジュリア> ,
+        <白石紬> ,
+        <桜守歌織> .
+
+# LTP_01
+<765_MILLIONSTARS> a :MusicGroup ;
+    :name "765 MILLIONSTARS" ;
+    :alternateName "MILLION ALLSTARS" ;
+    :member # 50人
+        <天海春香> ,
+        <如月千早> ,
+        <星井美希> ,
+        <萩原雪歩> ,
+        <高槻やよい> ,
+        <菊地真> ,
+        <水瀬伊織> ,
+        <四条貴音> ,
+        <秋月律子> ,
+        <三浦あずさ> ,
+        <双海亜美> ,
+        <双海真美> ,
+        <我那覇響> ,
+        <春日未来> ,
+        <最上静香> ,
+        <伊吹翼> ,
+        <田中琴葉> ,
+        <島原エレナ> ,
+        <佐竹美奈子> ,
+        <所恵美> ,
+        <徳川まつり> ,
+        <箱崎星梨花> ,
+        <野々原茜> ,
+        <望月杏奈> ,
+        <ロコ> ,
+        <七尾百合子> ,
+        <高山紗代子> ,
+        <松田亜利沙> ,
+        <高坂海美> ,
+        <中谷育> ,
+        <天空橋朋花> ,
+        <エミリー> ,
+        <北沢志保> ,
+        <舞浜歩> ,
+        <木下ひなた> ,
+        <矢吹可奈> ,
+        <横山奈緒> ,
+        <二階堂千鶴> ,
+        <馬場このみ> ,
+        <大神環> ,
+        <豊川風花> ,
+        <宮尾美也> ,
+        <福田のり子> ,
+        <真壁瑞希> ,
+        <篠宮可憐> ,
+        <百瀬莉緒> ,
+        <永吉昴> ,
+        <北上麗花> ,
+        <周防桃子> ,
+        <ジュリア> .
+
+<765PRO_ALLSTARS> a :MusicGroup ;
+    :name "765PRO ALLSTARS" ;
+    :member # 13人
+        <天海春香> ,
+        <如月千早> ,
+        <星井美希> ,
+        <萩原雪歩> ,
+        <高槻やよい> ,
+        <菊地真> ,
+        <水瀬伊織> ,
+        <四条貴音> ,
+        <秋月律子> ,
+        <三浦あずさ> ,
+        <双海亜美> ,
+        <双海真美> ,
+        <我那覇響> .
+
+<765THEATER_ALLSTARS> a :MusicGroup ;
+    :name "765THEATER ALLSTARS" ;
+    :member # 37人
+        <春日未来> ,
+        <最上静香> ,
+        <伊吹翼> ,
+        <田中琴葉> ,
+        <島原エレナ> ,
+        <佐竹美奈子> ,
+        <所恵美> ,
+        <徳川まつり> ,
+        <箱崎星梨花> ,
+        <野々原茜> ,
+        <望月杏奈> ,
+        <ロコ> ,
+        <七尾百合子> ,
+        <高山紗代子> ,
+        <松田亜利沙> ,
+        <高坂海美> ,
+        <中谷育> ,
+        <天空橋朋花> ,
+        <エミリー> ,
+        <北沢志保> ,
+        <舞浜歩> ,
+        <木下ひなた> ,
+        <矢吹可奈> ,
+        <横山奈緒> ,
+        <二階堂千鶴> ,
+        <馬場このみ> ,
+        <大神環> ,
+        <豊川風花> ,
+        <宮尾美也> ,
+        <福田のり子> ,
+        <真壁瑞希> ,
+        <篠宮可憐> ,
+        <百瀬莉緒> ,
+        <永吉昴> ,
+        <北上麗花> ,
+        <周防桃子> ,
+        <ジュリア> .
+
+# LTH_Series
+<レジェンドデイズ> a :MusicGroup ;
+    :name "レジェンドデイズ" ;
+    :member
+        <我那覇響> ,
+        <秋月律子> ,
+        <高槻やよい> ,
+        <双海亜美> ,
+        <水瀬伊織> .
+
+<乙女ストーム> a :MusicGroup ;
+    :name "乙女ストーム！" ;
+    :member
+        <春日未来> ,
+        <伊吹翼> ,
+        <七尾百合子> ,
+        <真壁瑞希> ,
+        <望月杏奈> .
+
+<クレシェンドブルー> a :MusicGroup ;
+    :name "クレシェンドブルー" ;
+    :member
+        <最上静香> ,
+        <北上麗花> ,
+        <北沢志保> ,
+        <野々原茜> ,
+        <箱崎星梨花> .
+
+<エターナルハーモニー> a :MusicGroup ;
+    :name "エターナルハーモニー" ;
+    :member
+        <如月千早> ,
+        <エミリー> ,
+        <ジュリア> ,
+        <徳川まつり> ,
+        <豊川風花> .
+
+<リコッタ> a :MusicGroup ;
+    :name "リコッタ" ;
+    :member
+        <天海春香> ,
+        <周防桃子> ,
+        <福田のり子> ,
+        <松田亜利沙> ,
+        <横山奈緒> .
+
+<灼熱少女> a :MusicGroup ;
+    :name "灼熱少女" ;
+    :member
+        <田中琴葉> ,
+        <大神環> ,
+        <高坂海美> ,
+        <所恵美> ,
+        <宮尾美也> .
+
+<BIRTH> a :MusicGroup ;
+    :name "BIRTH" ;
+    :member
+        <菊地真> ,
+        <萩原雪歩> ,
+        <舞浜歩> ,
+        <三浦あずさ> ,
+        <矢吹可奈> .
+
+<ミックスナッツ> a :MusicGroup ;
+    :name "ミックスナッツ" ;
+    :member
+        <馬場このみ> ,
+        <木下ひなた> ,
+        <佐竹美奈子> ,
+        <中谷育> ,
+        <双海真美> .
+
+<ミルキーウェイ> a :MusicGroup ;
+    :name "ミルキーウェイ" ;
+    :member
+        <星井美希> ,
+        <高山紗代子> ,
+        <天空橋朋花> ,
+        <永吉昴> ,
+        <二階堂千鶴> .
+
+<ARRIVE> a :MusicGroup ;
+    :name "ARRIVE" ;
+    :member
+        <篠宮可憐> ,
+        <四条貴音> ,
+        <島原エレナ> ,
+        <百瀬莉緒> ,
+        <ロコ> .
+
+# LTD_01
+<MILLION_ALLSTARS> a :MusicGroup ;
+    :name "MILLION ALLSTARS" ;
+    :member # 50人
+        <天海春香> ,
+        <如月千早> ,
+        <星井美希> ,
+        <萩原雪歩> ,
+        <高槻やよい> ,
+        <菊地真> ,
+        <水瀬伊織> ,
+        <四条貴音> ,
+        <秋月律子> ,
+        <三浦あずさ> ,
+        <双海亜美> ,
+        <双海真美> ,
+        <我那覇響> ,
+        <春日未来> ,
+        <最上静香> ,
+        <伊吹翼> ,
+        <田中琴葉> ,
+        <島原エレナ> ,
+        <佐竹美奈子> ,
+        <所恵美> ,
+        <徳川まつり> ,
+        <箱崎星梨花> ,
+        <野々原茜> ,
+        <望月杏奈> ,
+        <ロコ> ,
+        <七尾百合子> ,
+        <高山紗代子> ,
+        <松田亜利沙> ,
+        <高坂海美> ,
+        <中谷育> ,
+        <天空橋朋花> ,
+        <エミリー> ,
+        <北沢志保> ,
+        <舞浜歩> ,
+        <木下ひなた> ,
+        <矢吹可奈> ,
+        <横山奈緒> ,
+        <二階堂千鶴> ,
+        <馬場このみ> ,
+        <大神環> ,
+        <豊川風花> ,
+        <宮尾美也> ,
+        <福田のり子> ,
+        <真壁瑞希> ,
+        <篠宮可憐> ,
+        <百瀬莉緒> ,
+        <永吉昴> ,
+        <北上麗花> ,
+        <周防桃子> ,
+        <ジュリア> .
+
+# LTF_01
+<キャンサー> a :MusicGroup ;
+    :name "キャンサー" ;
+    :member
+        <エミリー> ,
+        <木下ひなた> ,
+        <横山奈緒> .
+
+<レオ> a :MusicGroup ;
+    :name "レオ" ;
+    :member
+        <島原エレナ> ,
+        <中谷育> ,
+        <ロコ> .
+
+<リブラ> a :MusicGroup ;
+    :name "リブラ" ;
+    :member
+        <伊吹翼> ,
+        <佐竹美奈子> ,
+        <福田のり子> .
+
+<カプリコーン> a :MusicGroup ;
+    :name "カプリコーン" ;
+    :member
+        <望月杏奈> ,
+        <百瀬莉緒> ,
+        <矢吹可奈> .
+
+<Sunshine_Rhythm> a :MusicGroup ;
+    :name "Sunshine Rhythm" ;
+    :member
+        <伊吹翼> ,
+        <エミリー> ,
+        <木下ひなた> ,
+        <佐竹美奈子> ,
+        <島原エレナ> ,
+        <中谷育> ,
+        <福田のり子> ,
+        <望月杏奈> ,
+        <百瀬莉緒> ,
+        <矢吹可奈> ,
+        <横山奈緒> ,
+        <ロコ> .
+
+# LTF_02
+<サジタリアス> a :MusicGroup ;
+    :name "サジタリアス" ;
+    :member
+        <所恵美> ,
+        <舞浜歩> ,
+        <真壁瑞希> .
+
+<ピスケス> a :MusicGroup ;
+    :name "ピスケス" ;
+    :member
+        <篠宮可憐> ,
+        <天空橋朋花> ,
+        <二階堂千鶴> .
+
+<ウィルゴ> a :MusicGroup ;
+    :name "ウィルゴ" ;
+    :member
+        <永吉昴> ,
+        <七尾百合子> ,
+        <最上静香> .
+
+<アクアリウス> a :MusicGroup ;
+    :name "アクアリウス" ;
+    :member
+        <北上麗花> ,
+        <ジュリア> ,
+        <高山紗代子> .
+
+<BlueMoon_Harmony> a :MusicGroup ;
+    :name "BlueMoon Harmony" ;
+    :member
+        <北上麗花> ,
+        <篠宮可憐> ,
+        <ジュリア> ,
+        <高山紗代子> ,
+        <天空橋朋花> ,
+        <所恵美> ,
+        <永吉昴> ,
+        <七尾百合子> ,
+        <二階堂千鶴> ,
+        <舞浜歩> ,
+        <真壁瑞希> ,
+        <最上静香> .
+
+# LTF_03
+<スコーピオ> a :MusicGroup ;
+    :name "スコーピオ" ;
+    :member
+        <北沢志保> ,
+        <高坂海美> ,
+        <松田亜利沙> .
+
+<アリエス> a :MusicGroup ;
+    :name "アリエス" ;
+    :member
+        <大神環> ,
+        <野々原茜> ,
+        <箱崎星梨花> .
+
+<タウラス> a :MusicGroup ;
+    :name "タウラス" ;
+    :member
+        <春日未来> ,
+        <徳川まつり> ,
+        <宮尾美也> .
+
+<ジェミニ> a :MusicGroup ;
+    :name "ジェミニ" ;
+    :member
+        <周防桃子> ,
+        <豊川風花> ,
+        <馬場このみ> .
+
+<Starlight_Melody> a :MusicGroup ;
+    :name "Starlight Melody" ;
+    :member
+        <大神環> ,
+        <春日未来> ,
+        <北沢志保> ,
+        <高坂海美> ,
+        <周防桃子> ,
+        <徳川まつり> ,
+        <豊川風花> ,
+        <野々原茜> ,
+        <箱崎星梨花> ,
+        <馬場このみ> ,
+        <松田亜利沙> ,
+        <宮尾美也> .
+
+# LTF (Brand New Ver.)
+<Sunshine_Rhythm_Brand_New_Ver> a :MusicGroup ;
+    :name "Sunshine Rhythm" ;
+    :member
+        <伊吹翼> ,
+        <エミリー> ,
+        <木下ひなた> ,
+        <桜守歌織> ,
+        <佐竹美奈子> ,
+        <島原エレナ> ,
+        <中谷育> ,
+        <福田のり子> ,
+        <望月杏奈> ,
+        <百瀬莉緒> ,
+        <矢吹可奈> ,
+        <横山奈緒> ,
+        <ロコ> .
+
+<BlueMoon_Harmony_Brand_New_Ver> a :MusicGroup ;
+    :name "BlueMoon Harmony" ;
+    :member
+        <北上麗花> ,
+        <篠宮可憐> ,
+        <ジュリア> ,
+        <白石紬> ,
+        <高山紗代子> ,
+        <天空橋朋花> ,
+        <所恵美> ,
+        <永吉昴> ,
+        <七尾百合子> ,
+        <二階堂千鶴> ,
+        <舞浜歩> ,
+        <真壁瑞希> ,
+        <最上静香> .
+
+<Starlight_Melody_Brand_New_Ver> a :MusicGroup ;
+    :name "Starlight Melody" ;
+    :member
+        <大神環> ,
+        <春日未来> ,
+        <北沢志保> ,
+        <高坂海美> ,
+        <周防桃子> ,
+        <田中琴葉> ,
+        <徳川まつり> ,
+        <豊川風花> ,
+        <野々原茜> ,
+        <箱崎星梨花> ,
+        <馬場このみ> ,
+        <松田亜利沙> ,
+        <宮尾美也> .
+
+# MTG_01
+<マイティーセーラーズ> a :MusicGroup ;
+    :name "マイティーセーラーズ" ;
+    :member
+        <伊吹翼> ,
+        <高坂海美> .
+
+# MTG_02
+<フェアリースターズ_FairyTaleじゃいられない> a :MusicGroup ;
+    :name "フェアリースターズ" ;
+    :alternateName "FAIRY STARS" ;
+    :member
+        <最上静香> ,
+        <白石紬> ,
+        <所恵美> ,
+        <ジュリア> ,
+        <北沢志保> .
+
+<フェアリースターズ> a :MusicGroup ;
+    :name "フェアリースターズ" ;
+    :alternateName "FAIRY STARS" ;
+    :member
+        <如月千早> ,
+        <水瀬伊織> ,
+        <四条貴音> ,
+        <秋月律子> ,
+        <最上静香> ,
+        <所恵美> ,
+        <ロコ> ,
+        <天空橋朋花> ,
+        <北沢志保> ,
+        <舞浜歩> ,
+        <二階堂千鶴> ,
+        <真壁瑞希> ,
+        <百瀬莉緒> ,
+        <永吉昴> ,
+        <周防桃子> ,
+        <ジュリア> ,
+        <白石紬> .
+
+# MTG_03
+<エンジェルスターズ_Angelic_Parade♪> a :MusicGroup ;
+    :name "エンジェルスターズ" ;
+    :alternateName "ANGEL STARS" ;
+    :member
+        <伊吹翼> ,
+        <桜守歌織> ,
+        <北上麗花> ,
+        <望月杏奈> ,
+        <箱崎星梨花> .
+
+<エンジェルスターズ> a :MusicGroup ;
+    :name "エンジェルスターズ" ;
+    :alternateName "ANGEL STARS" ;
+    :member
+        <星井美希> ,
+        <高槻やよい> ,
+        <三浦あずさ> ,
+        <双海亜美> ,
+        <双海真美> ,
+        <伊吹翼> ,
+        <島原エレナ> ,
+        <箱崎星梨花> ,
+        <野々原茜> ,
+        <望月杏奈> ,
+        <木下ひなた> ,
+        <馬場このみ> ,
+        <大神環> ,
+        <豊川風花> ,
+        <宮尾美也> ,
+        <篠宮可憐> ,
+        <北上麗花> ,
+        <桜守歌織> .
+
+# MTG_04
+<プリンセススターズ_Princess_Be_Ambitious> a :MusicGroup ;
+    :name "プリンセススターズ" ;
+    :alternateName "PRINCESS STARS" ;
+    :member
+        <春日未来> ,
+        <徳川まつり> ,
+        <七尾百合子> ,
+        <矢吹可奈> ,
+        <エミリー> .
+
+<プリンセススターズ> a :MusicGroup ;
+    :name "プリンセススターズ" ;
+    :alternateName "PRINCESS STARS" ;
+    :member
+        <天海春香> ,
+        <萩原雪歩> ,
+        <菊地真> ,
+        <我那覇響> ,
+        <春日未来> ,
+        <田中琴葉> ,
+        <佐竹美奈子> ,
+        <徳川まつり> ,
+        <七尾百合子> ,
+        <高山紗代子> ,
+        <松田亜利沙> ,
+        <高坂海美> ,
+        <中谷育> ,
+        <エミリー> ,
+        <矢吹可奈> ,
+        <横山奈緒> ,
+        <福田のり子> .
+
+# MTG_05
+<夜想令嬢_-GRACE_NOCTURNE-> a :MusicGroup ;
+    :name "夜想令嬢 -GRAC&E NOCTURNE-" ;
+    :member
+        <天空橋朋花> ,
+        <所恵美> ,
+        <二階堂千鶴> ,
+        <百瀬莉緒> .
+
+# MTG_06
+<Cleasky> a :MusicGroup ;
+    :name "Cleasky" ;
+    :member
+        <島原エレナ> ,
+        <宮尾美也> .
+
+# MTG_07
+<トゥインクルリズム> a :MusicGroup ;
+    :name "トゥインクルリズム" ;
+    :member
+        <中谷育> ,
+        <七尾百合子> ,
+        <松田亜利沙> .
+
+# MTG_08
+<EScape> a :MusicGroup ;
+    :name "EScape" ;
+    :member
+        <真壁瑞希> ,
+        <白石紬> ,
+        <北沢志保> .
+
+# MTG_09
+<4_Luxury> a :MusicGroup ;
+    :name "4 Luxury" ;
+    :member
+        <桜守歌織> ,
+        <豊川風花> ,
+        <北上麗花> ,
+        <馬場このみ> .
+
+# MTG_10
+<閃光☆HANABI団> a :MusicGroup ;
+    :name "閃光☆HANABI団" ;
+    :member
+        <高山紗代子> ,
+        <横山奈緒> ,
+        <高坂海美> ,
+        <佐竹美奈子> ,
+        <福田のり子> .
+
+# MTG_12
+<D_Zeal> a :MusicGroup ;
+    :name "D/Zeal" ;
+    :member
+        <ジュリア> ,
+        <最上静香> .
+
+# MTG_13
+<りるきゃん_〜3_little_candy〜> a :MusicGroup ;
+    :name "りるきゃん 〜3 little candy〜" ;
+    :member
+        <篠宮可憐> ,
+        <野々原茜> ,
+        <伊吹翼> .
+
+# MTG_14
+<Charlotte・Charlotte> a :MusicGroup ;
+    :name "Charlotte・Charlotte" ;
+    :member
+        <徳川まつり> ,
+        <エミリー> .
+
+# MTG_15
+<Jelly_PoP_Beans> a :MusicGroup ;
+    :name "Jelly PoP Beans" ;
+    :member
+        <ロコ> ,
+        <舞浜歩> ,
+        <永吉昴> ,
+        <周防桃子> .
+
+# MTG_16
+<ピコピコプラネッツ> a :MusicGroup ;
+    :name "ピコピコプラネッツ" ;
+    :member
+        <木下ひなた> ,
+        <箱崎星梨花> ,
+        <大神環> ,
+        <望月杏奈> .
+
+# MTG_17
+<STAR_ELEMENTS> a :MusicGroup ;
+    :name "STAR ELEMENTS" ;
+    :member
+        <春日未来> ,
+        <矢吹可奈> ,
+        <田中琴葉> .
+
+# MTW_01
+<ジェネシス×ネメシス> a :MusicGroup ;
+    :name "ジェネシス×ネメシス" ;
+    :member
+        <白石紬> ,
+        <桜守歌織> ,
+        <ジュリア> ,
+        <菊地真> ,
+        <野々原茜> .
+
+# MTW_02
+<Chrono-Lexica> a :MusicGroup ;
+    :name "Chrono-Lexica" ;
+    :member
+        <七尾百合子> ,
+        <永吉昴> ,
+        <ロコ> ,
+        <望月杏奈> ,
+        <真壁瑞希> .
+
+# MTW_03
+<Xs> a :MusicGroup ;
+    :name "Xs" ;
+    :member
+        <星井美希> ,
+        <萩原雪歩> ,
+        <菊地真> ,
+        <水瀬伊織> .
+
+# BC_CD
+<ダブルエース> a :MusicGroup ;
+    :name "ダブルエース" ;
+    :member
+        <佐竹美奈子> ,
+        <横山奈緒> .
+
+<トライスタービジョン> a :MusicGroup ;
+    :name "トライスタービジョン" ;
+    :member
+        <田中琴葉> ,
+        <所恵美> ,
+        <島原エレナ> .
+
+<Clover> a :MusicGroup ;
+    :name "Clover" ;
+    :member
+        <矢吹可奈> ,
+        <北沢志保> ,
+        <箱崎星梨花> ,
+        <高坂海美> .

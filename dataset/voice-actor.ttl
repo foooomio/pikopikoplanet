@@ -1,0 +1,946 @@
+BASE <https://mltd.pikopikopla.net/resource/>
+PREFIX mltd: <https://mltd.pikopikopla.net/mltd-schema#>
+PREFIX : <http://schema.org/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# NOTE:
+# 全体的に :birthPlace を使わず dbo:hometown を使用しているが、
+# 浜崎奈々さんの公式プロフィールが東京都出身となっているが、
+# 兵庫県出身という話もある、という例があるため。
+
+# NOTE:
+# 生年不明の声優が多いため、:birthDate に月日を定義し、
+# 生年の公式情報がある場合は、dbo:birthYear に定義している。
+
+# NOTE:
+# dbo:hometown は文字列ではなく、URI を持つべきかもしれない。(要検討)
+
+<中村繪里子> a mltd:VoiceActor ;
+    :name "中村繪里子" ;
+    :familyName "中村"@ja ;
+    :givenName "繪里子"@ja ;
+    :familyName "なかむら"@ja-Hira ;
+    :givenName "えりこ"@ja-Hira ;
+    :birthDate "--11-19"^^xsd:gMonthDay ;
+    dbo:hometown "神奈川県" ;
+    :memberOf <アーツビジョン> ;
+    :url <https://www.artsvision.co.jp/talent/697/> ;
+    foaf:weblog <https://ameblo.jp/eriko-nakamura-blog/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/eriko_co_log" ;
+        foaf:accountName "eriko_co_log" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<今井麻美> a mltd:VoiceActor ;
+    :name "今井麻美" ;
+    :familyName "今井"@ja ;
+    :givenName "麻美"@ja ;
+    :familyName "いまい"@ja-Hira ;
+    :givenName "あさみ"@ja-Hira ;
+    :birthDate "--05-16"^^xsd:gMonthDay ;
+    dbo:hometown "山口県" ;
+    :memberOf <EARLY_WING> ;
+    :url <http://earlywing.co.jp/talent_w/imaiasami.php> ;
+    foaf:homepage <http://5pb.jp/records/sp/asami/> ;
+    foaf:weblog <http://blog.livedoor.jp/ubiquitous777/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/asamingosu" ;
+        foaf:accountName "asamingosu" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<長谷川明子> a mltd:VoiceActor ;
+    :name "長谷川明子" ;
+    :familyName "長谷川"@ja ;
+    :givenName "明子"@ja ;
+    :familyName "はせがわ"@ja-Hira ;
+    :givenName "あきこ"@ja-Hira ;
+    :birthDate "--04-14"^^xsd:gMonthDay ;
+    dbo:hometown "新潟県" ;
+    :memberOf <アーツビジョン> ;
+    :url <https://www.artsvision.co.jp/talent/622/> ;
+    foaf:weblog <http://blog.livedoor.jp/onigiriwa315/> .
+
+<浅倉杏美> a mltd:VoiceActor ;
+    :name "浅倉杏美" ;
+    :familyName "浅倉"@ja ;
+    :givenName "杏美"@ja ;
+    :familyName "あさくら"@ja-Hira ;
+    :givenName "あずみ"@ja-Hira ;
+    :birthDate "--02-15"^^xsd:gMonthDay ;
+    dbo:hometown "神奈川県" ;
+    :memberOf <アーツビジョン> ;
+    :url <https://www.artsvision.co.jp/talent/31/> ;
+    foaf:weblog <https://ameblo.jp/asakura-azumi/> .
+
+<仁後真耶子> a mltd:VoiceActor ;
+    :name "仁後真耶子" ;
+    :familyName "仁後"@ja ;
+    :givenName "真耶子"@ja ;
+    :familyName "にご"@ja-Hira ;
+    :givenName "まやこ"@ja-Hira ;
+    :birthDate "--12-02"^^xsd:gMonthDay ;
+    dbo:hometown "東京都" ;
+    :memberOf <アイムエンタープライズ> ;
+    :url <https://www.imenterprise.jp/profile.php?id=72> ;
+    foaf:weblog <https://yaplog.jp/maya-rhythm/> .
+
+<平田宏美> a mltd:VoiceActor ;
+    :name "平田宏美" ;
+    :familyName "平田"@ja ;
+    :givenName "宏美"@ja ;
+    :familyName "ひらた"@ja-Hira ;
+    :givenName "ひろみ"@ja-Hira ;
+    :birthDate "--02-19"^^xsd:gMonthDay ;
+    dbo:hometown "広島県" ;
+    :memberOf <アイムエンタープライズ> ;
+    :url <https://www.imenterprise.jp/profile.php?id=76> ;
+    foaf:weblog <http://blog.livedoor.jp/hira__hiro/> .
+
+<釘宮理恵> a mltd:VoiceActor ;
+    :name "釘宮理恵" ;
+    :familyName "釘宮"@ja ;
+    :givenName "理恵"@ja ;
+    :familyName "くぎみや"@ja-Hira ;
+    :givenName "りえ"@ja-Hira ;
+    :birthDate "--05-30"^^xsd:gMonthDay ;
+    dbo:hometown "熊本県" ;
+    :memberOf <アイムエンタープライズ> ;
+    :url <https://www.imenterprise.jp/profile.php?id=52> ;
+    foaf:weblog <https://ameblo.jp/kugimiyarie-blog> .
+
+<原由実> a mltd:VoiceActor ;
+    :name "原由実" ;
+    :familyName "原"@ja ;
+    :givenName "由実"@ja ;
+    :familyName "はら"@ja-Hira ;
+    :givenName "ゆみ"@ja-Hira ;
+    :birthDate "--01-21"^^xsd:gMonthDay ;
+    dbo:hometown "大阪府" ;
+    :memberOf <アーツビジョン> ;
+    :url <https://www.artsvision.co.jp/talent/653/> ;
+    foaf:homepage <http://5pb.jp/records/sp/yumi/> ;
+    foaf:weblog <https://ameblo.jp/yumi-hara-0121> .
+
+<若林直美> a mltd:VoiceActor ;
+    :name "若林直美" ;
+    :familyName "若林"@ja ;
+    :givenName "直美"@ja ;
+    :familyName "わかばやし"@ja-Hira ;
+    :givenName "なおみ"@ja-Hira ;
+    :birthDate "--11-02"^^xsd:gMonthDay ;
+    dbo:hometown "鳥取県" ;
+    :memberOf <フォレストリンク> ;
+    :url <http://forestlink.co.jp/talents/wakabayashi-naomi> ;
+    foaf:weblog <http://wakachoku.way-nifty.com/blog/> .
+
+<たかはし智秋> a mltd:VoiceActor ;
+    :name "たかはし智秋" ;
+    :familyName "たかはし"@ja ;
+    :givenName "智秋"@ja ;
+    :familyName "たかはし"@ja-Hira ;
+    :givenName "ちあき"@ja-Hira ;
+    :birthDate "--05-08"^^xsd:gMonthDay ;
+    dbo:hometown "神奈川県" ;
+    :url <http://chiaking58.com/> ;
+    foaf:weblog <https://lineblog.me/takahashichiaki/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/chiaking58" ;
+        foaf:accountName "chiaking58" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Instagram" ;
+        foaf:page "https://www.instagram.com/juicy.chiaking/" ;
+        foaf:accountName "juicy.chiaking" ;
+        foaf:accountServiceHomepage <https://www.instagram.com/>
+    ] .
+
+<下田麻美> a mltd:VoiceActor ;
+    :name "下田麻美" ;
+    :familyName "下田"@ja ;
+    :givenName "麻美"@ja ;
+    :familyName "しもだ"@ja-Hira ;
+    :givenName "あさみ"@ja-Hira ;
+    :birthDate "--01-30"^^xsd:gMonthDay ;
+    dbo:hometown "鳥取県" ;
+    :memberOf <アーツビジョン> ;
+    :url <https://www.artsvision.co.jp/talent/813/> ;
+    foaf:weblog <https://yaplog.jp/asaponmax/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/shimoda_asami" ;
+        foaf:accountName "shimoda_asami" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<沼倉愛美> a mltd:VoiceActor ;
+    :name "沼倉愛美" ;
+    :familyName "沼倉"@ja ;
+    :givenName "愛美"@ja ;
+    :familyName "ぬまくら"@ja-Hira ;
+    :givenName "まなみ"@ja-Hira ;
+    :birthDate "--04-15"^^xsd:gMonthDay ;
+    dbo:hometown "神奈川県" ;
+    :memberOf <アーツビジョン> ;
+    :url <https://www.artsvision.co.jp/talent/715/> ;
+    foaf:homepage <https://numakuramanami.com/> ;
+    foaf:weblog <https://lineblog.me/numakuramanami/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/numakura_manami" ;
+        foaf:accountName "numakura_manami" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<山崎はるか> a mltd:VoiceActor ;
+    :name "山崎はるか" ;
+    :familyName "山崎"@ja ;
+    :givenName "はるか"@ja ;
+    :familyName "やまざき"@ja-Hira ;
+    :givenName "はるか"@ja-Hira ;
+    :birthDate "--06-27"^^xsd:gMonthDay ;
+    dbo:hometown "神奈川県" ;
+    :memberOf <アーツビジョン> ;
+    :url <https://www.artsvision.co.jp/talent/522/> ;
+    foaf:homepage <https://yamazakiharuka.com/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/yamazaki_haruka" ;
+        foaf:accountName "yamazaki_haruka" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Instagram" ;
+        foaf:page "https://www.instagram.com/pyon.haruka.y/" ;
+        foaf:accountName "pyon.haruka.y" ;
+        foaf:accountServiceHomepage <https://www.instagram.com/>
+    ] .
+
+<田所あずさ> a mltd:VoiceActor ;
+    :name "田所あずさ" ;
+    :familyName "田所"@ja ;
+    :givenName "あずさ"@ja ;
+    :familyName "たどころ"@ja-Hira ;
+    :givenName "あずさ"@ja-Hira ;
+    :birthDate "--11-10"^^xsd:gMonthDay ;
+    dbo:birthYear "1993"^^xsd:gYear ;
+    dbo:hometown "茨城県" ;
+    :memberOf <ホリプロ> ;
+    :url <http://tadokoroazusa.com/wf/profile> ;
+    foaf:homepage <http://tadokoroazusa.com/> ;
+    foaf:weblog <https://ameblo.jp/azusa-tadokoro/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/AzusaTadokoro" ;
+        foaf:accountName "AzusaTadokoro" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<Machico> a mltd:VoiceActor ;
+    :name "Machico" ;
+    :givenName "Machico"@ja ;
+    :givenName "まちこ"@ja-Hira ;
+    :birthDate "--03-25"^^xsd:gMonthDay ;
+    dbo:hometown "広島県" ;
+    :memberOf <ホリプロ> ;
+    :url <https://machi.co/profiles> ;
+    foaf:homepage <https://machi.co/> ;
+    foaf:weblog <https://ameblo.jp/miumachi10/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/MachicoOfficial" ;
+        foaf:accountName "MachicoOfficial" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Instagram" ;
+        foaf:page "https://www.instagram.com/machico_3s25/" ;
+        foaf:accountName "machico_3s25" ;
+        foaf:accountServiceHomepage <https://www.instagram.com/>
+    ] .
+
+<種田梨沙> a mltd:VoiceActor ;
+    :name "種田梨沙" ;
+    :familyName "種田"@ja ;
+    :givenName "梨沙"@ja ;
+    :familyName "たねだ"@ja-Hira ;
+    :givenName "りさ"@ja-Hira ;
+    :birthDate "--07-12"^^xsd:gMonthDay ;
+    dbo:hometown "東京都" ;
+    :memberOf <大沢事務所> ;
+    :url <https://osawa-inc.co.jp/women/tanedarisa/> .
+
+<角元明日香> a mltd:VoiceActor ;
+    :name "角元明日香" ;
+    :familyName "角元"@ja ;
+    :givenName "明日香"@ja ;
+    :familyName "かくもと"@ja-Hira ;
+    :givenName "あすか"@ja-Hira ;
+    :birthDate "--04-08"^^xsd:gMonthDay ;
+    dbo:birthYear "1992"^^xsd:gYear ;
+    dbo:hometown "埼玉県" ;
+    :memberOf <スペースクラフト> ;
+    :url <http://www.spacecraft.co.jp/kakumoto_asuka/> .
+
+<大関英里> a mltd:VoiceActor ;
+    :name "大関英里" ;
+    :familyName "大関"@ja ;
+    :givenName "英里"@ja ;
+    :familyName "おおぜき"@ja-Hira ;
+    :givenName "えり"@ja-Hira ;
+    :birthDate "--08-18"^^xsd:gMonthDay ;
+    dbo:hometown "神奈川県" ;
+    :url <http://very-diary.jugem.jp/?pid=1> ;
+    foaf:weblog <http://very-diary.jugem.jp/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/zekieri818" ;
+        foaf:accountName "zekieri818" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<藤井ゆきよ> a mltd:VoiceActor ;
+    :name "藤井ゆきよ" ;
+    :familyName "藤井"@ja ;
+    :givenName "ゆきよ"@ja ;
+    :familyName "ふじい"@ja-Hira ;
+    :givenName "ゆきよ"@ja-Hira ;
+    :birthDate "--05-08"^^xsd:gMonthDay ;
+    dbo:hometown "神奈川県" ;
+    :memberOf <青二プロダクション> ;
+    :url <https://www.aoni.co.jp/search/fujii-yukiyo.html> ;
+    foaf:weblog <https://ameblo.jp/yukiichigo1515> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/yukiyofujii0508" ;
+        foaf:accountName "yukiyofujii0508" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Instagram" ;
+        foaf:page "https://www.instagram.com/yukiyo0508/" ;
+        foaf:accountName "yukiyo0508" ;
+        foaf:accountServiceHomepage <https://www.instagram.com/>
+    ] .
+
+<諏訪彩花> a mltd:VoiceActor ;
+    :name "諏訪彩花" ;
+    :familyName "諏訪"@ja ;
+    :givenName "彩花"@ja ;
+    :familyName "すわ"@ja-Hira ;
+    :givenName "あやか"@ja-Hira ;
+    :birthDate "--05-27"^^xsd:gMonthDay ;
+    dbo:hometown "愛知県" ;
+    :memberOf <アーツビジョン> ;
+    :url <https://www.artsvision.co.jp/talent/832/> ;
+    foaf:weblog <https://ameblo.jp/nana-monky/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/Suwa_Ayaka" ;
+        foaf:accountName "Suwa_Ayaka" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<麻倉もも> a mltd:VoiceActor ;
+    :name "麻倉もも" ;
+    :familyName "麻倉"@ja ;
+    :givenName "もも"@ja ;
+    :familyName "あさくら"@ja-Hira ;
+    :givenName "もも"@ja-Hira ;
+    :birthDate "--06-25"^^xsd:gMonthDay ;
+    dbo:birthYear "1994"^^xsd:gYear ;
+    dbo:hometown "福岡県" ;
+    :memberOf <ミュージックレイン> ;
+    :url <https://musicrayn.com/asakura_momo> ;
+    foaf:homepage <https://www.sonymusic.co.jp/artist/asakuramomo/> ;
+    foaf:weblog <https://ameblo.jp/asakuramomoblog/> .
+
+<小笠原早紀> a mltd:VoiceActor ;
+    :name "小笠原早紀" ;
+    :familyName "小笠原"@ja ;
+    :givenName "早紀"@ja ;
+    :familyName "おがさわら"@ja-Hira ;
+    :givenName "さき"@ja-Hira ;
+    :birthDate "--03-29"^^xsd:gMonthDay ;
+    dbo:hometown "青森県" ;
+    :memberOf <賢プロダクション> ;
+    :url <http://www.kenproduction.co.jp/talent/member.php?mem=w90> ;
+    foaf:weblog <https://ameblo.jp/sweet-sweet0329/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/sachi_oga" ;
+        foaf:accountName "sachi_oga" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<夏川椎菜> a mltd:VoiceActor ;
+    :name "夏川椎菜" ;
+    :familyName "夏川"@ja ;
+    :givenName "椎菜"@ja ;
+    :familyName "なつかわ"@ja-Hira ;
+    :givenName "しいな"@ja-Hira ;
+    :birthDate "--07-18"^^xsd:gMonthDay ;
+    dbo:birthYear "1996"^^xsd:gYear ;
+    dbo:hometown "千葉県" ;
+    :memberOf <ミュージックレイン> ;
+    :url <https://musicrayn.com/natsukawa_shiina> ;
+    foaf:homepage <https://www.natsukawashiina.jp/> ;
+    foaf:weblog <https://ameblo.jp/natsukawashiinablog/> .
+
+<中村温姫> a mltd:VoiceActor ;
+    :name "中村温姫" ;
+    :familyName "中村"@ja ;
+    :givenName "温姫"@ja ;
+    :familyName "なかむら"@ja-Hira ;
+    :givenName "あつき"@ja-Hira ;
+    :birthDate "--06-15"^^xsd:gMonthDay ;
+    dbo:hometown "埼玉県" ;
+    :memberOf <EARLY_WING> ;
+    :url <http://www.earlywing.co.jp/talent_w/nakamuraatsuki.html> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/7330615nayg" ;
+        foaf:accountName "7330615nayg" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<伊藤美来> a mltd:VoiceActor ;
+    :name "伊藤美来" ;
+    :familyName "伊藤"@ja ;
+    :givenName "美来"@ja ;
+    :familyName "いとう"@ja-Hira ;
+    :givenName "みく"@ja-Hira ;
+    :birthDate "--10-12"^^xsd:gMonthDay ;
+    dbo:birthYear "1996"^^xsd:gYear ;
+    dbo:hometown "東京都" ;
+    :memberOf <スタイルキューブ> ;
+    :url <http://stylecube.jp/talents/miku/index.html> ;
+    foaf:homepage <https://columbia.jp/itomiku/> ;
+    foaf:weblog <https://ameblo.jp/itou-miku/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/InfoItomiku" ;
+        foaf:accountName "InfoItomiku" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<駒形友梨> a mltd:VoiceActor ;
+    :name "駒形友梨" ;
+    :familyName "駒形"@ja ;
+    :givenName "友梨"@ja ;
+    :familyName "こまがた"@ja-Hira ;
+    :givenName "ゆり"@ja-Hira ;
+    :birthDate "--08-25"^^xsd:gMonthDay ;
+    dbo:birthYear "1991"^^xsd:gYear ;
+    dbo:hometown "東京都" ;
+    :memberOf <スペースクラフト> ;
+    :url <http://spacecraft.co.jp/komagata_yuri/> ;
+    foaf:weblog <https://ameblo.jp/komagata-yuri/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/KomagataYuri" ;
+        foaf:accountName "KomagataYuri" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<村川梨衣> a mltd:VoiceActor ;
+    :name "村川梨衣" ;
+    :familyName "村川"@ja ;
+    :givenName "梨衣"@ja ;
+    :familyName "むらかわ"@ja-Hira ;
+    :givenName "りえ"@ja-Hira ;
+    :birthDate "--06-01"^^xsd:gMonthDay ;
+    dbo:hometown "東京都" ;
+    :memberOf <俳協> ;
+    :url <https://haikyo.co.jp/profile/profile.php?ActorID=12498> ;
+    foaf:homepage <https://columbia.jp/murakawarie/> ;
+    foaf:weblog <https://ameblo.jp/6riemagic6> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/RiEmagic" ;
+        foaf:accountName "RiEmagic" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<上田麗奈> a mltd:VoiceActor ;
+    :name "上田麗奈" ;
+    :familyName "上田"@ja ;
+    :givenName "麗奈"@ja ;
+    :familyName "うえだ"@ja-Hira ;
+    :givenName "れいな"@ja-Hira ;
+    :birthDate "--01-17"^^xsd:gMonthDay ;
+    dbo:hometown "富山県" ;
+    :memberOf <81プロデュース> ;
+    :url <https://www.81produce.co.jp/actor_search/index.php/item?id=162> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/ReinaUeda_Staff" ;
+        foaf:accountName "ReinaUeda_Staff" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<原嶋あかり> a mltd:VoiceActor ;
+    :name "原嶋あかり" ;
+    :familyName "原嶋"@ja ;
+    :givenName "あかり"@ja ;
+    :familyName "はらしま"@ja-Hira ;
+    :givenName "あかり"@ja-Hira ;
+    :birthDate "--03-09"^^xsd:gMonthDay ;
+    dbo:hometown "北海道" ;
+    :memberOf <俳協> ;
+    :url <https://haikyo.co.jp/profile/profile.php?ActorID=12750> ;
+    foaf:weblog <https://ameblo.jp/aw0w-0309/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/0309akari" ;
+        foaf:accountName "0309akari" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<小岩井ことり> a mltd:VoiceActor ;
+    :name "小岩井ことり" ;
+    :familyName "小岩井"@ja ;
+    :givenName "ことり"@ja ;
+    :familyName "こいわい"@ja-Hira ;
+    :givenName "ことり"@ja-Hira ;
+    :birthDate "--02-15"^^xsd:gMonthDay ;
+    dbo:hometown "京都府" ;
+    :memberOf <ピアレスガーベラ> ;
+    :url <http://pg-wcf.co.jp/profile/04/> ;
+    foaf:weblog <https://ameblo.jp/koiwai-kotori/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/koiwai_kotori" ;
+        foaf:accountName "koiwai_kotori" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<郁原ゆう> a mltd:VoiceActor ;
+    :name "郁原ゆう" ;
+    :familyName "郁原"@ja ;
+    :givenName "ゆう"@ja ;
+    :familyName "かはら"@ja-Hira ;
+    :givenName "ゆう"@ja-Hira ;
+    :birthDate "--02-19"^^xsd:gMonthDay ;
+    dbo:hometown "千葉県" ;
+    :url <https://ameblo.jp/yukahara219> ;
+    foaf:weblog <https://ameblo.jp/yukahara219> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/yk_yu002" ;
+        foaf:accountName "yk_yu002" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<雨宮天> a mltd:VoiceActor ;
+    :name "雨宮天" ;
+    :familyName "雨宮"@ja ;
+    :givenName "天"@ja ;
+    :familyName "あまみや"@ja-Hira ;
+    :givenName "そら"@ja-Hira ;
+    :birthDate "--08-28"^^xsd:gMonthDay ;
+    dbo:birthYear "1993"^^xsd:gYear ;
+    dbo:hometown "東京都" ;
+    :memberOf <ミュージックレイン> ;
+    :url <https://musicrayn.com/amamiya_sora> ;
+    foaf:homepage <https://www.amamiyasora.jp/> ;
+    foaf:weblog <https://ameblo.jp/amamiyasorablog/> .
+
+<戸田めぐみ> a mltd:VoiceActor ;
+    :name "戸田めぐみ" ;
+    :familyName "戸田"@ja ;
+    :givenName "めぐみ"@ja ;
+    :familyName "とだ"@ja-Hira ;
+    :givenName "めぐみ"@ja-Hira ;
+    :birthDate "--12-08"^^xsd:gMonthDay ;
+    dbo:hometown "東京都" ;
+    :memberOf <ケンユウオフィス> ;
+    :url <http://kenyu-office.com/todamegumi/> ;
+    foaf:weblog <https://ameblo.jp/mysweet365days/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/todamegumi" ;
+        foaf:accountName "todamegumi" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Instagram" ;
+        foaf:page "https://www.instagram.com/todamegumi/" ;
+        foaf:accountName "todamegumi" ;
+        foaf:accountServiceHomepage <https://www.instagram.com/>
+    ] .
+
+<田村奈央> a mltd:VoiceActor ;
+    :name "田村奈央" ;
+    :familyName "田村"@ja ;
+    :givenName "奈央"@ja ;
+    :familyName "たむら"@ja-Hira ;
+    :givenName "なお"@ja-Hira ;
+    :birthDate "--10-10"^^xsd:gMonthDay ;
+    dbo:hometown "埼玉県" ;
+    :memberOf <俳協> ;
+    :url <https://haikyo.co.jp/profile/profile.php?ActorID=12777> ;
+    foaf:weblog <https://ameblo.jp/denchan10/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/tamunao10" ;
+        foaf:accountName "tamunao10" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<木戸衣吹> a mltd:VoiceActor ;
+    :name "木戸衣吹" ;
+    :familyName "木戸"@ja ;
+    :givenName "衣吹"@ja ;
+    :familyName "きど"@ja-Hira ;
+    :givenName "いぶき"@ja-Hira ;
+    :birthDate "--11-14"^^xsd:gMonthDay ;
+    dbo:birthYear "1997"^^xsd:gYear ;
+    dbo:hometown "青森県" ;
+    :memberOf <ホリプロ> ;
+    :url <http://www.horipro-international.com/artist/kido> ;
+    foaf:weblog <https://ameblo.jp/kido-ibuki> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/ibuking_1114" ;
+        foaf:accountName "ibuking_1114" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<渡部優衣> a mltd:VoiceActor ;
+    :name "渡部優衣" ;
+    :familyName "渡部"@ja ;
+    :givenName "優衣"@ja ;
+    :familyName "わたなべ"@ja-Hira ;
+    :givenName "ゆい"@ja-Hira ;
+    :birthDate "--12-04"^^xsd:gMonthDay ;
+    dbo:birthYear "1988"^^xsd:gYear ;
+    dbo:hometown "大阪府" ;
+    :memberOf <ダンデライオン> ;
+    :url <http://www.ddl-ltd.co.jp/watanabeyui.html> ;
+    foaf:homepage <https://yuiwatanabe.com/> ;
+    foaf:weblog <https://ameblo.jp/yui-chupunch/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/watanabeyui_Ton" ;
+        foaf:accountName "watanabeyui_Ton" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<野村香菜子> a mltd:VoiceActor ;
+    :name "野村香菜子" ;
+    :familyName "野村"@ja ;
+    :givenName "香菜子"@ja ;
+    :familyName "のむら"@ja-Hira ;
+    :givenName "かなこ"@ja-Hira ;
+    :birthDate "--12-25"^^xsd:gMonthDay ;
+    dbo:birthYear "1989"^^xsd:gYear ;
+    dbo:hometown "東京都" ;
+    :memberOf <Rush_Style> ;
+    :url <http://rushstyle.net/?talent=%E7%A7%8B%E6%B2%B3%E3%81%82%E3%82%86%E3%82%80%EF%BC%88%E9%A0%90%E3%81%8B%E3%82%8A%EF%BC%89> ; # なにこのURL・・・
+    foaf:weblog <https://ameblo.jp/kanako-nomura/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/watanabeyui_Ton" ;
+        foaf:accountName "watanabeyui_Ton" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<高橋未奈美> a mltd:VoiceActor ;
+    :name "高橋未奈美" ;
+    :familyName "高橋"@ja ;
+    :givenName "未奈美"@ja ;
+    :familyName "たかはし"@ja-Hira ;
+    :givenName "みなみ"@ja-Hira ;
+    :birthDate "--12-20"^^xsd:gMonthDay ;
+    dbo:hometown "神奈川県" ;
+    :memberOf <俳協> ;
+    :url <https://haikyo.co.jp/profile/profile.php?ActorID=12532> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/miiiiiina_cat" ;
+        foaf:accountName "miiiiiina_cat" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<稲川英里> a mltd:VoiceActor ;
+    :name "稲川英里" ;
+    :familyName "稲川"@ja ;
+    :givenName "英里"@ja ;
+    :familyName "いながわ"@ja-Hira ;
+    :givenName "えり"@ja-Hira ;
+    :birthDate "--10-28"^^xsd:gMonthDay ;
+    dbo:hometown "神奈川県" ;
+    :memberOf <賢プロダクション> ;
+    :url <http://www.kenproduction.co.jp/talent/member.php?mem=w83> ;
+    foaf:weblog <https://ameblo.jp/greentea-senbei/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/greentea_senbei" ;
+        foaf:accountName "greentea_senbei" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<末柄里恵> a mltd:VoiceActor ;
+    :name "末柄里恵" ;
+    :familyName "末柄"@ja ;
+    :givenName "里恵"@ja ;
+    :familyName "すえがら"@ja-Hira ;
+    :givenName "りえ"@ja-Hira ;
+    :birthDate "--01-08"^^xsd:gMonthDay ;
+    dbo:hometown "神奈川県" ;
+    :memberOf <賢プロダクション> ;
+    :url <http://www.kenproduction.co.jp/talent/member.php?mem=w94> ;
+    foaf:weblog <https://ameblo.jp/su-gii> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/suzygara" ;
+        foaf:accountName "suzygara" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<桐谷蝶々> a mltd:VoiceActor ;
+    :name "桐谷蝶々" ;
+    :familyName "桐谷"@ja ;
+    :givenName "蝶々"@ja ;
+    :familyName "きりたに"@ja-Hira ;
+    :givenName "ちょうちょ"@ja-Hira ;
+    :birthDate "--01-15"^^xsd:gMonthDay ;
+    dbo:hometown "東京都" ;
+    :url <https://choucho1515.wixsite.com/choucho-website/about-me> ;
+    foaf:homepage <https://choucho1515.wixsite.com/choucho-website> ;
+    foaf:weblog <https://ameblo.jp/mmmm1515/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/choucho0115" ;
+        foaf:accountName "choucho0115" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<浜崎奈々> a mltd:VoiceActor ;
+    :name "浜崎奈々" ;
+    :familyName "浜崎"@ja ;
+    :givenName "奈々"@ja ;
+    :familyName "はまさき"@ja-Hira ;
+    :givenName "なな"@ja-Hira ;
+    :birthDate "--09-06"^^xsd:gMonthDay ;
+    dbo:hometown "東京都" ;
+    :memberOf <アイムエンタープライズ> ;
+    :url <https://www.imenterprise.jp/profile.php?id=73> ;
+    foaf:weblog <https://ameblo.jp/hmsk-nana/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/7NanaHamasaki7" ;
+        foaf:accountName "7NanaHamasaki7" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<阿部里果> a mltd:VoiceActor ;
+    :name "阿部里果" ;
+    :familyName "阿部"@ja ;
+    :givenName "里果"@ja ;
+    :familyName "あべ"@ja-Hira ;
+    :givenName "りか"@ja-Hira ;
+    :birthDate "--09-20"^^xsd:gMonthDay ;
+    dbo:hometown "三重県" ;
+    :memberOf <ヴィムス> ;
+    :url <https://vims.co.jp/talent_profile_detail.php?id=27> .
+
+<近藤唯> a mltd:VoiceActor ;
+    :name "近藤唯" ;
+    :familyName "近藤"@ja ;
+    :givenName "唯"@ja ;
+    :familyName "こんどう"@ja-Hira ;
+    :givenName "ゆい"@ja-Hira ;
+    :birthDate "--06-28"^^xsd:gMonthDay ;
+    dbo:hometown "神奈川県" ;
+    :memberOf <ケンユウオフィス> ;
+    :url <http://kenyu-office.com/kondoyui/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/yun_yk28" ;
+        foaf:accountName "yun_yk28" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<山口立花子> a mltd:VoiceActor ;
+    :name "山口立花子" ;
+    :familyName "山口"@ja ;
+    :givenName "立花子"@ja ;
+    :familyName "やまぐち"@ja-Hira ;
+    :givenName "りかこ"@ja-Hira ;
+    :birthDate "--03-30"^^xsd:gMonthDay ;
+    dbo:hometown "東京都" ;
+    :memberOf <サンミュージック> ;
+    :url <https://www.sunmusic.org/profile/yamaguchi_rikako.html> ;
+    foaf:weblog <https://ameblo.jp/genki-morisoba/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/YamaguchiRikako" ;
+        foaf:accountName "YamaguchiRikako" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<斉藤佑圭> a mltd:VoiceActor ;
+    :name "斉藤佑圭" ;
+    :familyName "斉藤"@ja ;
+    :givenName "佑圭"@ja ;
+    :familyName "さいとう"@ja-Hira ;
+    :givenName "ゆか"@ja-Hira ;
+    :birthDate "--11-13"^^xsd:gMonthDay ;
+    dbo:hometown "福島県" ;
+    :memberOf <青二プロダクション> ;
+    :url <https://www.aoni.co.jp/search/saito-yuka.html> ;
+    foaf:weblog <https://ameblo.jp/yukke1113/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/yuka_s1113" ;
+        foaf:accountName "yuka_s1113" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<平山笑美> a mltd:VoiceActor ;
+    :name "平山笑美" ;
+    :familyName "平山"@ja ;
+    :givenName "笑美"@ja ;
+    :familyName "ひらやま"@ja-Hira ;
+    :givenName "えみ"@ja-Hira ;
+    :birthDate "--09-24"^^xsd:gMonthDay ;
+    dbo:hometown "東京都" ;
+    :url <https://www.pirami.online/profile> ;
+    foaf:homepage <https://www.pirami.online/> ;
+    foaf:weblog <https://ameblo.jp/emi-3kan-1128/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/hirayama8emi" ;
+        foaf:accountName "hirayama8emi" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<渡部恵子> a mltd:VoiceActor ;
+    :name "渡部恵子" ;
+    :familyName "渡部"@ja ;
+    :givenName "恵子"@ja ;
+    :familyName "わたなべ"@ja-Hira ;
+    :givenName "けいこ"@ja-Hira ;
+    :birthDate "--03-29"^^xsd:gMonthDay ;
+    dbo:hometown "埼玉県" ;
+    :memberOf <クレイジーボックス> ;
+    :url <http://crazy-box.co.jp/female/talent65/> .
+
+<愛美> a mltd:VoiceActor ;
+    :name "愛美" ;
+    :givenName "愛美"@ja ;
+    :givenName "あいみ"@ja-Hira ;
+    :birthDate "--12-25"^^xsd:gMonthDay ;
+    dbo:hometown "兵庫県" ;
+    :memberOf <響> ;
+    :url <https://hibiki-cast.jp/hibiki_f/aimi/> ;
+    foaf:homepage <https://aimi-sound.com/> ;
+    foaf:weblog <https://ameblo.jp/aimi-sound/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/aimi_sound" ;
+        foaf:accountName "aimi_sound" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Instagram" ;
+        foaf:page "https://www.instagram.com/aimin_official/" ;
+        foaf:accountName "aimin_official" ;
+        foaf:accountServiceHomepage <https://www.instagram.com/>
+    ] .
+
+<南早紀> a mltd:VoiceActor ;
+    :name "南早紀" ;
+    :familyName "南"@ja ;
+    :givenName "早紀"@ja ;
+    :familyName "みなみ"@ja-Hira ;
+    :givenName "さき"@ja-Hira ;
+    :birthDate "--11-19"^^xsd:gMonthDay ;
+    dbo:hometown "大分県" ;
+    :memberOf <81プロデュース> ;
+    :url <https://www.81produce.co.jp/actor_search/index.php/item?id=308> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/minamisaki_81" ;
+        foaf:accountName "minamisaki_81" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Instagram" ;
+        foaf:page "https://www.instagram.com/minamisaki1119/" ;
+        foaf:accountName "minamisaki1119" ;
+        foaf:accountServiceHomepage <https://www.instagram.com/>
+    ] .
+
+<香里有佐> a mltd:VoiceActor ;
+    :name "香里有佐" ;
+    :familyName "香里"@ja ;
+    :givenName "有佐"@ja ;
+    :familyName "こうり"@ja-Hira ;
+    :givenName "ありさ"@ja-Hira ;
+    :birthDate "--03-13"^^xsd:gMonthDay ;
+    dbo:hometown "大阪府" ;
+    :memberOf <青二プロダクション> ;
+    :url <https://www.aoni.co.jp/search/kori-arisa.html> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/arisa_kori" ;
+        foaf:accountName "arisa_kori" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .

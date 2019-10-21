@@ -1,0 +1,1792 @@
+BASE <https://mltd.pikopikopla.net/resource/>
+PREFIX mltd: <https://mltd.pikopikopla.net/mltd-schema#>
+PREFIX : <http://schema.org/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# NOTE:
+# 編曲者の概念が少なくとも英語圏にはないため、
+# 広い意味での編集者として :editor を代用している。
+
+# NOTE:
+# クリエイターを文字列で持っているが、URI をつけるべきかもしれない。(要検討)
+# ただし、正規化によって所属など細かい情報が欠落する可能性がある。
+
+# NOTE:
+# :MusicComposition からはオリジナルの歌唱メンバーを特定できない問題がある。
+
+# LTP_01
+<Thank_You> a :MusicComposition ;
+    :name "Thank You!" ;
+    :lyricist "NBSI (モモキエイジ)" ;
+    :composer "NBSI (佐藤貴文)" ;
+    :editor "NBSI (佐藤貴文)" .
+
+# LTP_02
+<キラメキ進行形> a :MusicComposition ;
+    :name "キラメキ進行形" ;
+    :lyricist "rino" ;
+    :composer "高田暁" ;
+    :editor "高田暁" .
+
+<透明なプロローグ> a :MusicComposition ;
+    :name "透明なプロローグ" ;
+    :lyricist "こだまさおり" ;
+    :composer "若林充" ;
+    :editor "若林充" .
+
+<トキメキの音符になって> a :MusicComposition ;
+    :name "トキメキの音符になって" ;
+    :lyricist "rino" ;
+    :composer "岡本健介" ;
+    :editor "岡本健介" .
+
+<Maria_Trap> a :MusicComposition ;
+    :name "Maria Trap" ;
+    :lyricist "ZAQ" ;
+    :composer "三浦誠司" ;
+    :editor "三浦誠司" .
+
+<Precious_Grain> a :MusicComposition ;
+    :name "Precious Grain" ;
+    :lyricist "松井洋平" ;
+    :composer "佐々木裕" ;
+    :editor "佐々木裕" .
+
+<Legend_Girls> a :MusicComposition ;
+    :name "Legend Girls!!" ;
+    :lyricist "こだまさおり" ;
+    :composer "白戸佑輔" ;
+    :editor "白戸佑輔" .
+
+# LTP_03
+<素敵なキセキ> a :MusicComposition ;
+    :name "素敵なキセキ" ;
+    :lyricist "岡本健介" ;
+    :composer "岡本健介" ;
+    :editor "岡本健介" .
+
+<ハッピー☆ラッキー☆ジェットマシーン> a :MusicComposition ;
+    :name "ハッピー☆ラッキー☆ジェットマシーン" ;
+    :lyricist "由貴野ひめか" ;
+    :composer "江並哲志" ;
+    :editor "佐々木裕" .
+
+<Happy_Darling> a :MusicComposition ;
+    :name "Happy Darling" ;
+    :lyricist "rino" ;
+    :composer "山元祐介" ;
+    :editor "山元祐介" .
+
+<オレンジの空の下> a :MusicComposition ;
+    :name "オレンジの空の下" ;
+    :lyricist "こだまさおり" ;
+    :composer "岡本健介" ;
+    :editor "森谷敏紀" .
+
+<Rebellion> a :MusicComposition ;
+    :name "Rebellion" ;
+    :lyricist "ZAQ" ;
+    :composer "前山田健一" ;
+    :editor "石井健太郎" .
+
+<PRETTY_DREAMER> a :MusicComposition ;
+    :name "PRETTY DREAMER" ;
+    :lyricist "こだまさおり" ;
+    :composer "矢鴇つかさ (Arte Refact)" ;
+    :editor "矢鴇つかさ (Arte Refact)" .
+
+# LTP_04
+<アフタースクールパーリータイム> a :MusicComposition ;
+    :name "アフタースクールパーリータイム" ;
+    :lyricist "ZAQ" ;
+    :composer "増谷賢" ;
+    :editor "増谷賢" .
+
+<朝焼けのクレッシェンド> a :MusicComposition ;
+    :name "朝焼けのクレッシェンド" ;
+    :lyricist "こだまさおり" ;
+    :composer "松田彬人" ;
+    :editor "松田彬人" .
+
+<ライアー・ルージュ> a :MusicComposition ;
+    :name "ライアー・ルージュ" ;
+    :lyricist "松井洋平" ;
+    :composer "西添健 (Arte Refact)" ;
+    :editor "西添健 (Arte Refact)" .
+
+<Snow_White> a :MusicComposition ;
+    :name "Snow White" ;
+    :lyricist "森由里子" ;
+    :composer "rino" ;
+    :editor "増田武史" .
+
+<Blue_Symphony> a :MusicComposition ;
+    :name "Blue Symphony" ;
+    :lyricist "こだまさおり" ;
+    :composer "山口朗彦" ;
+    :editor "山口朗彦" .
+
+# LTP_05
+<微笑み日和> a :MusicComposition ;
+    :name "微笑み日和" ;
+    :lyricist "rino" ;
+    :composer "rino" ;
+    :editor "福富雅之" .
+
+<POKER_POKER> a :MusicComposition ;
+    :name "POKER POKER" ;
+    :lyricist "松井洋平" ;
+    :composer "橋本由香利" ;
+    :editor "橋本由香利" .
+
+<Be_My_Boy> a :MusicComposition ;
+    :name "Be My Boy" ;
+    :lyricist "mavie" ;
+    :composer "KOH" ;
+    :editor "KOH" .
+
+<プライヴェイト・ロードショウ_playback_Weekday> a :MusicComposition ;
+    :name "プライヴェイト・ロードショウ (playback, Weekday)" ;
+    :lyricist "松井洋平" ;
+    :composer "松田彬人" ;
+    :editor "松田彬人" .
+
+<Sentimental_Venus> a :MusicComposition ;
+    :name "Sentimental Venus" ;
+    :lyricist "こだまさおり" ;
+    :composer "rino" ;
+    :editor "関野元規" .
+
+# LTP_06
+<恋のLesson初級編> a :MusicComposition ;
+    :name "恋のLesson初級編" ;
+    :lyricist "こだまさおり" ;
+    :composer "nyanyannya (Team.ねこかん[猫])" ;
+    :editor "nyanyannya (Team.ねこかん[猫])" .
+
+<FIND_YOUR_WIND> a :MusicComposition ;
+    :name "FIND YOUR WIND!" ;
+    :lyricist "松井洋平" ;
+    :composer "中土智博" ;
+    :editor "中土智博" .
+
+<追憶のサンドグラス> a :MusicComposition ;
+    :name "追憶のサンドグラス" ;
+    :lyricist "ZAQ" ;
+    :composer "高田暁" ;
+    :editor "高田暁" .
+
+<流星群> a :MusicComposition ;
+    :name "流星群" ;
+    :lyricist "きみコ" ;
+    :composer "黒須克彦" ;
+    :editor "黒須克彦" .
+
+<Marionetteは眠らない> a :MusicComposition ;
+    :name "Marionetteは眠らない" ;
+    :lyricist "こだまさおり" ;
+    :composer "高田暁" ;
+    :editor "高田暁" .
+
+# LTP_07
+<マイペース☆マイウェイ> a :MusicComposition ;
+    :name "マイペース☆マイウェイ" ;
+    :lyricist "松井洋平" ;
+    :composer "増谷賢" ;
+    :editor "増谷賢" .
+
+<君想いBirthday> a :MusicComposition ;
+    :name "君想いBirthday" ;
+    :lyricist "rino" ;
+    :composer "福富雅之" ;
+    :editor "福富雅之" .
+
+<ちいさな恋の足音> a :MusicComposition ;
+    :name "ちいさな恋の足音" ;
+    :lyricist "こだまさおり" ;
+    :composer "高田暁" ;
+    :editor "高田暁" .
+
+<嘆きのFRACTION> a :MusicComposition ;
+    :name "嘆きのFRACTION" ;
+    :lyricist "藤本記子" ;
+    :composer "藤本記子" ;
+    :editor "福富雅之" .
+
+<カワラナイモノ> a :MusicComposition ;
+    :name "カワラナイモノ" ;
+    :lyricist "こだまさおり" ;
+    :composer "藤本記子" ;
+    :editor "福富雅之" .
+
+# LTP_08
+<ホップ♪ステップ♪レインボウ> a :MusicComposition ;
+    :name "ホップ♪ステップ♪レインボウ♪" ;
+    :lyricist "松井洋平" ;
+    :composer "三輪智也" ;
+    :editor "炭竃智弘" .
+
+<グッデイ・サンシャイン> a :MusicComposition ;
+    :name "グッデイ・サンシャイン！" ;
+    :lyricist "松井洋平" ;
+    :composer "八尋春菜" ;
+    :editor "八尋春菜" ;
+    :editor "KanadeYUK" ;
+    :editor "佐藤亘" .
+
+<オリジナル声になって> a :MusicComposition ;
+    :name "オリジナル声になって" ;
+    :lyricist "rino" ;
+    :composer "関野元規" ;
+    :editor "関野元規" .
+
+<ハートウォーミング> a :MusicComposition ;
+    :name "ハートウォーミング" ;
+    :lyricist "アツミサオリ" ;
+    :composer "KanadeYUK" ;
+    :editor "KanadeYUK" .
+
+<Good-Sleep_Baby♡> a :MusicComposition ;
+    :name "Good-Sleep, Baby♡" ;
+    :lyricist "こだまさおり" ;
+    :composer "川野勝広" ;
+    :editor "川野勝広" .
+
+# LTP_09
+<Helloコンチェルト> a :MusicComposition ;
+    :name "Helloコンチェルト" ;
+    :lyricist "こだまさおり" ;
+    :composer "増谷賢" ;
+    :editor "長田直之" .
+
+<スマイルいちばん> a :MusicComposition ;
+    :name "スマイルいちばん" ;
+    :lyricist "rino" ;
+    :composer "サイトウヨシヒロ" ;
+    :editor "サイトウヨシヒロ" .
+
+<あのね、聞いてほしいことがあるんだ> a :MusicComposition ;
+    :name "あのね、聞いてほしいことがあるんだ" ;
+    :lyricist "藤本記子" ;
+    :composer "藤本記子" ;
+    :editor "福富雅之" .
+
+<チョー↑元気Show☆アイドルchang> a :MusicComposition ;
+    :name "チョー↑元気Show☆アイドルch@ng!" ;
+    :lyricist "松井洋平" ;
+    :composer "バグベア" ;
+    :editor "バグベア" .
+
+<GREEDY_GIRL> a :MusicComposition ;
+    :name "GREEDY GIRL" ;
+    :lyricist "藤本記子" ;
+    :composer "藤本記子" ;
+    :editor "福富雅之" .
+
+# LTP_10
+<フェスタ・イルミネーション> a :MusicComposition ;
+    :name "フェスタ・イルミネーション" ;
+    :lyricist "松井洋平" ;
+    :composer "松井洋平" ;
+    :editor "関野元規" .
+
+<ココロ☆エクササイズ> a :MusicComposition ;
+    :name "ココロ☆エクササイズ" ;
+    :lyricist "唐沢美帆" ;
+    :composer "板垣祐介" ;
+    :editor "板垣祐介" .
+
+<ハッピ〜_エフェクト> a :MusicComposition ;
+    :name "ハッピ〜 エフェクト！" ;
+    :lyricist "松井洋平" ;
+    :composer "バグベア" ;
+    :editor "バグベア" .
+
+<恋花> a :MusicComposition ;
+    :name "恋花" ;
+    :lyricist "藤本記子" ;
+    :composer "福富雅之" ;
+    :editor "福富雅之" .
+
+<瞳の中のシリウス> a :MusicComposition ;
+    :name "瞳の中のシリウス" ;
+    :lyricist "こだまさおり" ;
+    :composer "野井洋児" ;
+    :editor "野井洋児" .
+
+# LTP_11
+<想いはCarnaval> a :MusicComposition ;
+    :name "想いはCarnaval" ;
+    :lyricist "ハラユカ。" ;
+    :composer "吉川奏" ;
+    :editor "白戸佑輔" .
+
+<Get_My_Shinin> a :MusicComposition ;
+    :name "Get My Shinin'" ;
+    :lyricist "磯谷佳江" ;
+    :composer "関野元規" ;
+    :editor "関野元規" .
+
+<FLY_TO_EVERYWHERE> a :MusicComposition ;
+    :name "FLY TO EVERYWHERE" ;
+    :lyricist "松井洋平" ;
+    :composer "石井伸昂" ;
+    :editor "若林充" .
+
+<DETECTIVE_HIGH_〜恋探偵物語〜> a :MusicComposition ;
+    :name "DETECTIVE HIGH! 〜恋探偵物語〜" ;
+    :lyricist "松井洋平" ;
+    :composer "石井健太郎" ;
+    :editor "石井健太郎" .
+
+<Fu-Wa-Du-Wa> a :MusicComposition ;
+    :name "Fu-Wa-Du-Wa" ;
+    :lyricist "こだまさおり" ;
+    :composer "関野元規" ;
+    :editor "関野元規" .
+
+# LTP_12
+<IMPRESSION→LOCOMOTION> a :MusicComposition ;
+    :name "IMPRESSION→LOCOMOTION!" ;
+    :lyricist "松井洋平" ;
+    :composer "谷島俊" ;
+    :editor "谷島俊" .
+
+<恋心マスカレード> a :MusicComposition ;
+    :name "恋心マスカレード" ;
+    :lyricist "唐沢美帆" ;
+    :composer "増谷賢" ;
+    :editor "増谷賢" .
+
+<ハミングロード> a :MusicComposition ;
+    :name "ハミングロード" ;
+    :lyricist "ZAQ" ;
+    :composer "KanadeYUK" ;
+    :editor "KanadeYUK" .
+
+<デコレーション・ドリ〜ミンッ♪> a :MusicComposition ;
+    :name "デコレーション・ドリ〜ミンッ♪" ;
+    :lyricist "松井洋平" ;
+    :composer "増谷賢" ;
+    :editor "長田直之" .
+
+<ココロがかえる場所> a :MusicComposition ;
+    :name "ココロがかえる場所" ;
+    :lyricist "こだまさおり" ;
+    :composer "高田暁" ;
+    :editor "高田暁" .
+
+# LTP_13
+<Heart♡・デイズ・Night☆> a :MusicComposition ;
+    :name "Heart♡・デイズ・Night☆" ;
+    :lyricist "松井洋平" ;
+    :composer "バグベア" ;
+    :editor "バグベア" .
+
+<微笑んだから、気づいたんだ。> a :MusicComposition ;
+    :name "微笑んだから、気づいたんだ。" ;
+    :lyricist "松井洋平" ;
+    :composer "増谷賢" ;
+    :editor "増谷賢" .
+
+<dear> a :MusicComposition ;
+    :name "dear..." ;
+    :lyricist "KOH" ;
+    :composer "KOH" ;
+    :editor "KOH" .
+
+<ビギナーズ☆ストライク> a :MusicComposition ;
+    :name "ビギナーズ☆ストライク" ;
+    :lyricist "唐沢美帆" ;
+    :composer "小野貴光" ;
+    :editor "玉木千尋" .
+
+<Bigバルーン◎> a :MusicComposition ;
+    :name "Bigバルーン◎" ;
+    :lyricist "こだまさおり" ;
+    :composer "高田暁" ;
+    :editor "高田暁" .
+
+# LTH
+<Welcome> a :MusicComposition ;
+    :name "Welcome!!" ;
+    :lyricist "佐々木恵梨" ;
+    :composer "BNSI (佐藤貴文)" ;
+    :editor "BNSI (佐藤貴文)" .
+
+# LTH_01
+<合言葉はスタートアップ> a :MusicComposition ;
+    :name "合言葉はスタートアップ！";
+    :lyricist "mft" ;
+    :composer "酒井拓也 (Arte Refact)" ;
+    :editor "酒井拓也 (Arte Refact)" .
+
+<地球ミラーボウル> a :MusicComposition ;
+    :name "地球ミラーボウル" ;
+    :lyricist "KOH" ;
+    :composer "KOH" ;
+    :editor "KOH" .
+
+<ストロベリー・キューピッド> a :MusicComposition ;
+    :name "ストロベリー・キューピッド" ;
+    :lyricist "河田貴央＆juun.coo" ;
+    :composer "河田貴央" ;
+    :editor "河田貴央" .
+
+<Liars_good_bye> a :MusicComposition ;
+    :name "Liar's good bye" ;
+    :lyricist "真崎エリカ" ;
+    :composer "原田厚 (Arte Refact)" ;
+    :editor "桑原聖 (Arte Refact)" .
+
+<タイムマシンに飛び乗って> a :MusicComposition ;
+    :name "タイムマシンに飛び乗って！" ;
+    :lyricist "松井洋平" ;
+    :composer "矢鴇つかさ (Arte Refact)" ;
+    :editor "矢鴇つかさ (Arte Refact)" .
+
+<smiley_days> a :MusicComposition ;
+    :name "smiley days" ;
+    :lyricist "KOH" ;
+    :composer "KOH" ;
+    :editor "KOH" .
+
+# LTH_02
+<Growing_Storm> a :MusicComposition ;
+    :name "Growing Storm!" ;
+    :lyricist "mft" ;
+    :composer "高田暁" ;
+    :editor "高田暁" .
+
+<In_The_Name_Of。LOVE> a :MusicComposition ;
+    :name "...In The Name Of。...LOVE?" ;
+    :lyricist "松井洋平" ;
+    :composer "AstroNoteS" ;
+    :editor "AstroNoteS" .
+
+<VIVID_イマジネーション> a :MusicComposition ;
+    :name "VIVID イマジネーション" ;
+    :lyricist "真崎エリカ" ;
+    :composer "桑原聖 (Arte Refact)" ;
+    :editor "酒井拓也 (Arte Refact)" .
+
+<空想文学少女> a :MusicComposition ;
+    :name "空想文学少女" ;
+    :lyricist "藤本記子" ;
+    :composer "福富雅之" ;
+    :editor "福富雅之" .
+
+<Believe_my_change> a :MusicComposition ;
+    :name "Believe my change!" ;
+    :lyricist "真崎エリカ" ;
+    :composer "西添健 (Arte Refact)" ;
+    :composer "桑原聖 (Arte Refact)" ;
+    :editor "桑原聖 (Arte Refact)" ;
+    :editor "桑原聖 (Arte Refact)" .
+
+<未来飛行> a :MusicComposition ;
+    :name "未来飛行" ;
+    :lyricist "唐沢美帆" ;
+    :composer "板垣祐介" ;
+    :editor "板垣祐介" .
+
+# LTH_03
+<Shooting_Stars> a :MusicComposition ;
+    :name "Shooting Stars" ;
+    :lyricist "真崎エリカ" ;
+    :composer "矢鴇つかさ (Arte Refact)" ;
+    :editor "矢鴇つかさ (Arte Refact)" .
+
+<夢色トレイン> a :MusicComposition ;
+    :name "夢色トレイン" ;
+    :lyricist "rino" ;
+    :composer "増谷賢" ;
+    :editor "長田直之" .
+
+<サマ☆トリ_〜Summer_trip〜> a :MusicComposition ;
+    :name "サマ☆トリ 〜Summer trip〜" ;
+    :lyricist "唐沢美帆" ;
+    :composer "増谷賢" ;
+    :editor "桑原聖 (Arte Refact)" ;
+    :editor "酒井拓也 (Arte Refact)" .
+
+<プリティ〜〜〜ッ→ニャンニャンッ> a :MusicComposition ;
+    :name "プリティ〜〜〜ッ→ニャンニャン！" ;
+    :lyricist "松井洋平" ;
+    :composer "高田暁" ;
+    :editor "高田暁" .
+
+<絵本> a :MusicComposition ;
+    :name "絵本" ;
+    :lyricist "坂井季乃" ;
+    :composer "増谷健" ;
+    :editor "増谷健" .
+
+<Catch_my_dream> a :MusicComposition ;
+    :name "Catch my dream" ;
+    :lyricist "Mine" ;
+    :composer "中土智博" ;
+    :editor "中土智博" .
+
+# LTH_04
+<Eternal_Harmony> a :MusicComposition ;
+    :name "Eternal Harmony" ;
+    :lyricist "Ayaka Miyake" ;
+    :lyricist "TAKAROT" ;
+    :composer "Mitsuyuki Miyake" ;
+    :composer "K's" ;
+    :composer "TAKAROT" ;
+    :editor "K's" ;
+    :editor "TAKAROT" .
+
+<カーニヴァル・ジャパネスク> a :MusicComposition ;
+    :name "カーニヴァル・ジャパネスク" ;
+    :lyricist "松井洋平" ;
+    :composer "松井洋平" ;
+    :editor "AstroNoteS" .
+
+<プラリネ> a :MusicComposition ;
+    :name "プラリネ" ;
+    :lyricist "きみコ" ;
+    :composer "佐々木淳" ;
+    :editor "nano.RIPE" .
+
+<bitter_sweet> a :MusicComposition ;
+    :name "bitter sweet" ;
+    :lyricist "KOH" ;
+    :composer "KOH" ;
+    :editor "KOH" .
+
+<君だけの欠片> a :MusicComposition ;
+    :name "君だけの欠片" ;
+    :lyricist "藤本記子" ;
+    :composer "藤本記子" ;
+    :editor "福富雅之" .
+
+<Just_be_myself> a :MusicComposition ;
+    :name "Just be myself!!" ;
+    :lyricist "藤本記子" ;
+    :composer "山口朗彦" ;
+    :editor "山口朗彦" .
+
+# LTH_05
+<HOME_SWEET_FRIENDSHIP> a :MusicComposition ;
+    :name "HOME, SWEET FRIENDSHIP" ;
+    :lyricist "松井洋平" ;
+    :composer "AstroNoteS" ;
+    :editor "AstroNoteS" .
+
+<MY_STYLE_OUR_STYLE> a :MusicComposition ;
+    :name "MY STYLE! OUR STYLE!!!!" ;
+    :lyricist "前山田健一" ;
+    :composer "前山田健一" ;
+    :editor "板垣祐介" .
+
+<Super_Lover> a :MusicComposition ;
+    :name "Super Lover" ;
+    :lyricist "サイトウヨシヒロ" ;
+    :composer "サイトウヨシヒロ" ;
+    :editor "サイトウヨシヒロ" .
+
+<求ム_VS_マイ・フューチャー> a :MusicComposition ;
+    :name "求ム VS マイ・フューチャー" ;
+    :lyricist "藤本記子" ;
+    :composer "藤本記子" ;
+    :editor "福富雅之" .
+
+<Up_10sion♪Pleeeeeeeeease> a :MusicComposition ;
+    :name "Up!10sion♪Pleeeeeeeeease!" ;
+    :lyricist "松井洋平" ;
+    :composer "AstroNoteS" ;
+    :editor "AstroNoteS" .
+
+<キミがいて夢になる> a :MusicComposition ;
+    :name "キミがいて夢になる" ;
+    :lyricist "こだまさおり" ;
+    :composer "高田暁" ;
+    :editor "高田暁" .
+
+# LTH_06
+<ジレるハートに火をつけて> a :MusicComposition ;
+    :name "ジレるハートに火をつけて" ;
+    :lyricist "藤本記子" ;
+    :composer "増田武史" ;
+    :editor "増田武史" .
+
+<恋愛ロードランナー> a :MusicComposition ;
+    :name "恋愛ロードランナー" ;
+    :lyricist "唐沢美帆" ;
+    :composer "石田秀登" ;
+    :editor "石田秀登" .
+
+<BOUNCING♪_SMILE> a :MusicComposition ;
+    :name "BOUNCING♪ SMILE!" ;
+    :lyricist "松井洋平" ;
+    :composer "石田秀登" ;
+    :editor "石田秀登" .
+
+<初恋バタフライ> a :MusicComposition ;
+    :name "初恋バタフライ" ;
+    :lyricist "唐沢美帆" ;
+    :composer "石井健太郎" ;
+    :editor "石井健太郎" ;
+    :editor "福富雅之" .
+
+<フローズン・ワード> a :MusicComposition ;
+    :name "フローズン・ワード" ;
+    :lyricist "真崎エリカ" ;
+    :composer "桑原聖 (Arte Refact)" ;
+    :editor "酒井拓也 (Arte Refact)" .
+
+<ホントウノワタシ> a :MusicComposition ;
+    :name "ホントウノワタシ" ;
+    :lyricist "藤本記子" ;
+    :composer "野井洋児" ;
+    :editor "野井洋児" .
+
+# LTH_07
+<Birth_of_Color> a :MusicComposition ;
+    :name "Birth of Color" ;
+    :lyricist "藤本記子" ;
+    :composer "EFFY" ;
+    :editor "EFFY" .
+
+<WORLD_WIDE_DANCE> a :MusicComposition ;
+    :name "WORLD WIDE DANCE!!!" ;
+    :lyricist "唐沢美帆" ;
+    :composer "高田暁" ;
+    :editor "高田暁" .
+
+<ユニゾン☆ビート> a :MusicComposition ;
+    :name "ユニゾン☆ビート" ;
+    :lyricist "唐沢美帆" ;
+    :composer "高田暁" ;
+    :editor "高田暁" .
+
+<月のほとりで> a :MusicComposition ;
+    :name "月のほとりで" ;
+    :lyricist "ChouCho" ;
+    :composer "中土智博" ;
+    :editor "中土智博" .
+
+<Impervious_Resolution> a :MusicComposition ;
+    :name "Impervious Resolution" ;
+    :lyricist "ZAQ" ;
+    :composer "中土智博" ;
+    :editor "中土智博" .
+
+<おまじない> a :MusicComposition ;
+    :name "おまじない" ;
+    :lyricist "きみコ" ;
+    :composer "中土智博" ;
+    :editor "中土智博" .
+
+# LTH_08
+<ドリームトラベラー> a :MusicComposition ;
+    :name "ドリームトラベラー" ;
+    :lyricist "藤本記子" ;
+    :composer "藤本記子" ;
+    :editor "福富雅之" .
+
+<SUPER_SIZE_LOVE> a :MusicComposition ;
+    :name "SUPER SIZE LOVE!!" ;
+    :lyricist "松井洋平" ;
+    :composer "酒井拓也 (Arte Refact)" ;
+    :editor "酒井拓也 (Arte Refact)" .
+
+<アニマル☆ステイション> a :MusicComposition ;
+    :name "アニマル☆ステイション！" ;
+    :lyricist "松井洋平" ;
+    :composer "AstroNoteS" ;
+    :editor "AstroNoteS" .
+
+<りんごのマーチ> a :MusicComposition ;
+    :name "りんごのマーチ" ;
+    :lyricist "坂井季乃" ;
+    :composer "菊池達也" ;
+    :editor "菊池達也" .
+
+<WOW_I_NEED_〜シンギングモンキー_歌唱拳〜> a :MusicComposition ;
+    :name "WOW! I NEED!! 〜シンギングモンキー 歌唱拳〜" ;
+    :lyricist "松井洋平" ;
+    :composer "AstroNoteS" ;
+    :editor "AstroNoteS" .
+
+<水中キャンディ> a :MusicComposition ;
+    :name "水中キャンディ" ;
+    :lyricist "KOH" ;
+    :composer "KOH" ;
+    :editor "KOH" .
+
+# LTH_09
+<星屑のシンフォニア> a :MusicComposition ;
+    :name "星屑のシンフォニア" ;
+    :lyricist "藤本記子" ;
+    :composer "EFFY" ;
+    :editor "EFFY" .
+
+<FAKE_SELF×TRUE_SELF> a :MusicComposition ;
+    :name "FAKE SELF×TRUE SELF" ;
+    :lyricist "結城アイラ" ;
+    :composer "山口朗彦" ;
+    :editor "山口朗彦" .
+
+<恋の音色ライン> a :MusicComposition ;
+    :name "恋の音色ライン" ;
+    :lyricist "KOH" ;
+    :composer "KOH" ;
+    :editor "KOH" .
+
+<Day_After_“Yesterday”> a :MusicComposition ;
+    :name "Day After “Yesterday”" ;
+    :lyricist "松井洋平" ;
+    :composer "高田暁" ;
+    :editor "高田暁" .
+
+<鳥籠スクリプチュア> a :MusicComposition ;
+    :name "鳥籠スクリプチュア" ;
+    :lyricist "真崎エリカ" ;
+    :composer "酒井拓也 (Arte Refact)" ;
+    :editor "酒井拓也 (Arte Refact)" .
+
+<vivid_color> a :MusicComposition ;
+    :name "vivid color" ;
+    :lyricist "KOH" ;
+    :composer "KOH" ;
+    :editor "KOH" .
+
+# LTH_10
+<STANDING_ALIVE> a :MusicComposition ;
+    :name "STANDING ALIVE" ;
+    :lyricist "松井洋平" ;
+    :composer "中土智博" ;
+    :editor "中土智博" .
+
+<ファンタジスタ・カーニバル> a :MusicComposition ;
+    :name "ファンタジスタ・カーニバル" ;
+    :lyricist "真崎エリカ" ;
+    :composer "桑原聖 (Arte Refact)" ;
+    :editor "酒井拓也 (Arte Refact)" .
+
+<WHY> a :MusicComposition ;
+    :name "WHY?" ;
+    :lyricist "春和文" ;
+    :composer "中土智博" ;
+    :editor "中土智博" .
+
+<STEREOPHONIC_ISOTONIC> a :MusicComposition ;
+    :name "STEREOPHONIC ISOTONIC" ;
+    :lyricist "松井洋平" ;
+    :composer "AstroNoteS" ;
+    :editor "AstroNoteS" .
+
+<addicted> a :MusicComposition ;
+    :name "addicted" ;
+    :lyricist "KOH" ;
+    :composer "KOH" ;
+    :editor "KOH" .
+
+<夕風のメロディー> a :MusicComposition ;
+    :name "夕風のメロディー" ;
+    :lyricist "藤本記子" ;
+    :composer "野井洋児" ;
+    :editor "野井洋児" .
+
+# LTD_01
+<Dreaming> a :MusicComposition ;
+    :name "Dreaming!" ;
+    :lyricist "真崎エリカ" ;
+    :composer "BNSI (佐藤貴文)" ;
+    :editor "Arte Refact" .
+
+# LTD_02
+<ハルカナミライ> a :MusicComposition ;
+    :name "ハルカナミライ" ;
+    :lyricist "藤本記子" ;
+    :composer "増谷健" ;
+    :editor "増谷健" .
+
+<成長Chu→LOVER> a :MusicComposition ;
+    :name "成長Chu→LOVER!!" ;
+    :lyricist "真崎エリカ" ;
+    :composer "桑原聖 (Arte Refact)" ;
+    :editor "酒井拓也 (Arte Refact)" .
+
+<エスケープ> a :MusicComposition ;
+    :name "エスケープ" ;
+    :lyricist "きみコ" ;
+    :composer "AstroNoteS" ;
+    :editor "AstroNoteS" .
+
+<Eternal_Spiral> a :MusicComposition ;
+    :name "Eternal Spiral" ;
+    :lyricist "松井洋平" ;
+    :composer "AstroNoteS" ;
+    :editor "AstroNoteS" .
+
+<piece_of_cake> a :MusicComposition ;
+    :name "piece of cake" ;
+    :lyricist "松井洋平" ;
+    :composer "AstroNoteS" ;
+    :editor "AstroNoteS" .
+
+# LTD_03
+<アライブファクター> a :MusicComposition ;
+    :name "アライブファクター" ;
+    :lyricist "藤本記子" ;
+    :composer "藤本記子" ;
+    :editor "福富雅之" .
+
+<Persona_Voice> a :MusicComposition ;
+    :name "Persona Voice" ;
+    :lyricist "真崎エリカ" ;
+    :composer "山口朗彦" ;
+    :editor "山口朗彦" .
+
+<Cut_Cut_Cut> a :MusicComposition ;
+    :name "Cut. Cut. Cut." ;
+    :lyricist "松井洋平" ;
+    :composer "睦月周平" ;
+    :editor "睦月周平" .
+
+<Smiling_Crescent> a :MusicComposition ;
+    :name "Smiling Crescent" ;
+    :lyricist "松井洋平" ;
+    :composer "板垣祐介" ;
+    :editor "板垣祐介" .
+
+<Decided> a :MusicComposition ;
+    :name "Decided" ;
+    :lyricist "結城アイラ" ;
+    :composer "山口朗彦" ;
+    :editor "山口朗彦" .
+
+# LTD_04
+<深層マーメイド> a :MusicComposition ;
+    :name "深層マーメイド" ;
+    :lyricist "唐沢美帆" ;
+    :composer "睦月周平" ;
+    :editor "睦月周平" .
+
+<HELLO_YOUR_ANGEL♪> a :MusicComposition ;
+    :name "HELLO, YOUR ANGEL♪" ;
+    :lyricist "真崎エリカ" ;
+    :composer "鈴木裕明" ;
+    :editor "鈴木裕明" .
+
+<G♡F> a :MusicComposition ;
+    :name "G♡F" ;
+    :lyricist "KOH" ;
+    :composer "KOH" ;
+    :editor "KOH" .
+
+<little_trip_around_the_world> a :MusicComposition ;
+    :name "little trip around the world" ;
+    :lyricist "松井洋平" ;
+    :composer "yuxuki waga (fhána)" ;
+    :editor "yuxuki waga (fhána)" .
+
+<Melody_in_scape> a :MusicComposition ;
+    :name "Melody in scape" ;
+    :lyricist "真崎エリカ" ;
+    :composer "光増ハジメ" ;
+    :editor "光増ハジメ" .
+
+# LTD_05
+<“Your”_HOME_TOWN> a :MusicComposition ;
+    :name "“Your” HOME TOWN" ;
+    :lyricist "松井洋平" ;
+    :composer "AstroNoteS" ;
+    :editor "AstroNoteS" .
+
+<fruity_love> a :MusicComposition ;
+    :name "fruity love" ;
+    :lyricist "宮崎まゆ" ;
+    :composer "宮崎まゆ" ;
+    :editor "高橋修平" .
+
+<夜に輝く星座のように> a :MusicComposition ;
+    :name "夜に輝く星座のように" ;
+    :lyricist "松井洋平" ;
+    :composer "板垣祐介" ;
+    :editor "板垣祐介" .
+
+<秘密のメモリーズ> a :MusicComposition ;
+    :name "秘密のメモリーズ" ;
+    :lyricist "KOH" ;
+    :composer "KOH" ;
+    :editor "KOH" .
+
+<たしかな足跡> a :MusicComposition ;
+    :name "たしかな足跡" ;
+    :lyricist "藤本記子" ;
+    :composer "藤本記子" ;
+    :editor "福富雅之" .
+
+# LTD_06
+<Understand_Understand> a :MusicComposition ;
+    :name "Understand? Understand!" ;
+    :lyricist "真崎エリカ" ;
+    :composer "桑原聖 (Arte Refact)" ;
+    :editor "酒井拓也 (Arte Refact)" .
+
+<ジャングル☆パーティー> a :MusicComposition ;
+    :name "ジャングル☆パーティー" ;
+    :lyricist "松井洋平" ;
+    :composer "AstroNoteS" ;
+    :editor "AstroNoteS" .
+
+<Beat_the_World> a :MusicComposition ;
+    :name "Beat the World!!!" ;
+    :lyricist "唐沢美帆" ;
+    :composer "EFFY" ;
+    :editor "EFFY" .
+
+<Emergence_Vibe> a :MusicComposition ;
+    :name "Emergence Vibe" ;
+    :lyricist "松井洋平" ;
+    :composer "AstroNoteS" ;
+    :editor "AstroNoteS" .
+
+<Dreamscape> a :MusicComposition ;
+    :name "Dreamscape" ;
+    :lyricist "藤本記子" ;
+    :composer "藤本記子" ;
+    :editor "福富雅之" .
+
+# Tx
+<DIAMOND_DAYS> a :MusicComposition ;
+    :name "DIAMOND DAYS" ;
+    :lyricist "rino" ;
+    :composer "高田暁" ;
+    :editor "高田暁" .
+
+# TA_01
+<創造は始まりの風を連れて> a :MusicComposition ;
+    :name "創造は始まりの風を連れて" ;
+    :lyricist "結城アイラ" ;
+    :composer "KOHTA YAMAMOTO" ;
+    :editor "KOHTA YAMAMOTO" .
+
+# TA_02
+<俠気乱舞> a :MusicComposition ;
+    :name "俠気乱舞" ;
+    :lyricist "松井洋平" ;
+    :composer "yuxuki waga (fhána)" ;
+    :editor "yuxuki waga (fhána)" ;
+    :editor "sasakure.UK" .
+
+# TA_03
+<赤い世界が消える頃> a :MusicComposition ;
+    :name "赤い世界が消える頃" ;
+    :lyricist "真崎エリカ" ;
+    :composer "光増ハジメ" ;
+    :editor "光増ハジメ" .
+
+# LTF_01
+<ランニング・ハイッ> a :MusicComposition ;
+    :name "ランニング・ハイッ" ;
+    :lyricist "松井洋平" ;
+    :composer "睦月周平" ;
+    :editor "睦月周平" .
+
+<ゲキテキ_ムテキ_恋したい> a :MusicComposition ;
+    :name "ゲキテキ！ムテキ！恋したい！" ;
+    :lyricist "藤本記子" ;
+    :composer "藤本記子" ;
+    :editor "福富雅之" .
+
+<Bonnes_Bonnes_Vacances> a :MusicComposition ;
+    :name "Bonnes! Bonnes!! Vacances!!!" ;
+    :lyricist "松井洋平" ;
+    :composer "AstroNoteS" ;
+    :editor "AstroNoteS" .
+
+<NO_CURRY_NO_LIFE> a :MusicComposition ;
+    :name "NO CURRY NO LIFE" ;
+    :lyricist "唐沢美帆" ;
+    :composer "板垣祐介" ;
+    :editor "板垣祐介" .
+
+<サンリズム・オーケストラ♪> a :MusicComposition ;
+    :name "サンリズム・オーケストラ♪" ;
+    :lyricist "真崎エリカ" ;
+    :composer "EFFY" ;
+    :editor "EFFY" .
+
+# LTF_02
+<Raise_the_FLAG> a :MusicComposition ;
+    :name "Raise the FLAG" ;
+    :lyricist "松井洋平" ;
+    :composer "堀江晶太" ;
+    :editor "堀江晶太" .
+
+<PS_I_Love_You> a :MusicComposition ;
+    :name "P.S I Love You" ;
+    :lyricist "唐沢美帆" ;
+    :composer "ラムシーニ" ;
+    :editor "ラムシーニ" .
+
+<プリムラ> a :MusicComposition ;
+    :name "プリムラ" ;
+    :lyricist "KOH" ;
+    :composer "KOH" ;
+    :editor "KOH" .
+
+<待ちぼうけのLacrima> a :MusicComposition ;
+    :name "待ちぼうけのLacrima" ;
+    :lyricist "真崎エリカ" ;
+    :composer "小高光太郎" ;
+    :composer "UiNA" ;
+    :editor "小高光太郎" .
+
+<brave_HARMONY> a :MusicComposition ;
+    :name "brave HARMONY" ;
+    :lyricist "結城アイラ" ;
+    :composer "山口朗彦" ;
+    :editor "山口朗彦" .
+
+# LTF_03
+<リフレインキス> a :MusicComposition ;
+    :name "リフレインキス" ;
+    :lyricist "藤本記子" ;
+    :composer "藤本記子" ;
+    :editor "福富雅之" .
+
+<Sweet_Sweet_Soul> a :MusicComposition ;
+    :name "Sweet Sweet Soul" ;
+    :lyricist "ZAQ" ;
+    :composer "BERABOW" ;
+    :composer "SigN" ;
+    :editor "Shinnosuke" .
+
+<メメント_モメント♪ルルルルル☆> a :MusicComposition ;
+    :name "メメント？モメント♪ルルルルル☆" ;
+    :lyricist "松井洋平" ;
+    :composer "宮崎まゆ" ;
+    :editor "ラムシーニ" .
+
+<永遠の花> a :MusicComposition ;
+    :name "永遠の花" ;
+    :lyricist "森由里子" ;
+    :composer "三好啓太" ;
+    :editor "三好啓太" .
+
+<Starry_Melody> a :MusicComposition ;
+    :name "Starry Melody" ;
+    :lyricist "こだまさおり" ;
+    :composer "高田暁" ;
+    :editor "高田暁" .
+
+# MTG_01
+<Brand_New_Theater> a :MusicComposition ;
+    :name "Brand New Theater!" ;
+    :lyricist "モモキエイジ" ;
+    :composer "BNSI (佐藤貴文)" ;
+    :editor "EFFY" .
+
+<インヴィンシブル・ジャスティス> a :MusicComposition ;
+    :name "インヴィンシブル・ジャスティス" ;
+    :lyricist "松井洋平" ;
+    :composer "中山真斗" ;
+    :editor "中山真斗" .
+
+# MTG_02
+<FairyTaleじゃいられない> a :MusicComposition ;
+    :name "FairyTaleじゃいられない" ;
+    :lyricist "結城アイラ" ;
+    :composer "堀江晶太" ;
+    :editor "堀江晶太" .
+
+# MTG_03
+<Angelic_Parade♪> a :MusicComposition ;
+    :name "Angelic Parade♪" ;
+    :lyricist "こだまさおり" ;
+    :composer "rionos" ;
+    :editor "rionos" .
+
+# MTG_04
+<Princess_Be_Ambitious> a :MusicComposition ;
+    :name "Princess Be Ambitious!!" ;
+    :lyricist "藤本記子 (Nostalgic Orchestra)" ;
+    :composer "新田目翔" ;
+    :editor "福富雅之 (Nostalgic Orchestra)" .
+
+# MTG_05
+<昏き星、遠い月> a :MusicComposition ;
+    :name "昏き星、遠い月" ;
+    :lyricist "BNSI (青木朋子)" ;
+    :lyricist "松井洋平" ;
+    :composer "伊藤賢" ;
+    :editor "伊藤賢" .
+
+<Everlasting> a :MusicComposition ;
+    :name "Everlasting" ;
+    :lyricist "青木朋子" ;
+    :lyricist "久澄春人" ;
+    :composer "shilo" ;
+    :editor "佐野宏晃" .
+
+# MTG_06
+<虹色letters> a :MusicComposition ;
+    :name "虹色letters" ;
+    :lyricist "KOH" ;
+    :composer "高田暁" ;
+    :editor "高田暁" .
+
+<想い出はクリアスカイ> a :MusicComposition ;
+    :name "想い出はクリアスカイ" ;
+    :lyricist "KOH" ;
+    :composer "本多友紀 (Arte Refact)" ;
+    :editor "本多友紀 (Arte Refact)" .
+
+# MTG_07
+<ZETTAI_×_BREAK_トゥインクルリズム> a :MusicComposition ;
+    :name "ZETTAI × BREAK!! トゥインクルリズム" ;
+    :lyricist "松井洋平" ;
+    :composer "KOHTA YAMAMOTO" ;
+    :editor "KOHTA YAMAMOTO" .
+
+<Tomorrow_Program> a :MusicComposition ;
+    :name "Tomorrow Program" ;
+    :lyricist "松井洋平" ;
+    :composer "光増ハジメ" ;
+    :editor "光増ハジメ" .
+
+# MTG_08
+<Melty_Fantasia> a :MusicComposition ;
+    :name "Melty Fantasia" ;
+    :lyricist "モリタコータ" ;
+    :composer "小高光太郎" ;
+    :editor "小高光太郎" .
+
+<ID_〜EScape_from_Utopia〜> a :MusicComposition ;
+    :name "I.D〜EScape from Utopia〜" ;
+    :lyricist "モリタコータ" ;
+    :composer "中土智博" ;
+    :editor "中土智博" .
+
+# MTG_09
+<花ざかりWeekend✿> a :MusicComposition ;
+    :name "花ざかりWeekend✿" ;
+    :lyricist "唐沢美帆" ;
+    :composer "新田目翔" ;
+    :editor "新田目翔" .
+
+<RED_ZONE> a :MusicComposition ;
+    :name "RED ZONE" ;
+    :lyricist "唐沢美帆" ;
+    :composer "太田貴之" ;
+    :editor "太田貴之" .
+
+# MTG_10
+<咲くは浮世の君花火> a :MusicComposition ;
+    :name "咲くは浮世の君花火" ;
+    :lyricist "真崎エリカ" ;
+    :composer "山本陽介" ;
+    :editor "EFFY" .
+
+<BORN_ON_DREAM_〜HANABI☆NIGHT〜> a :MusicComposition ;
+    :name "BORN ON DREAM! 〜HANABI☆NIGHT〜" ;
+    :lyricist "松井洋平" ;
+    :composer "AstroNoteS" ;
+    :editor "AstroNoteS" .
+
+# MTG_11
+<UNION> a :MusicComposition ;
+    :name "UNION!!" ;
+    :lyricist "藤本記子 (Nostalgic Orchestra)" ;
+    :composer "堀江晶太" ;
+    :editor "堀江晶太" .
+
+# MTG_12
+<ハーモニクス> a :MusicComposition ;
+    :name "ハーモニクス" ;
+    :lyricist "坂井季乃" ;
+    :composer "高橋諒" ;
+    :editor "高橋諒" .
+
+<餞の鳥> a :MusicComposition ;
+    :name "餞の鳥" ;
+    :lyricist "坂井季乃" ;
+    :composer "高橋諒" ;
+    :editor "高橋諒" .
+
+# MTG_13
+<ハルマチ女子> a :MusicComposition ;
+    :name "ハルマチ女子" ;
+    :lyricist "HoneyWorks" ;
+    :composer "HoneyWorks" ;
+    :editor "HoneyWorks" .
+
+<彼氏になってよ。> a :MusicComposition ;
+    :name "彼氏になってよ。" ;
+    :lyricist "HoneyWorks" ;
+    :composer "HoneyWorks" ;
+    :editor "HoneyWorks" .
+
+# MTG_14
+<だってあなたはプリンセス> a :MusicComposition ;
+    :name "だってあなたはプリンセス" ;
+    :lyricist "新田目駿" ;
+    :composer "新田目駿" ;
+    :editor "KOH" .
+
+<ミラージュ・ミラー> a :MusicComposition ;
+    :name "ミラージュ・ミラー" ;
+    :lyricist "KOH" ;
+    :lyricist "月丘りあ子" ;
+    :composer "KOH" ;
+    :editor "KOH" .
+
+# MTG_15
+<月曜日のクリームソーダ> a :MusicComposition ;
+    :name "月曜日のクリームソーダ" ;
+    :lyricist "安藤紗々" ;
+    :composer "原知也" ;
+    :editor "ラムシーニ" .
+
+<I_did_I_will> a :MusicComposition ;
+    :name "I did+I will" ;
+    :lyricist "安藤紗々" ;
+    :composer "gen" ;
+    :composer "伊藤“三代”タカシ" ;
+    :editor "gen" .
+
+# MTG_16
+<ピコピコIIKO_インベーダー> a :MusicComposition ;
+    :name "ピコピコIIKO! インベーダー" ;
+    :lyricist "松井洋平" ;
+    :composer "AstroNoteS" ;
+    :editor "AstroNoteS" .
+
+<Get_lol_Get_lol_SONG> a :MusicComposition ;
+    :name "Get lol! Get lol! SONG" ;
+    :lyricist "松井洋平" ;
+    :composer "AstroNoteS" ;
+    :editor "AstroNoteS" .
+
+# MTG_17
+<Episode_Tiara> a :MusicComposition ;
+    :name "Episode. Tiara" ;
+    :lyricist "真崎エリカ" ;
+    :composer "EFFY" ;
+    :editor "EFFY" .
+
+<ギブミーメタファー> a :MusicComposition ;
+    :name "ギブミーメタファー" ;
+    :lyricist "真崎エリカ" ;
+    :composer "田中俊亮" ;
+    :editor "田中俊亮" .
+
+# MTG_18
+<LEADER> a :MusicComposition ;
+    :name "LEADER!!" ;
+    :lyricist "星銀乃丈" ;
+    :composer "星銀乃丈" ;
+    :editor "星銀乃丈" .
+
+# MS_01
+<ローリング△さんかく> a :MusicComposition ;
+    :name "ローリング△さんかく" ;
+    :lyricist "安藤紗々" ;
+    :composer "松坂康司" ;
+    :editor "松坂康司" .
+
+<地球儀にない国> a :MusicComposition ;
+    :name "地球儀にない国" ;
+    :lyricist "森由里子" ;
+    :composer "佐藤純一 (fhána)" ;
+    :editor "yuxuki waga (fhána)" .
+
+<祈りの羽根> a :MusicComposition ;
+    :name "祈りの羽根" ;
+    :lyricist "rino" ;
+    :composer "EFFY" ;
+    :editor "EFFY" .
+
+<瑠璃色金魚と花菖蒲> a :MusicComposition ;
+    :name "瑠璃色金魚と花菖蒲" ;
+    :lyricist "中村彼方" ;
+    :composer "ラムシーニ" ;
+    :editor "ラムシーニ" .
+
+<未来系ドリーマー> a :MusicComposition ;
+    :name "未来系ドリーマー" ;
+    :lyricist "唐沢美帆" ;
+    :composer "板垣祐介" ;
+    :editor "板垣祐介" .
+
+# MS_02
+<プリンセス・アラモード> a :MusicComposition ;
+    :name "プリンセス・アラモード" ;
+    :lyricist "松井洋平" ;
+    :composer "松井洋平" ;
+    :composer "AstroNoteS" ;
+    :editor "AstroNoteS" .
+
+<HOME_RUN_SONG♪> a :MusicComposition ;
+    :name "HOME RUN SONG♪" ;
+    :lyricist "結城アイラ" ;
+    :composer "中土智博" ;
+    :editor "中土智博" .
+
+<ロケットスター☆> a :MusicComposition ;
+    :name "ロケットスター☆" ;
+    :lyricist "真崎エリカ" ;
+    :composer "本多友紀 (Arte Refact)" ;
+    :editor "本多友紀 (Arte Refact)" .
+
+<CAT_CROSSING> a :MusicComposition ;
+    :name "CAT CROSSING" ;
+    :lyricist "中村彼方" ;
+    :composer "中野ゆう" ;
+    :editor "EFFY" .
+
+<ハミングバード> a :MusicComposition ;
+    :name "ハミングバード" ;
+    :lyricist "藤本記子" ;
+    :composer "福富雅之" ;
+    :editor "福富雅之" .
+
+# MS_03
+<Come_on_a_Tea_Party> a :MusicComposition ;
+    :name "Come on a Tea Party!" ;
+    :lyricist "中村彼方" ;
+    :composer "光増ハジメ" ;
+    :editor "光増ハジメ" .
+
+<満腹至極フルコォス> a :MusicComposition ;
+    :name "満腹至極フルコォス" ;
+    :lyricist "安藤紗々" ;
+    :composer "ラムシーニ" ;
+    :editor "ラムシーニ" .
+
+<Only_One_Second> a :MusicComposition ;
+    :name "Only One Second" ;
+    :lyricist "松井洋平" ;
+    :composer "石谷桂亮" ;
+    :editor "遠藤直弥" ;
+    :editor "石谷桂亮" .
+
+<To> a :MusicComposition ;
+    :name "To..." ;
+    :lyricist "KOH" ;
+    :composer "KOH" ;
+    :editor "KOH" .
+
+<SING_MY_SONG> a :MusicComposition ;
+    :name "SING MY SONG" ;
+    :lyricist "松井洋平" ;
+    :composer "黒須克彦" ;
+    :editor "黒須克彦" .
+
+# MS_05
+<AIKANE> a :MusicComposition ;
+    :name "AIKANE？" ;
+    :lyricist "ZAQ" ;
+    :composer "ZAQ" ;
+    :editor "CMJK" .
+
+<スポーツ_スポーツ_スポーツ> a :MusicComposition ;
+    :name "スポーツ！スポーツ！スポーツ！" ;
+    :lyricist "前山田健一" ;
+    :composer "前山田健一" ;
+    :editor "サイトウヨシヒロ" .
+
+<ART_NEEDS_HEART_BEATS> a :MusicComposition ;
+    :name "ART NEEDS HEART BEATS" ;
+    :lyricist "松井洋平" ;
+    :composer "AstroNoteS" ;
+    :editor "AstroNoteS" .
+
+<ENTER→PLEASURE> a :MusicComposition ;
+    :name "ENTER→PLEASURE" ;
+    :lyricist "真崎エリカ" ;
+    :composer "原田篤 (Arte Refact)" ;
+    :editor "脇眞富 (Arte Refact)" .
+
+<あめにうたおう♪> a :MusicComposition ;
+    :name "あめにうたおう♪" ;
+    :lyricist "安藤紗々" ;
+    :composer "久澄春人" ;
+    :editor "福富雅之" .
+
+# MS_06
+<Border_LINE→→→♡> a :MusicComposition ;
+    :name "Border LINE→→→♡" ;
+    :lyricist "唐沢美帆" ;
+    :composer "睦月周平" ;
+    :editor "睦月周平" .
+
+<ふわりずむ> a :MusicComposition ;
+    :name "ふわりずむ" ;
+    :lyricist "rino" ;
+    :composer "渡部チェル" ;
+    :editor "渡部チェル" .
+
+<たんけんぼうけん☆ハイホー隊> a :MusicComposition ;
+    :name "たんけんぼうけん☆ハイホー隊" ;
+    :lyricist "藤本記子 (Nostalgic Orchestra)" ;
+    :composer "本多友紀 (Arte Refact)" ;
+    :editor "酒井拓也 (Arte Refact)" .
+
+<Silent_Joker> a :MusicComposition ;
+    :name "Silent Joker" ;
+    :lyricist "中村彼方" ;
+    :composer "ANCHOR" ;
+    :editor "ANCHOR" .
+
+<はなしらべ> a :MusicComposition ;
+    :name "はなしらべ" ;
+    :lyricist "藤本記子 (Nostalgic Orchestra)" ;
+    :composer "藤本記子 (Nostalgic Orchestra)" ;
+    :editor "福富雅之 (Nostalgic Orchestra)" .
+
+# MS_06
+<WE_ARE_ONE> a :MusicComposition ;
+    :name "WE ARE ONE!!" ;
+    :lyricist "藤本記子 (Nostalgic Orchestra)" ;
+    :composer "藤本記子 (Nostalgic Orchestra)" ;
+    :editor "福富雅之 (Nostalgic Orchestra)" .
+
+<Home_is_a_coming_now> a :MusicComposition ;
+    :name "Home is a coming now!" ;
+    :lyricist "伊福部崇" ;
+    :composer "伊藤賢" ;
+    :editor "伊藤賢" .
+
+<Oli_Oli_DISCO> a :MusicComposition ;
+    :name "Oli Oli DISCO" ;
+    :lyricist "真崎エリカ" ;
+    :composer "Shinnosuke" ;
+    :editor "Shinnosuke" .
+
+<ムーンゴールド> a :MusicComposition ;
+    :name "ムーンゴールド" ;
+    :lyricist "中村彼方" ;
+    :composer "松田彬人" ;
+    :editor "松田彬人" .
+
+<スタートリップ> a :MusicComposition ;
+    :name "スタートリップ" ;
+    :lyricist "きみコ" ;
+    :composer "ハヤシケイ" ;
+    :editor "ササキジュン" .
+
+# MS_07
+<Take_3_2_1_→S・P・A・C・E↑↑> a :MusicComposition ;
+    :name "Take! 3.2.1.→S・P・A・C・E↑↑" ;
+    :lyricist "松井洋平" ;
+    :composer "AstroNoteS" ;
+    :editor "AstroNoteS" .
+
+<ときどきシーソー> a :MusicComposition ;
+    :name "ときどきシーソー" ;
+    :lyricist "真崎エリカ" ;
+    :composer "原田篤 (Arte Refact)" ;
+    :editor "原田篤 (Arte Refact)" .
+
+<スノウレター> a :MusicComposition ;
+    :name "スノウレター" ;
+    :lyricist "藤本記子 (Nostalgic Orchestra)" ;
+    :composer "岩瀬賢明 (とけた電球)" ;
+    :editor "福富雅之 (Nostalgic Orchestra)" .
+
+<教えてlast_note> a :MusicComposition ;
+    :name "教えてlast note…" ;
+    :lyricist "安藤紗々" ;
+    :composer "奈須野新平" ;
+    :editor "奈須野新平" .
+
+<Hearty> a :MusicComposition ;
+    :name "Hearty!!" ;
+    :lyricist "藤本記子 (Nostalgic Orchestra)" ;
+    :composer "増谷賢" ;
+    :editor "増谷賢" .
+
+# MS_08
+<シャクネツのパレード> a :MusicComposition ;
+    :name "シャクネツのパレード" ;
+    :lyricist "安藤紗々" ;
+    :composer "ラムシーニ" ;
+    :editor "ラムシーニ" .
+
+<空に手が触れる場所> a :MusicComposition ;
+    :name "空に手が触れる場所" ;
+    :lyricist "真崎エリカ" ;
+    :composer "矢鴇つかさ (Arte Refact)" ;
+    :editor "矢鴇つかさ (Arte Refact)" .
+
+<Sister> a :MusicComposition ;
+    :name "Sister" ;
+    :lyricist "小岩井ことり" ;
+    :composer "小岩井ことり" ;
+    :editor "KOHTA YAMAMOTO" .
+
+<シルエット> a :MusicComposition ;
+    :name "シルエット" ;
+    :lyricist "坂井季乃" ;
+    :composer "山口朗彦" ;
+    :editor "山口朗彦" .
+
+# TB_01
+<ビッグバンズバリボー> a :MusicComposition ;
+    :name "ビッグバンズバリボー!!!!!" ;
+    :lyricist "ZAQ" ;
+    :composer "ZAQ" ;
+    :editor "ZAQ" .
+
+# TB_02
+<オーディナリィ・クローバー> a :MusicComposition ;
+    :name "オーディナリィ・クローバー" ;
+    :lyricist "松井洋平" ;
+    :composer "菊池達也" ;
+    :editor "菊池達也" .
+
+# TB_03
+<ラスト・アクトレス> a :MusicComposition ;
+    :name "ラスト・アクトレス" ;
+    :lyricist "中村彼方" ;
+    :composer "R・O・N" ;
+    :editor "睦月周平" .
+
+# MTW_01
+<Flyers> a :MusicComposition ;
+    :name "Flyers!!!" ;
+    :lyricist "唐沢美帆" ;
+    :composer "新田目翔" ;
+    :editor "新田目翔" .
+
+<Justice_OR_Voice> a :MusicComposition ;
+    :name "Justice OR Voice" ;
+    :lyricist "真崎エリカ" ;
+    :composer "矢鴇つかさ (Arte Refact)" ;
+    :editor "矢鴇つかさ (Arte Refact)" .
+
+<White_Vows> a :MusicComposition ;
+    :name "White Vows" ;
+    :lyricist "結城アイラ" ;
+    :composer "遠藤直弥" ;
+    :editor "遠藤直弥" .
+
+# MTW_02
+<dans_lobscurité> a :MusicComposition ;
+    :name "dans l'obscurité" ;
+    :lyricist "中村彼方" ;
+    :composer "大和" ;
+    :editor "大和" .
+
+<囚われのTeaTime> a :MusicComposition ;
+    :name "囚われのTeaTime" ;
+    :lyricist "島みやえい子" ;
+    :composer "大和" ;
+    :editor "大和" .
+
+# MTW_03
+<ラビットファー> a :MusicComposition ;
+    :name "ラビットファー" ;
+    :lyricist "OSTER project" ;
+    :composer "OSTER project" ;
+    :editor "OSTER project" .
+
+<Dreamy_Dream> a :MusicComposition ;
+    :name "Dreamy Dream" ;
+    :lyricist "OSTER project" ;
+    :composer "OSTER project" ;
+    :editor "OSTER project" .
+
+# ミリラジ
+<Welcome_-MR_remix-> a :MusicComposition ;
+    :name "Welcome!! -MR remix-" ;
+    :lyricist "佐々木恵梨" ;
+    :composer "BNSI (佐藤貴文)" ;
+    :editor "AstroNoteS" .
+
+<U・N・M・E・I_ライブ> a :MusicComposition ;
+    :name "U・N・M・E・I ライブ" ;
+    :lyricist "伊福部崇" ;
+    :composer "増谷賢" ;
+    :editor "長田直之" .
+
+<Thank_You_-MR_remix-> a :MusicComposition ;
+    :name "Thank You! -MR remix-" ;
+    :isBasedOn <Thank_You> ;
+    :lyricist "NBSI (モモキエイジ)" ;
+    :composer "NBSI (佐藤貴文)" ;
+    :editor "矢鴇つかさ (Arte Refact)" .
+
+<ターンオンタイム> a :MusicComposition ;
+    :name "ターンオンタイム！" ;
+    :lyricist "伊福部崇" ;
+    :composer "三好啓太" ;
+    :editor "三好啓太" .
+
+<Dreaming_-MR_remix-> a :MusicComposition ;
+    :name "Dreaming! -MR remix" ;
+    :isBasedOn <Dreaming> ;
+    :lyricist "真崎エリカ" ;
+    :composer "BNSI (佐藤貴文)" ;
+    :editor "KOH" .
+
+# ゲッサン_CD_01
+<青い鳥> a :MusicComposition ;
+    :name "青い鳥" ;
+    :lyricist "森由里子" ;
+    :composer "NBGI (椎名豪)" .
+
+<GO_MY_WAY> a :MusicComposition ;
+    :name "GO MY WAY!!" ;
+    :lyricist "yura" ;
+    :composer "NBGI (神前暁)" .
+
+# ゲッサン_CD_02
+<ビジョナリー> a :MusicComposition ;
+    :name "ビジョナリー" ;
+    :lyricist "NBGI (mtf)" ;
+    :composer "NBGI (中川浩二)" .
+
+<キミはメロディ> a :MusicComposition ;
+    :name "キミはメロディ" ;
+    :lyricist "遠藤フビト" ;
+    :composer "内田哲也" .
+
+# ゲッサン_CD_03
+<アイル> a :MusicComposition ;
+    :name "アイル" ;
+    :lyricist "きみコ" ;
+    :composer "佐々木淳" ;
+    :editor "nano.RIPE" .
+
+<my_song> a :MusicComposition ;
+    :name "my_song" ;
+    :lyricist "yura" ;
+    :composer "神前暁" .
+
+# ゲッサン_CD_04
+<Flooding> a :MusicComposition ;
+    :name "Flooding" ;
+    :lyricist "真崎エリカ" ;
+    :composer "矢鴇つかさ (Arte Refact)" ;
+    :editor "矢鴇つかさ (Arte Refact)" .
+
+<Vault_That_Borderline> a :MusicComposition ;
+    :name "Valut That Borderline!" ;
+    :lyricist "NBGI (LindaAi-CUE)" ;
+    :composer "NBGI (LindaAi-CUE)" .
+
+# ゲッサン_CD_05
+<君との明日を願うから> a :MusicComposition ;
+    :name "君との明日を願うから" ;
+    :lyricist "真崎エリカ" ;
+    :composer "原田篤 (Arte Refact)" ;
+    :editor "酒井拓也 (Arte Refact)" .
+
+<私はアイドル♡> a :MusicComposition ;
+    :name "私はアイドル♡" ;
+    :lyricist "中村恵" ;
+    :composer "佐々木宏人" .
+
+# BC_CD_01
+<L・O・B・M> a :MusicComposition ;
+    :name "L・O・B・M" ;
+    :lyricist "mft (BNEI)" ;
+    :composer "高田龍一 (BNEI)" .
+
+<ゲンキトリッパー> a :MusicComposition ;
+    :name "ゲンキトリッパー" ;
+    :lyricist "おおくぼひろし (BNEI)" ;
+    :composer "おおくぼひろし (BNEI)" ;
+    :editor "おおくぼひろし (BNEI)" .
+
+<DREAM> a :MusicComposition ;
+    :name "DREAM" ;
+    :lyricist "yura Dark" ;
+    :composer "中川浩二 (BNEI)" ;
+    :editor "増渕裕二 (BNEI)" ;
+    :editor "中川浩二 (BNEI)" .
+
+# BC_CD_02
+<Do-Dai> a :MusicComposition ;
+    :name "Do-Dai" ;
+    :lyricist "mtf (BNEI)" ;
+    :composer "中川浩二 (BNEI)" .
+
+<フラワーガール> a :MusicComposition ;
+    :name "フラワーガール" ;
+    :lyricist "Yoshi (BNEI)" ;
+    :lyricist "Kyon (BNEI)" ;
+    :composer "Yoshi (BNEI)" ;
+    :editor "Yoshi (BNEI)" .
+
+<スマイル体操> a :MusicComposition ;
+    :name "スマイル体操" ;
+    :lyricist "yura" ;
+    :composer "宮崎誠" ;
+    :editor "宮崎誠" .
+
+# BC_CD_03
+<神SUMMER> a :MusicComposition ;
+    :name "神SUMMER!!" ;
+    :lyricist "yura" ;
+    :composer "田中秀和" ;
+    :editor "田中秀和" .
+
+<ONLY_MY_NOTE> a :MusicComposition ;
+    :name "ONLY MY NOTE" ;
+    :lyricist "marhy" ;
+    :composer "BNSI (内田哲也)" .
+
+<MUSIC♪> a :MusicComposition ;
+    :name "MUSIC♪" ;
+    :lyricist "yura" ;
+    :composer "BNEI (渡辺量)" .
+
+# BC_CD_04
+<チェリー> a :MusicComposition ;
+    :name "チェリー" ;
+    :lyricist "yura" ;
+    :composer "Funta7" ;
+    :editor "Funta7" .
+
+<i> a :MusicComposition ;
+    :name "i" ;
+    :lyricist "中村恵" ;
+    :composer "BNEI (佐々木宏人)" .
+
+# BC_CD_05
+<Clover_Days> a :MusicComposition ;
+    :name "Clover Days" ;
+    :lyricist "工藤了" ;
+    :composer "じん" ;
+    :editor "堀江晶太" .
+
+<キラメキラリ> a :MusicComposition ;
+    :name "キラメキラリ" ;
+    :lyricist "yura" ;
+    :composer "神前暁" ;
+    :editor "神前暁" .
+
+<メリー> a :MusicComposition ;
+    :name "メリー" ;
+    :lyricist "yura" ;
+    :composer "Funta" ;
+    :editor "Funta" .
+
+# etc
+<MUSIC_JOURNEY> a :MusicComposition ;
+    :name "MUSIC JOURNEY" ;
+    :lyricist "藤本記子 (Nostalgic Orchestra)" ;
+    :composer "福富雅之 (Nostalgic Orchestra)" ;
+    :editor "福富雅之 (Nostalgic Orchestra)" .
+
+<さかしまの言葉> a :MusicComposition ;
+    :name "さかしまの言葉" ;
+    :lyricist "中村彼方" ;
+    :composer "高橋諒" ;
+    :editor "高橋諒" .

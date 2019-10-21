@@ -1,0 +1,429 @@
+BASE <https://mltd.pikopikopla.net/resource/>
+PREFIX mltd: <https://mltd.pikopikopla.net/mltd-schema#>
+PREFIX : <http://schema.org/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# NOTE:
+# デフォルトの順番を :position で制御しているが、
+# 別途リストを用意して制御すべきかもしれない。(要検討)
+
+<天海春香> a mltd:Idol ;
+    :name "天海春香" ;
+    mltd:cv <中村繪里子> ;
+    mltd:typePrFaAn mltd:Princess ;
+    :memberOf <765PRO_ALLSTARS> ;
+    :position 1 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Amami_Haruka> .
+
+<如月千早> a mltd:Idol ;
+    :name "如月千早" ;
+    mltd:cv <今井麻美> ;
+    mltd:typePrFaAn mltd:Fairy ;
+    :memberOf <765PRO_ALLSTARS> ;
+    :position 2 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Kisaragi_Chihaya> .
+
+<星井美希> a mltd:Idol ;
+    :name "星井美希" ;
+    mltd:cv <長谷川明子> ;
+    mltd:typePrFaAn mltd:Angel ;
+    :memberOf <765PRO_ALLSTARS> ;
+    :position 3 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Hoshii_Miki> .
+
+<萩原雪歩> a mltd:Idol ;
+    :name "萩原雪歩" ;
+    mltd:cv <浅倉杏美> ;
+    mltd:typePrFaAn mltd:Princess ;
+    :memberOf <765PRO_ALLSTARS> ;
+    :position 4 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Hagiwara_Yukiho> .
+
+<高槻やよい> a mltd:Idol ;
+    :name "高槻やよい" ;
+    mltd:cv <仁後真耶子> ;
+    mltd:typePrFaAn mltd:Angel ;
+    :memberOf <765PRO_ALLSTARS> ;
+    :position 5 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Takatsuki_Yayoi> .
+
+<菊地真> a mltd:Idol ;
+    :name "菊地真" ;
+    mltd:cv <平田宏美> ;
+    mltd:typePrFaAn mltd:Princess ;
+    :memberOf <765PRO_ALLSTARS> ;
+    :position 6 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Kikuchi_Makoto> .
+
+<水瀬伊織> a mltd:Idol ;
+    :name "水瀬伊織" ;
+    mltd:cv <釘宮理恵> ;
+    mltd:typePrFaAn mltd:Fairy ;
+    :memberOf <765PRO_ALLSTARS> ;
+    :position 7 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Minase_Iori> .
+
+<四条貴音> a mltd:Idol ;
+    :name "四条貴音" ;
+    mltd:cv <原由実> ;
+    mltd:typePrFaAn mltd:Fairy ;
+    :memberOf <765PRO_ALLSTARS> ;
+    :position 8 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Shijou_Takane> .
+
+<秋月律子> a mltd:Idol ;
+    :name "秋月律子" ;
+    mltd:cv <若林直美> ;
+    mltd:typePrFaAn mltd:Fairy ;
+    :memberOf <765PRO_ALLSTARS> ;
+    :position 9 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Akizuki_Ritsuko> .
+
+<三浦あずさ> a mltd:Idol ;
+    :name "三浦あずさ" ;
+    mltd:cv <たかはし智秋> ;
+    mltd:typePrFaAn mltd:Angel ;
+    :memberOf <765PRO_ALLSTARS> ;
+    :position 10 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Miura_Azusa> .
+
+<双海亜美> a mltd:Idol ;
+    :name "双海亜美" ;
+    mltd:cv <下田麻美> ;
+    mltd:typePrFaAn mltd:Angel ;
+    :memberOf <765PRO_ALLSTARS> ;
+    :position 11 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Futami_Ami> .
+
+<双海真美> a mltd:Idol ;
+    :name "双海真美" ;
+    mltd:cv <下田麻美> ;
+    mltd:typePrFaAn mltd:Angel ;
+    :memberOf <765PRO_ALLSTARS> ;
+    :position 12 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Futami_Mami> .
+
+<我那覇響> a mltd:Idol ;
+    :name "我那覇響" ;
+    mltd:cv <沼倉愛美> ;
+    mltd:typePrFaAn mltd:Princess ;
+    :memberOf <765PRO_ALLSTARS> ;
+    :position 13 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Ganaha_Hibiki> .
+
+<春日未来> a mltd:Idol ;
+    :name "春日未来" ;
+    mltd:cv <山崎はるか> ;
+    mltd:typePrFaAn mltd:Princess ;
+    :memberOf <39プロジェクト> ;
+    :position 14 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Kasuga_Mirai> .
+
+<最上静香> a mltd:Idol ;
+    :name "最上静香" ;
+    mltd:cv <田所あずさ> ;
+    mltd:typePrFaAn mltd:Fairy ;
+    :memberOf <39プロジェクト> ;
+    :position 15 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Mogami_Shizuka> .
+
+<伊吹翼> a mltd:Idol ;
+    :name "伊吹翼" ;
+    mltd:cv <Machico> ;
+    mltd:typePrFaAn mltd:Angel ;
+    :memberOf <39プロジェクト> ;
+    :position 16 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Ibuki_Tsubasa> .
+
+<田中琴葉> a mltd:Idol ;
+    :name "田中琴葉" ;
+    mltd:cv <種田梨沙> ;
+    mltd:typePrFaAn mltd:Princess ;
+    :memberOf <39プロジェクト> ;
+    :position 17 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Tanaka_Kotoha> .
+
+<島原エレナ> a mltd:Idol ;
+    :name "島原エレナ" ;
+    mltd:cv <角元明日香> ;
+    mltd:typePrFaAn mltd:Angel ;
+    :memberOf <39プロジェクト> ;
+    :position 18 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Shimabara_Elena> .
+
+<佐竹美奈子> a mltd:Idol ;
+    :name "佐竹美奈子" ;
+    mltd:cv <大関英里> ;
+    mltd:typePrFaAn mltd:Princess ;
+    :memberOf <39プロジェクト> ;
+    :position 19 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Satake_Minako> .
+
+<所恵美> a mltd:Idol ;
+    :name "所恵美" ;
+    mltd:cv <藤井ゆきよ> ;
+    mltd:typePrFaAn mltd:Fairy ;
+    :memberOf <39プロジェクト> ;
+    :position 20 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Tokoro_Megumi> .
+
+<徳川まつり> a mltd:Idol ;
+    :name "徳川まつり" ;
+    mltd:cv <諏訪彩花> ;
+    mltd:typePrFaAn mltd:Princess ;
+    :memberOf <39プロジェクト> ;
+    :position 21 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Tokugawa_Matsuri> .
+
+<箱崎星梨花> a mltd:Idol ;
+    :name "箱崎星梨花" ;
+    mltd:cv <麻倉もも> ;
+    mltd:typePrFaAn mltd:Angel ;
+    :memberOf <39プロジェクト> ;
+    :position 22 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Hakozaki_Serika> .
+
+<野々原茜> a mltd:Idol ;
+    :name "野々原茜" ;
+    mltd:cv <小笠原早紀> ;
+    mltd:typePrFaAn mltd:Angel ;
+    :memberOf <39プロジェクト> ;
+    :position 23 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Nonohara_Akane> .
+
+<望月杏奈> a mltd:Idol ;
+    :name "望月杏奈" ;
+    mltd:cv <夏川椎菜> ;
+    mltd:typePrFaAn mltd:Angel ;
+    :memberOf <39プロジェクト> ;
+    :position 24 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Mochizuki_Anna> .
+
+<ロコ> a mltd:Idol ;
+    :name "ロコ" ;
+    mltd:cv <中村温姫> ;
+    mltd:typePrFaAn mltd:Fairy ;
+    :memberOf <39プロジェクト> ;
+    :position 25 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Handa_Roco> .
+
+<七尾百合子> a mltd:Idol ;
+    :name "七尾百合子" ;
+    mltd:cv <伊藤美来> ;
+    mltd:typePrFaAn mltd:Princess ;
+    :memberOf <39プロジェクト> ;
+    :position 26 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Nanao_Yuriko> .
+
+<高山紗代子> a mltd:Idol ;
+    :name "高山紗代子" ;
+    mltd:cv <駒形友梨> ;
+    mltd:typePrFaAn mltd:Princess ;
+    :memberOf <39プロジェクト> ;
+    :position 27 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Takayama_Sayoko> .
+
+<松田亜利沙> a mltd:Idol ;
+    :name "松田亜利沙" ;
+    mltd:cv <村川梨衣> ;
+    mltd:typePrFaAn mltd:Princess ;
+    :memberOf <39プロジェクト> ;
+    :position 28 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Matsuda_Arisa> .
+
+<高坂海美> a mltd:Idol ;
+    :name "高坂海美" ;
+    mltd:cv <上田麗奈> ;
+    mltd:typePrFaAn mltd:Princess ;
+    :memberOf <39プロジェクト> ;
+    :position 29 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Kousaka_Umi> .
+
+<中谷育> a mltd:Idol ;
+    :name "中谷育" ;
+    mltd:cv <原嶋あかり> ;
+    mltd:typePrFaAn mltd:Princess ;
+    :memberOf <39プロジェクト> ;
+    :position 30 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Nakatani_Iku> .
+
+<天空橋朋花> a mltd:Idol ;
+    :name "天空橋朋花" ;
+    mltd:cv <小岩井ことり> ;
+    mltd:typePrFaAn mltd:Fairy ;
+    :memberOf <39プロジェクト> ;
+    :position 31 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Tenkubashi_Tomoka> .
+
+<エミリー> a mltd:Idol ;
+    :name "エミリー" ;
+    mltd:cv <郁原ゆう> ;
+    mltd:typePrFaAn mltd:Princess ;
+    :memberOf <39プロジェクト> ;
+    :position 32 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Emily_Stewart> .
+
+<北沢志保> a mltd:Idol ;
+    :name "北沢志保" ;
+    mltd:cv <雨宮天> ;
+    mltd:typePrFaAn mltd:Fairy ;
+    :memberOf <39プロジェクト> ;
+    :position 33 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Kitazawa_Shiho> .
+
+<舞浜歩> a mltd:Idol ;
+    :name "舞浜歩" ;
+    mltd:cv <戸田めぐみ> ;
+    mltd:typePrFaAn mltd:Fairy ;
+    :memberOf <39プロジェクト> ;
+    :position 34 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Maihama_Ayumu> .
+
+<木下ひなた> a mltd:Idol ;
+    :name "木下ひなた" ;
+    mltd:cv <田村奈央> ;
+    mltd:typePrFaAn mltd:Angel ;
+    :memberOf <39プロジェクト> ;
+    :position 35 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Kinoshita_Hinata> .
+
+<矢吹可奈> a mltd:Idol ;
+    :name "矢吹可奈" ;
+    mltd:cv <木戸衣吹> ;
+    mltd:typePrFaAn mltd:Princess ;
+    :memberOf <39プロジェクト> ;
+    :position 36 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Yabuki_Kana> .
+
+<横山奈緒> a mltd:Idol ;
+    :name "横山奈緒" ;
+    mltd:cv <渡部優衣> ;
+    mltd:typePrFaAn mltd:Princess ;
+    :memberOf <39プロジェクト> ;
+    :position 37 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Yokoyama_Nao> .
+
+<二階堂千鶴> a mltd:Idol ;
+    :name "二階堂千鶴" ;
+    mltd:cv <野村香菜子> ;
+    mltd:typePrFaAn mltd:Fairy ;
+    :memberOf <39プロジェクト> ;
+    :position 38 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Nikaido_Chizuru> .
+
+<馬場このみ> a mltd:Idol ;
+    :name "馬場このみ" ;
+    mltd:cv <高橋未奈美> ;
+    mltd:typePrFaAn mltd:Angel ;
+    :memberOf <39プロジェクト> ;
+    :position 39 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Baba_Konomi> .
+
+<大神環> a mltd:Idol ;
+    :name "大神環" ;
+    mltd:cv <稲川英里> ;
+    mltd:typePrFaAn mltd:Angel ;
+    :memberOf <39プロジェクト> ;
+    :position 40 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Ogami_Tamaki> .
+
+<豊川風花> a mltd:Idol ;
+    :name "豊川風花" ;
+    mltd:cv <末柄里恵> ;
+    mltd:typePrFaAn mltd:Angel ;
+    :memberOf <39プロジェクト> ;
+    :position 41 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Toyokawa_Fuka> .
+
+<宮尾美也> a mltd:Idol ;
+    :name "宮尾美也" ;
+    mltd:cv <桐谷蝶々> ;
+    mltd:typePrFaAn mltd:Angel ;
+    :memberOf <39プロジェクト> ;
+    :position 42 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Miyao_Miya> .
+
+<福田のり子> a mltd:Idol ;
+    :name "福田のり子" ;
+    mltd:cv <浜崎奈々> ;
+    mltd:typePrFaAn mltd:Princess ;
+    :memberOf <39プロジェクト> ;
+    :position 43 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Fukuda_Noriko> .
+
+<真壁瑞希> a mltd:Idol ;
+    :name "真壁瑞希" ;
+    mltd:cv <阿部里果> ;
+    mltd:typePrFaAn mltd:Fairy ;
+    :memberOf <39プロジェクト> ;
+    :position 44 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Makabe_Mizuki> .
+
+<篠宮可憐> a mltd:Idol ;
+    :name "篠宮可憐" ;
+    mltd:cv <近藤唯> ;
+    mltd:typePrFaAn mltd:Angel ;
+    :memberOf <39プロジェクト> ;
+    :position 45 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Shinomiya_Karen> .
+
+<百瀬莉緒> a mltd:Idol ;
+    :name "百瀬莉緒" ;
+    mltd:cv <山口立花子> ;
+    mltd:typePrFaAn mltd:Fairy ;
+    :memberOf <39プロジェクト> ;
+    :position 46 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Momose_Rio> .
+
+<永吉昴> a mltd:Idol ;
+    :name "永吉昴" ;
+    mltd:cv <斉藤佑圭> ;
+    mltd:typePrFaAn mltd:Fairy ;
+    :memberOf <39プロジェクト> ;
+    :position 47 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Nagayoshi_Subaru> .
+
+<北上麗花> a mltd:Idol ;
+    :name "北上麗花" ;
+    mltd:cv <平山笑美> ;
+    mltd:typePrFaAn mltd:Angel ;
+    :memberOf <39プロジェクト> ;
+    :position 48 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Kitakami_Reika> .
+
+<周防桃子> a mltd:Idol ;
+    :name "周防桃子" ;
+    mltd:cv <渡部恵子> ;
+    mltd:typePrFaAn mltd:Fairy ;
+    :memberOf <39プロジェクト> ;
+    :position 49 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Suou_Momoko> .
+
+<ジュリア> a mltd:Idol ;
+    :name "ジュリア" ;
+    mltd:cv <愛美> ;
+    mltd:typePrFaAn mltd:Fairy ;
+    :memberOf <39プロジェクト> ;
+    :position 50 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Julia> .
+
+<白石紬> a mltd:Idol ;
+    :name "白石紬" ;
+    mltd:cv <南早紀> ;
+    mltd:typePrFaAn mltd:Fairy ;
+    :memberOf <39プロジェクト> ;
+    :position 51 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Shiraishi_Tsumugi> .
+
+<桜守歌織> a mltd:Idol ;
+    :name "桜守歌織" ;
+    mltd:cv <香里有佐> ;
+    mltd:typePrFaAn mltd:Angel ;
+    :memberOf <39プロジェクト> ;
+    :position 52 ;
+    :sameAs <https://sparql.crssnky.xyz/imasrdf/RDFs/detail/Sakuramori_Kaori> .

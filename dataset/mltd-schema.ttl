@@ -1,0 +1,93 @@
+PREFIX mltd: <https://mltd.pikopikopla.net/mltd-schema#>
+PREFIX : <http://schema.org/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+mltd: a owl:Ontology ;
+    rdfs:label "Vocabulary for THE IDOLM@STER MILLION LIVE! THEATER DAYS" ;
+    rdfs:comment "『アイドルマスター ミリオンライブ！ シアターデイズ』（ミリシタ）の語彙を提供します。" .
+
+
+# Classes
+mltd:Character a rdfs:Class ;
+    rdfs:label "キャラクター" ;
+    rdfs:subClassOf :Person .
+
+mltd:Idol a rdfs:Class ;
+    rdfs:label "アイドル" ;
+    rdfs:subClassOf mltd:Character .
+
+
+mltd:Type a rdfs:Class ;
+    rdfs:label "タイプ" ;
+    rdfs:subClassOf :Enumeration .
+
+mltd:PrFaAnType a rdfs:Class ;
+    rdfs:label "Princess・Fairy・Angel タイプ" ;
+    rdfs:subClassOf mltd:Type .
+
+mltd:Princess a rdfs:Class ;
+    rdfs:label "Princess" ;
+    rdfs:subClassOf mltd:PrFaAnType .
+
+mltd:Fairy a rdfs:Class ;
+    rdfs:label "Fairy" ;
+    rdfs:subClassOf mltd:PrFaAnType .
+
+mltd:Angel a rdfs:Class ;
+    rdfs:label "Angel" ;
+    rdfs:subClassOf mltd:PrFaAnType .
+
+mltd:All a rdfs:Class ;
+    rdfs:label "All" ;
+    rdfs:subClassOf mltd:PrFaAnType .
+
+mltd:Ex a rdfs:Class ;
+    rdfs:label "Ex" ;
+    rdfs:subClassOf mltd:PrFaAnType .
+
+mltd:VoDaViType a rdfs:Class ;
+    rdfs:label "Vocal・Dance・Visual タイプ" ;
+    rdfs:subClassOf mltd:Type .
+
+mltd:Vocal a rdfs:Class ;
+    rdfs:label "Vocal" ;
+    rdfs:subClassOf mltd:VoDaViType .
+
+mltd:Dance a rdfs:Class ;
+    rdfs:label "Dance" ;
+    rdfs:subClassOf mltd:VoDaViType .
+
+mltd:Visual a rdfs:Class ;
+    rdfs:label "Visual" ;
+    rdfs:subClassOf mltd:VoDaViType .
+
+
+mltd:VoiceActor a rdfs:Class ;
+    rdfs:label "声優" ;
+    rdfs:subClassOf :Person .
+
+mltd:TalentAgency a rdfs:Class ;
+    rdfs:label "芸能事務所" ;
+    rdfs:subClassOf :Corporation .
+
+
+# Properties
+mltd:cv a rdf:Property ;
+    rdfs:label "キャラクターボイス" ;
+    rdfs:domain mltd:Idol ;
+    rdfs:range mltd:VoiceActor .
+
+mltd:typeOfPrFaAn a rdf:Property ;
+    rdfs:label "Princess・Fairy・Angel タイプ" ;
+    rdfs:domain mltd:Idol ;
+    rdfs:range mltd:PrFaAnType .
+
+mltd:typeOfVoDaVi a rdf:Property ;
+    rdfs:label "Vocal・Dance・Visual タイプ" ;
+    rdfs:domain mltd:Idol ;
+    rdfs:range mltd:VoDaViType .

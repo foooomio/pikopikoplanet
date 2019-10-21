@@ -1,0 +1,40 @@
+BASE <https://mltd.pikopikopla.net/resource/>
+PREFIX mltd: <https://mltd.pikopikopla.net/mltd-schema#>
+PREFIX : <http://schema.org/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://mltd.pikopikopla.net/> a :WebApplication ;
+    :name "☆ピコピコプラネット☆" ;
+    :description "『アイドルマスター ミリオンライブ！ シアターデイズ』（ミリシタ）に関連する情報を収集し提供する非公式のオープンデータプラットフォーム" ;
+    :url <https://mltd.pikopikopla.net/> .
+
+<アイドルマスター_ミリオンライブ!_シアターデイズ> a :VideoGame ;
+    :name "アイドルマスター ミリオンライブ！ シアターデイズ" ;
+    :alternateName "ミリシタ" ;
+    :genre "アイドルライブ＆プロデュースゲーム" ;
+    :producer <狭間和歌子> ;
+    :publisher <バンダイナムコエンターテインメント> ;
+    :datePublished "2017-06-29"^^xsd:date ;
+    :url <https://millionlive.idolmaster.jp/theaterdays/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/imasml_theater" ;
+        foaf:accountName "imasml_theater" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
+
+<バンダイナムコエンターテインメント> a :Corporation ;
+    :name "バンダイナムコエンターテインメント" ;
+    :legalName "株式会社バンダイナムコエンターテインメント" ;
+    :url <https://www.bandainamcoent.co.jp/> .
+
+<狭間和歌子> a :Person ;
+    :name "狭間和歌子" ;
+    :alternateName "わかちこP" ;
+    :memberOf <バンダイナムコエンターテインメント> .
