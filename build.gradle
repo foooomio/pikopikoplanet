@@ -55,9 +55,6 @@ task download() {
 task tdbload() {
   mustRunAfter clean, download
   doLast {
-    delete {
-      delete "$TDB_LOCATION"
-    }
     exec{
       executable "sh"
       args "-c", "fuseki/bin/tdbloader2 --loc $TDB_LOCATION $DATASET_FILES"
