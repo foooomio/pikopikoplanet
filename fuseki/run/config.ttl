@@ -8,7 +8,7 @@
 @prefix tdb:     <http://jena.hpl.hp.com/2008/tdb#> .
 
 <#service> rdf:type fuseki:Service ;
-  fuseki:name                     "/sample" ;   # http://host:port/ds-ro
+  fuseki:name                     "/mltd" ;
   fuseki:serviceQuery             "query" ;    # SPARQL query service
   fuseki:serviceReadGraphStore    "data" ;     # SPARQL Graph store protocol (read only)
   fuseki:dataset           <#dataset> ;

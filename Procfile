@@ -1,1 +1,1 @@
-web: FUSEKI_HOME=$HOME java -jar jar/jena-fuseki-fulljar-3.12.0.jar --port=$PORT
+web: yarn start & cd fuseki && FUSEKI_HOME=$HOME/fuseki java -cp "jar/*" org.apache.jena.fuseki.cmd.FusekiCmd & wait -n

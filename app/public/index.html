@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>☆ピコピコプラネット☆</title>
+    <meta name="description" content="アイドルマスター ミリオンライブ！ シアターデイズ』（ミリシタ）に関連する情報を収集し提供する非公式のオープンデータプラットフォーム">
+    <meta name="og:title" content="☆ピコピコプラネット☆">
+    <meta name="og:site_name" content="☆ピコピコプラネット☆">
+    <meta name="og:description" content="『アイドルマスター ミリオンライブ！ シアターデイズ』（ミリシタ）に関連する情報を収集し提供する非公式のオープンデータプラットフォーム">
+    <meta name="og:type" content="website">
+    <meta name="og:image" content="https://pikopikopla.net/ogp.png">
+    <meta name="og:url" content="https://mltd.pikopikopla.net/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="☆ピコピコプラネット☆">
+    <meta name="twitter:description" content="アイドルマスター ミリオンライブ！ シアターデイズ』（ミリシタ）に関連する情報を収集し提供する非公式のオープンデータプラットフォーム">
+    <meta name="twitter:image" content="https://pikopikopla.net/ogp.png">
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/theme/mdn-like.min.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>ピコピコプラネット</h1>
+        <h2>BETA</h2>
+      </div>
+    </header>
+    <main>
+      <div>
+        <textarea id="query" hidden></textarea>
+      </div>
+      <div>
+        <input type="submit" id="submit" value="実行">
+        <input type="reset" id="reset" value="リセット">
+        <select id="accept">
+          <option value="application/sparql-results+json, application/ld+json" selected>JSON (SELECT / DESCRIBE)</option>
+          <option value="application/sparql-results+xml, application/rdf+xml">XML (SELECT / DESCRIBE)</option>
+          <option value="text/plain">Text (SELECT / DESCRIBE)</option>
+          <option value="text/csv">CSV (SELECT)</option>
+          <option value="text/tab-separated-values">TSV (SELECT)</option>
+          <option value="text/turtle">Turtle (DESCRIBE)</option>
+          <option value="application/rdf+json">RDF/JSON (DESCRIBE)</option>
+        </select>
+        <span>Ctrl+Enter/Cmd+Enter で実行</span>
+        <span>[<a href="https://gist.github.com/foooomio/8314036fee8bc74c8d7da835ab1b7fa3">クエリ例</a>]</span>
+      </div>
+      <div>
+        <textarea id="result" hidden>実行結果</textarea>
+      </div>
+    </main>
+    <footer>
+      <h2><a href="https://github.com/foooomio/pikopikoplanet">GitHub</a></h2>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/mode/sparql/sparql.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/addon/edit/matchbrackets.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/addon/edit/closebrackets.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/addon/selection/active-line.min.js"></script>
+    <script defer src="./patch-codemirror-im.js"></script>
+    <script defer src="./main.js"></script>
+  </body>
+</html>

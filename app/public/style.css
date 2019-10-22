@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+body {
+  background-color: #1B284F;
+  font-family: sans-serif;
+  color: #ddd;
+}
+
+a {
+  color: #ddd;
+}
+
+header {
+  margin: 1rem auto;
+}
+
+footer {
+  margin: 0.5rem auto;
+}
+
+h1 {
+  display: inline-block;
+  font-family: "Nico Moji";
+  font-size: 2.3rem;
+  color: #F7D36E;
+  margin: 0;
+}
+
+h1::before, h1::after {
+  content: '☆';
+  font-size: 1.6rem;
+  color: #64C0AB;
+}
+
+h2 {
+  display: inline-block;
+  font-family: "Nico Moji";
+  font-size: 1.5rem;
+  color: #ddd;
+  margin: 0;
+}
+
+.CodeMirror {
+  font-size: 16px !important;
+}
+
+#query + .CodeMirror {
+  height: 400px;
+}
+
+#result + .CodeMirror {
+  height: 400px;
+}
+
+.cm-s-mdn-like .cm-string {
+  font-style: normal !important;
+}
