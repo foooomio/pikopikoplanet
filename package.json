@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "ts-node-dev --no-notify --transpile-only app/index.ts",
-    "build": "tsc && cp -R app/public dist/",
+    "build": "tsc && cp -R app/public dist/ && cp -R app/views dist/",
     "start": "node dist/index.js",
     "fuseki": "cd fuseki && java -cp 'jar/*' org.apache.jena.fuseki.cmd.FusekiCmd",
     "too": "too --cmd 'yarn dev' --cmd 'yarn fuseki'"
