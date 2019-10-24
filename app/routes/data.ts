@@ -24,6 +24,6 @@ router.get('/:name', proxy({
 
     return `${FUSEKI_PATH}?output=${format}&query=DESCRIBE+<${uri}>`;
   }
-}))
+}));
 
 export default router;
