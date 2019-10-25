@@ -2,7 +2,6 @@ import express, { ErrorRequestHandler } from 'express';
 import path from 'path';
 import createError from 'http-errors';
 import { getStatusText } from 'http-status-codes';
-import partials from 'express-partials';
 import morgan from 'morgan';
 
 import resourceRouter from './routes/resource';
@@ -15,7 +14,6 @@ app.disable('x-powered-by');
 // template engine
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-app.use(partials());
 
 // access log
 app.use(morgan('short'));
