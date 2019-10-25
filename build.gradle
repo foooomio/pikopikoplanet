@@ -23,6 +23,14 @@ task clean {
   }
 }
 
+task tdbclean {
+  doLast {
+    delete {
+      delete "$TDB_LOCATION"
+    }
+  }
+}
+
 task download() {
   mustRunAfter clean
   doLast {
@@ -53,7 +61,7 @@ task download() {
 }
 
 task tdbload() {
-  mustRunAfter clean, download
+  mustRunAfter clean, tdbclean, download
   doLast {
     exec{
       executable "sh"
