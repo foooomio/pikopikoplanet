@@ -874,7 +874,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "けいこ"@ja-hira ;
     :birthDate "--03-29"^^xsd:gMonthDay ;
     dbo:hometown "埼玉県" ;
-    :memberOf <クレイジーボックス> ;
     :url <http://crazy-box.co.jp/female/talent65/> .
 
 <愛美> a mltd:VoiceActor ;

@@ -103,11 +103,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :legalName "株式会社サンミュージックプロダクション" ;
     :url <https://www.sunmusic.org/> .
 
-<クレイジーボックス> a mltd:TalentAgency ;
-    :name "クレイジーボックス" ;
-    :legalName "株式会社クレイジーボックス" ;
-    :url <https://crazy-box.co.jp/> .
-
 <響> a mltd:TalentAgency ;
     :name "響" ;
     :legalName "株式会社響" ;
