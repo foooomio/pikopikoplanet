@@ -82,12 +82,12 @@ mltd:cv a rdf:Property ;
     rdfs:domain mltd:Idol ;
     rdfs:range mltd:VoiceActor .
 
-mltd:typeOfPrFaAn a rdf:Property ;
+mltd:typePrFaAn a rdf:Property ;
     rdfs:label "Princess・Fairy・Angel タイプ" ;
     rdfs:domain mltd:Idol ;
     rdfs:range mltd:PrFaAnType .
 
-mltd:typeOfVoDaVi a rdf:Property ;
+mltd:typeVoDaVi a rdf:Property ;
     rdfs:label "Vocal・Dance・Visual タイプ" ;
     rdfs:domain mltd:Idol ;
     rdfs:range mltd:VoDaViType .
