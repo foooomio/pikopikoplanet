@@ -17,17 +17,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 # 生年不明の声優が多いため、:birthDate に月日を定義し、
 # 生年の公式情報がある場合は、dbo:birthYear に定義している。
 
-# NOTE:
-# dbo:hometown は文字列ではなく、URI を持つべきかもしれない。(要検討)
-
 <中村繪里子> a mltd:VoiceActor ;
     :name "中村繪里子" ;
     :familyName "中村"@ja ;
     :givenName "繪里子"@ja ;
     :familyName "なかむら"@ja-hira ;
     :givenName "えりこ"@ja-hira ;
+    :familyName "Nakamura"@en ;
+    :givenName "Eriko"@en ;
     :birthDate "--11-19"^^xsd:gMonthDay ;
-    dbo:hometown "神奈川県" ;
+    dbo:hometown <神奈川県> ;
     :memberOf <アーツビジョン> ;
     :url <https://www.artsvision.co.jp/talent/697/> ;
     foaf:weblog <https://ameblo.jp/eriko-nakamura-blog/> ;
@@ -45,8 +44,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "麻美"@ja ;
     :familyName "いまい"@ja-hira ;
     :givenName "あさみ"@ja-hira ;
+    :familyName "Imai"@en ;
+    :givenName "Asami"@en ;
     :birthDate "--05-16"^^xsd:gMonthDay ;
-    dbo:hometown "山口県" ;
+    dbo:hometown <山口県> ;
     :memberOf <EARLY_WING> ;
     :url <http://earlywing.co.jp/talent_w/imaiasami.php> ;
     foaf:homepage <http://5pb.jp/records/sp/asami/> ;
@@ -65,8 +66,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "明子"@ja ;
     :familyName "はせがわ"@ja-hira ;
     :givenName "あきこ"@ja-hira ;
+    :familyName "Hasegawa"@en ;
+    :givenName "Akiko"@en ;
     :birthDate "--04-14"^^xsd:gMonthDay ;
-    dbo:hometown "新潟県" ;
+    dbo:hometown <新潟県> ;
     :memberOf <アーツビジョン> ;
     :url <https://www.artsvision.co.jp/talent/622/> ;
     foaf:weblog <http://blog.livedoor.jp/onigiriwa315/> .
@@ -77,8 +80,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "杏美"@ja ;
     :familyName "あさくら"@ja-hira ;
     :givenName "あずみ"@ja-hira ;
+    :familyName "Asakura"@en ;
+    :givenName "Azumi"@en ;
     :birthDate "--02-15"^^xsd:gMonthDay ;
-    dbo:hometown "神奈川県" ;
+    dbo:hometown <神奈川県> ;
     :memberOf <アーツビジョン> ;
     :url <https://www.artsvision.co.jp/talent/31/> ;
     foaf:weblog <https://ameblo.jp/asakura-azumi/> .
@@ -89,8 +94,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "真耶子"@ja ;
     :familyName "にご"@ja-hira ;
     :givenName "まやこ"@ja-hira ;
+    :familyName "Nigo"@en ;
+    :givenName "Mayako"@en ;
     :birthDate "--12-02"^^xsd:gMonthDay ;
-    dbo:hometown "東京都" ;
+    dbo:hometown <東京都> ;
     :memberOf <アイムエンタープライズ> ;
     :url <https://www.imenterprise.jp/profile.php?id=72> ;
     foaf:weblog <https://yaplog.jp/maya-rhythm/> .
@@ -101,8 +108,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "宏美"@ja ;
     :familyName "ひらた"@ja-hira ;
     :givenName "ひろみ"@ja-hira ;
+    :familyName "Hirata"@en ;
+    :givenName "Hiromi"@en ;
     :birthDate "--02-19"^^xsd:gMonthDay ;
-    dbo:hometown "広島県" ;
+    dbo:hometown <広島県> ;
     :memberOf <アイムエンタープライズ> ;
     :url <https://www.imenterprise.jp/profile.php?id=76> ;
     foaf:weblog <http://blog.livedoor.jp/hira__hiro/> .
@@ -113,8 +122,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "理恵"@ja ;
     :familyName "くぎみや"@ja-hira ;
     :givenName "りえ"@ja-hira ;
+    :familyName "Kugimiya"@en ;
+    :givenName "Rie"@en ;
     :birthDate "--05-30"^^xsd:gMonthDay ;
-    dbo:hometown "熊本県" ;
+    dbo:hometown <熊本県> ;
     :memberOf <アイムエンタープライズ> ;
     :url <https://www.imenterprise.jp/profile.php?id=52> ;
     foaf:weblog <https://ameblo.jp/kugimiyarie-blog> .
@@ -125,8 +136,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "由実"@ja ;
     :familyName "はら"@ja-hira ;
     :givenName "ゆみ"@ja-hira ;
+    :familyName "Hara"@en ;
+    :givenName "Yumi"@en ;
     :birthDate "--01-21"^^xsd:gMonthDay ;
-    dbo:hometown "大阪府" ;
+    dbo:hometown <大阪府> ;
     :memberOf <アーツビジョン> ;
     :url <https://www.artsvision.co.jp/talent/653/> ;
     foaf:homepage <http://5pb.jp/records/sp/yumi/> ;
@@ -138,8 +151,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "直美"@ja ;
     :familyName "わかばやし"@ja-hira ;
     :givenName "なおみ"@ja-hira ;
+    :familyName "Wakabayashi"@en ;
+    :givenName "Naomi"@en ;
     :birthDate "--11-02"^^xsd:gMonthDay ;
-    dbo:hometown "鳥取県" ;
+    dbo:hometown <鳥取県> ;
     :memberOf <フォレストリンク> ;
     :url <http://forestlink.co.jp/talents/wakabayashi-naomi> ;
     foaf:weblog <http://wakachoku.way-nifty.com/blog/> .
@@ -150,8 +165,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "智秋"@ja ;
     :familyName "たかはし"@ja-hira ;
     :givenName "ちあき"@ja-hira ;
+    :familyName "Takahashi"@en ;
+    :givenName "Chiaki"@en ;
     :birthDate "--05-08"^^xsd:gMonthDay ;
-    dbo:hometown "神奈川県" ;
+    dbo:hometown <神奈川県> ;
     :url <http://chiaking58.com/> ;
     foaf:weblog <https://lineblog.me/takahashichiaki/> ;
     foaf:account [
@@ -175,8 +192,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "麻美"@ja ;
     :familyName "しもだ"@ja-hira ;
     :givenName "あさみ"@ja-hira ;
+    :familyName "Shimoda"@en ;
+    :givenName "Asami"@en ;
     :birthDate "--01-30"^^xsd:gMonthDay ;
-    dbo:hometown "鳥取県" ;
+    dbo:hometown <鳥取県> ;
     :memberOf <アーツビジョン> ;
     :url <https://www.artsvision.co.jp/talent/813/> ;
     foaf:weblog <https://yaplog.jp/asaponmax/> ;
@@ -194,8 +213,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "愛美"@ja ;
     :familyName "ぬまくら"@ja-hira ;
     :givenName "まなみ"@ja-hira ;
+    :familyName "Numakura"@en ;
+    :givenName "Manami"@en ;
     :birthDate "--04-15"^^xsd:gMonthDay ;
-    dbo:hometown "神奈川県" ;
+    dbo:hometown <神奈川県> ;
     :memberOf <アーツビジョン> ;
     :url <https://www.artsvision.co.jp/talent/715/> ;
     foaf:homepage <https://numakuramanami.com/> ;
@@ -214,8 +235,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "はるか"@ja ;
     :familyName "やまざき"@ja-hira ;
     :givenName "はるか"@ja-hira ;
+    :familyName "Yamazaki"@en ;
+    :givenName "Haruka"@en ;
     :birthDate "--06-27"^^xsd:gMonthDay ;
-    dbo:hometown "神奈川県" ;
+    dbo:hometown <神奈川県> ;
     :memberOf <アーツビジョン> ;
     :url <https://www.artsvision.co.jp/talent/522/> ;
     foaf:homepage <https://yamazakiharuka.com/> ;
@@ -240,9 +263,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "あずさ"@ja ;
     :familyName "たどころ"@ja-hira ;
     :givenName "あずさ"@ja-hira ;
+    :familyName "Tadokoro"@en ;
+    :givenName "Azusa"@en ;
     :birthDate "--11-10"^^xsd:gMonthDay ;
     dbo:birthYear "1993"^^xsd:gYear ;
-    dbo:hometown "茨城県" ;
+    dbo:hometown <茨城県> ;
     :memberOf <ホリプロ> ;
     :url <http://tadokoroazusa.com/wf/profile> ;
     foaf:homepage <http://tadokoroazusa.com/> ;
@@ -259,8 +284,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :name "Machico" ;
     :givenName "Machico"@ja ;
     :givenName "まちこ"@ja-hira ;
+    :givenName "Machico"@en ;
     :birthDate "--03-25"^^xsd:gMonthDay ;
-    dbo:hometown "広島県" ;
+    dbo:hometown <広島県> ;
     :memberOf <ホリプロ> ;
     :url <https://machi.co/profiles> ;
     foaf:homepage <https://machi.co/> ;
@@ -286,8 +312,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "梨沙"@ja ;
     :familyName "たねだ"@ja-hira ;
     :givenName "りさ"@ja-hira ;
+    :familyName "Taneda"@en ;
+    :givenName "Risa"@en ;
     :birthDate "--07-12"^^xsd:gMonthDay ;
-    dbo:hometown "東京都" ;
+    dbo:hometown <東京都> ;
     :memberOf <大沢事務所> ;
     :url <https://osawa-inc.co.jp/women/tanedarisa/> .
 
@@ -297,9 +325,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "明日香"@ja ;
     :familyName "かくもと"@ja-hira ;
     :givenName "あすか"@ja-hira ;
+    :familyName "Kakumoto"@en ;
+    :givenName "Asuka"@en ;
     :birthDate "--04-08"^^xsd:gMonthDay ;
     dbo:birthYear "1992"^^xsd:gYear ;
-    dbo:hometown "埼玉県" ;
+    dbo:hometown <埼玉県> ;
     :memberOf <スペースクラフト> ;
     :url <http://www.spacecraft.co.jp/kakumoto_asuka/> .
 
@@ -309,8 +339,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "英里"@ja ;
     :familyName "おおぜき"@ja-hira ;
     :givenName "えり"@ja-hira ;
+    :familyName "Ozeki"@en ;
+    :givenName "Eri"@en ;
     :birthDate "--08-18"^^xsd:gMonthDay ;
-    dbo:hometown "神奈川県" ;
+    dbo:hometown <神奈川県> ;
     :url <http://very-diary.jugem.jp/?pid=1> ;
     foaf:weblog <http://very-diary.jugem.jp/> ;
     foaf:account [
@@ -327,8 +359,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "ゆきよ"@ja ;
     :familyName "ふじい"@ja-hira ;
     :givenName "ゆきよ"@ja-hira ;
+    :familyName "Fujii"@en ;
+    :givenName "Yukiyo"@en ;
     :birthDate "--05-08"^^xsd:gMonthDay ;
-    dbo:hometown "神奈川県" ;
+    dbo:hometown <神奈川県> ;
     :memberOf <青二プロダクション> ;
     :url <https://www.aoni.co.jp/search/fujii-yukiyo.html> ;
     foaf:weblog <https://ameblo.jp/yukiichigo1515> ;
@@ -353,8 +387,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "彩花"@ja ;
     :familyName "すわ"@ja-hira ;
     :givenName "あやか"@ja-hira ;
+    :familyName "Suwa"@en ;
+    :givenName "Ayaka"@en ;
     :birthDate "--05-27"^^xsd:gMonthDay ;
-    dbo:hometown "愛知県" ;
+    dbo:hometown <愛知県> ;
     :memberOf <アーツビジョン> ;
     :url <https://www.artsvision.co.jp/talent/832/> ;
     foaf:weblog <https://ameblo.jp/nana-monky/> ;
@@ -372,9 +408,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "もも"@ja ;
     :familyName "あさくら"@ja-hira ;
     :givenName "もも"@ja-hira ;
+    :familyName "Asakura"@en ;
+    :givenName "Momo"@en ;
     :birthDate "--06-25"^^xsd:gMonthDay ;
     dbo:birthYear "1994"^^xsd:gYear ;
-    dbo:hometown "福岡県" ;
+    dbo:hometown <福岡県> ;
     :memberOf <ミュージックレイン> ;
     :url <https://musicrayn.com/asakura_momo> ;
     foaf:homepage <https://www.sonymusic.co.jp/artist/asakuramomo/> ;
@@ -386,8 +424,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "早紀"@ja ;
     :familyName "おがさわら"@ja-hira ;
     :givenName "さき"@ja-hira ;
+    :familyName "Ogasawara"@en ;
+    :givenName "Saki"@en ;
     :birthDate "--03-29"^^xsd:gMonthDay ;
-    dbo:hometown "青森県" ;
+    dbo:hometown <青森県> ;
     :memberOf <賢プロダクション> ;
     :url <http://www.kenproduction.co.jp/talent/member.php?mem=w90> ;
     foaf:weblog <https://ameblo.jp/sweet-sweet0329/> ;
@@ -405,9 +445,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "椎菜"@ja ;
     :familyName "なつかわ"@ja-hira ;
     :givenName "しいな"@ja-hira ;
+    :familyName "Natsukawa"@en ;
+    :givenName "Shiina"@en ;
     :birthDate "--07-18"^^xsd:gMonthDay ;
     dbo:birthYear "1996"^^xsd:gYear ;
-    dbo:hometown "千葉県" ;
+    dbo:hometown <千葉県> ;
     :memberOf <ミュージックレイン> ;
     :url <https://musicrayn.com/natsukawa_shiina> ;
     foaf:homepage <https://www.natsukawashiina.jp/> ;
@@ -419,8 +461,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "温姫"@ja ;
     :familyName "なかむら"@ja-hira ;
     :givenName "あつき"@ja-hira ;
+    :familyName "Nakamura"@en ;
+    :givenName "Atsuki"@en ;
     :birthDate "--06-15"^^xsd:gMonthDay ;
-    dbo:hometown "埼玉県" ;
+    dbo:hometown <埼玉県> ;
     :memberOf <EARLY_WING> ;
     :url <http://www.earlywing.co.jp/talent_w/nakamuraatsuki.html> ;
     foaf:account [
@@ -437,9 +481,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "美来"@ja ;
     :familyName "いとう"@ja-hira ;
     :givenName "みく"@ja-hira ;
+    :familyName "Ito"@en ;
+    :givenName "Miku"@en ;
     :birthDate "--10-12"^^xsd:gMonthDay ;
     dbo:birthYear "1996"^^xsd:gYear ;
-    dbo:hometown "東京都" ;
+    dbo:hometown <東京都> ;
     :memberOf <スタイルキューブ> ;
     :url <http://stylecube.jp/talents/miku/index.html> ;
     foaf:homepage <https://columbia.jp/itomiku/> ;
@@ -458,9 +504,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "友梨"@ja ;
     :familyName "こまがた"@ja-hira ;
     :givenName "ゆり"@ja-hira ;
+    :familyName "Komagata"@en ;
+    :givenName "Yuri"@en ;
     :birthDate "--08-25"^^xsd:gMonthDay ;
     dbo:birthYear "1991"^^xsd:gYear ;
-    dbo:hometown "東京都" ;
+    dbo:hometown <東京都> ;
     :memberOf <スペースクラフト> ;
     :url <http://spacecraft.co.jp/komagata_yuri/> ;
     foaf:weblog <https://ameblo.jp/komagata-yuri/> ;
@@ -478,8 +526,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "梨衣"@ja ;
     :familyName "むらかわ"@ja-hira ;
     :givenName "りえ"@ja-hira ;
+    :familyName "Murakawa"@en ;
+    :givenName "Rie"@en ;
     :birthDate "--06-01"^^xsd:gMonthDay ;
-    dbo:hometown "東京都" ;
+    dbo:hometown <東京都> ;
     :memberOf <俳協> ;
     :url <https://haikyo.co.jp/profile/profile.php?ActorID=12498> ;
     foaf:homepage <https://columbia.jp/murakawarie/> ;
@@ -498,8 +548,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "麗奈"@ja ;
     :familyName "うえだ"@ja-hira ;
     :givenName "れいな"@ja-hira ;
+    :familyName "Ueda"@en ;
+    :givenName "Reina"@en ;
     :birthDate "--01-17"^^xsd:gMonthDay ;
-    dbo:hometown "富山県" ;
+    dbo:hometown <富山県> ;
     :memberOf <81プロデュース> ;
     :url <https://www.81produce.co.jp/actor_search/index.php/item?id=162> ;
     foaf:account [
@@ -516,8 +568,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "あかり"@ja ;
     :familyName "はらしま"@ja-hira ;
     :givenName "あかり"@ja-hira ;
+    :familyName "Harashima"@en ;
+    :givenName "Akari"@en ;
     :birthDate "--03-09"^^xsd:gMonthDay ;
-    dbo:hometown "北海道" ;
+    dbo:hometown <北海道> ;
     :memberOf <俳協> ;
     :url <https://haikyo.co.jp/profile/profile.php?ActorID=12750> ;
     foaf:weblog <https://ameblo.jp/aw0w-0309/> ;
@@ -535,8 +589,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "ことり"@ja ;
     :familyName "こいわい"@ja-hira ;
     :givenName "ことり"@ja-hira ;
+    :familyName "Koiwai"@en ;
+    :givenName "Kotori"@en ;
     :birthDate "--02-15"^^xsd:gMonthDay ;
-    dbo:hometown "京都府" ;
+    dbo:hometown <京都府> ;
     :memberOf <ピアレスガーベラ> ;
     :url <http://pg-wcf.co.jp/profile/04/> ;
     foaf:weblog <https://ameblo.jp/koiwai-kotori/> ;
@@ -554,8 +610,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "ゆう"@ja ;
     :familyName "かはら"@ja-hira ;
     :givenName "ゆう"@ja-hira ;
+    :familyName "Kahara"@en ;
+    :givenName "Yu"@en ;
     :birthDate "--02-19"^^xsd:gMonthDay ;
-    dbo:hometown "千葉県" ;
+    dbo:hometown <千葉県> ;
     :url <https://ameblo.jp/yukahara219> ;
     foaf:weblog <https://ameblo.jp/yukahara219> ;
     foaf:account [
@@ -572,9 +630,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "天"@ja ;
     :familyName "あまみや"@ja-hira ;
     :givenName "そら"@ja-hira ;
+    :familyName "Amamiya"@en ;
+    :givenName "Sora"@en ;
     :birthDate "--08-28"^^xsd:gMonthDay ;
     dbo:birthYear "1993"^^xsd:gYear ;
-    dbo:hometown "東京都" ;
+    dbo:hometown <東京都> ;
     :memberOf <ミュージックレイン> ;
     :url <https://musicrayn.com/amamiya_sora> ;
     foaf:homepage <https://www.amamiyasora.jp/> ;
@@ -586,8 +646,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "めぐみ"@ja ;
     :familyName "とだ"@ja-hira ;
     :givenName "めぐみ"@ja-hira ;
+    :familyName "Toda"@en ;
+    :givenName "Megumi"@en ;
     :birthDate "--12-08"^^xsd:gMonthDay ;
-    dbo:hometown "東京都" ;
+    dbo:hometown <東京都> ;
     :memberOf <ケンユウオフィス> ;
     :url <http://kenyu-office.com/todamegumi/> ;
     foaf:weblog <https://ameblo.jp/mysweet365days/> ;
@@ -612,8 +674,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "奈央"@ja ;
     :familyName "たむら"@ja-hira ;
     :givenName "なお"@ja-hira ;
+    :familyName "Tamura"@en ;
+    :givenName "Nao"@en ;
     :birthDate "--10-10"^^xsd:gMonthDay ;
-    dbo:hometown "埼玉県" ;
+    dbo:hometown <埼玉県> ;
     :memberOf <俳協> ;
     :url <https://haikyo.co.jp/profile/profile.php?ActorID=12777> ;
     foaf:weblog <https://ameblo.jp/denchan10/> ;
@@ -631,9 +695,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "衣吹"@ja ;
     :familyName "きど"@ja-hira ;
     :givenName "いぶき"@ja-hira ;
+    :familyName "Kido"@en ;
+    :givenName "Ibuki"@en ;
     :birthDate "--11-14"^^xsd:gMonthDay ;
     dbo:birthYear "1997"^^xsd:gYear ;
-    dbo:hometown "青森県" ;
+    dbo:hometown <青森県> ;
     :memberOf <ホリプロ> ;
     :url <http://www.horipro-international.com/artist/kido> ;
     foaf:weblog <https://ameblo.jp/kido-ibuki> ;
@@ -651,9 +717,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "優衣"@ja ;
     :familyName "わたなべ"@ja-hira ;
     :givenName "ゆい"@ja-hira ;
+    :familyName "Watanabe"@en ;
+    :givenName "Yui"@en ;
     :birthDate "--12-04"^^xsd:gMonthDay ;
     dbo:birthYear "1988"^^xsd:gYear ;
-    dbo:hometown "大阪府" ;
+    dbo:hometown <大阪府> ;
     :memberOf <ダンデライオン> ;
     :url <http://www.ddl-ltd.co.jp/watanabeyui.html> ;
     foaf:homepage <https://yuiwatanabe.com/> ;
@@ -672,9 +740,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "香菜子"@ja ;
     :familyName "のむら"@ja-hira ;
     :givenName "かなこ"@ja-hira ;
+    :familyName "Nomura"@en ;
+    :givenName "Kanako"@en ;
     :birthDate "--12-25"^^xsd:gMonthDay ;
     dbo:birthYear "1989"^^xsd:gYear ;
-    dbo:hometown "東京都" ;
+    dbo:hometown <東京都> ;
     :memberOf <Rush_Style> ;
     :url <http://rushstyle.net/?talent=%E7%A7%8B%E6%B2%B3%E3%81%82%E3%82%86%E3%82%80%EF%BC%88%E9%A0%90%E3%81%8B%E3%82%8A%EF%BC%89> ; # なにこのURL・・・
     foaf:weblog <https://ameblo.jp/kanako-nomura/> ;
@@ -692,8 +762,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "未奈美"@ja ;
     :familyName "たかはし"@ja-hira ;
     :givenName "みなみ"@ja-hira ;
+    :familyName "Takahashi"@en ;
+    :givenName "Minami"@en ;
     :birthDate "--12-20"^^xsd:gMonthDay ;
-    dbo:hometown "神奈川県" ;
+    dbo:hometown <神奈川県> ;
     :memberOf <俳協> ;
     :url <https://haikyo.co.jp/profile/profile.php?ActorID=12532> ;
     foaf:account [
@@ -710,8 +782,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "英里"@ja ;
     :familyName "いながわ"@ja-hira ;
     :givenName "えり"@ja-hira ;
+    :familyName "Inagawa"@en ;
+    :givenName "Eri"@en ;
     :birthDate "--10-28"^^xsd:gMonthDay ;
-    dbo:hometown "神奈川県" ;
+    dbo:hometown <神奈川県> ;
     :memberOf <賢プロダクション> ;
     :url <http://www.kenproduction.co.jp/talent/member.php?mem=w83> ;
     foaf:weblog <https://ameblo.jp/greentea-senbei/> ;
@@ -729,8 +803,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "里恵"@ja ;
     :familyName "すえがら"@ja-hira ;
     :givenName "りえ"@ja-hira ;
+    :familyName "Suegara"@en ;
+    :givenName "Rie"@en ;
     :birthDate "--01-08"^^xsd:gMonthDay ;
-    dbo:hometown "神奈川県" ;
+    dbo:hometown <神奈川県> ;
     :memberOf <賢プロダクション> ;
     :url <http://www.kenproduction.co.jp/talent/member.php?mem=w94> ;
     foaf:weblog <https://ameblo.jp/su-gii> ;
@@ -748,8 +824,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "蝶々"@ja ;
     :familyName "きりたに"@ja-hira ;
     :givenName "ちょうちょ"@ja-hira ;
+    :familyName "Kiritani"@en ;
+    :givenName "Choucho"@en ;
     :birthDate "--01-15"^^xsd:gMonthDay ;
-    dbo:hometown "東京都" ;
+    dbo:hometown <東京都> ;
     :url <https://choucho1515.wixsite.com/choucho-website/about-me> ;
     foaf:homepage <https://choucho1515.wixsite.com/choucho-website> ;
     foaf:weblog <https://ameblo.jp/mmmm1515/> ;
@@ -767,8 +845,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "奈々"@ja ;
     :familyName "はまさき"@ja-hira ;
     :givenName "なな"@ja-hira ;
+    :familyName "Hamasaki"@en ;
+    :givenName "Nana"@en ;
     :birthDate "--09-06"^^xsd:gMonthDay ;
-    dbo:hometown "東京都" ;
+    dbo:hometown <東京都> ;
     :memberOf <アイムエンタープライズ> ;
     :url <https://www.imenterprise.jp/profile.php?id=73> ;
     foaf:weblog <https://ameblo.jp/hmsk-nana/> ;
@@ -786,8 +866,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "里果"@ja ;
     :familyName "あべ"@ja-hira ;
     :givenName "りか"@ja-hira ;
+    :familyName "Abe"@en ;
+    :givenName "Rika"@en ;
     :birthDate "--09-20"^^xsd:gMonthDay ;
-    dbo:hometown "三重県" ;
+    dbo:hometown <三重県> ;
     :memberOf <ヴィムス> ;
     :url <https://vims.co.jp/talent_profile_detail.php?id=27> .
 
@@ -797,8 +879,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "唯"@ja ;
     :familyName "こんどう"@ja-hira ;
     :givenName "ゆい"@ja-hira ;
+    :familyName "Kondo"@en ;
+    :givenName "Yui"@en ;
     :birthDate "--06-28"^^xsd:gMonthDay ;
-    dbo:hometown "神奈川県" ;
+    dbo:hometown <神奈川県> ;
     :memberOf <ケンユウオフィス> ;
     :url <http://kenyu-office.com/kondoyui/> ;
     foaf:account [
@@ -815,8 +899,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "立花子"@ja ;
     :familyName "やまぐち"@ja-hira ;
     :givenName "りかこ"@ja-hira ;
+    :familyName "Yamaguchi"@en ;
+    :givenName "Rikako"@en ;
     :birthDate "--03-30"^^xsd:gMonthDay ;
-    dbo:hometown "東京都" ;
+    dbo:hometown <東京都> ;
     :memberOf <サンミュージック> ;
     :url <https://www.sunmusic.org/profile/yamaguchi_rikako.html> ;
     foaf:weblog <https://ameblo.jp/genki-morisoba/> ;
@@ -834,8 +920,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "佑圭"@ja ;
     :familyName "さいとう"@ja-hira ;
     :givenName "ゆか"@ja-hira ;
+    :familyName "Saito"@en ;
+    :givenName "Yuka"@en ;
     :birthDate "--11-13"^^xsd:gMonthDay ;
-    dbo:hometown "福島県" ;
+    dbo:hometown <福島県> ;
     :memberOf <青二プロダクション> ;
     :url <https://www.aoni.co.jp/search/saito-yuka.html> ;
     foaf:weblog <https://ameblo.jp/yukke1113/> ;
@@ -853,8 +941,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "笑美"@ja ;
     :familyName "ひらやま"@ja-hira ;
     :givenName "えみ"@ja-hira ;
+    :familyName "Hirayama"@en ;
+    :givenName "Emi"@en ;
     :birthDate "--09-24"^^xsd:gMonthDay ;
-    dbo:hometown "東京都" ;
+    dbo:hometown <東京都> ;
     :url <https://www.pirami.online/profile> ;
     foaf:homepage <https://www.pirami.online/> ;
     foaf:weblog <https://ameblo.jp/emi-3kan-1128/> ;
@@ -872,16 +962,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "恵子"@ja ;
     :familyName "わたなべ"@ja-hira ;
     :givenName "けいこ"@ja-hira ;
+    :familyName "Watanabe"@en ;
+    :givenName "Keiko"@en ;
     :birthDate "--03-29"^^xsd:gMonthDay ;
-    dbo:hometown "埼玉県" ;
+    dbo:hometown <埼玉県> ;
     :url <http://crazy-box.co.jp/female/talent65/> .
 
 <愛美> a mltd:VoiceActor ;
     :name "愛美" ;
     :givenName "愛美"@ja ;
     :givenName "あいみ"@ja-hira ;
+    :givenName "Aimi"@en ;
     :birthDate "--12-25"^^xsd:gMonthDay ;
-    dbo:hometown "兵庫県" ;
+    dbo:hometown <兵庫県> ;
     :memberOf <響> ;
     :url <https://hibiki-cast.jp/hibiki_f/aimi/> ;
     foaf:homepage <https://aimi-sound.com/> ;
@@ -907,8 +1000,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "早紀"@ja ;
     :familyName "みなみ"@ja-hira ;
     :givenName "さき"@ja-hira ;
+    :familyName "Minami"@en ;
+    :givenName "Saki"@en ;
     :birthDate "--11-19"^^xsd:gMonthDay ;
-    dbo:hometown "大分県" ;
+    dbo:hometown <大分県> ;
     :memberOf <81プロデュース> ;
     :url <https://www.81produce.co.jp/actor_search/index.php/item?id=308> ;
     foaf:account [
@@ -932,8 +1027,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "有佐"@ja ;
     :familyName "こうり"@ja-hira ;
     :givenName "ありさ"@ja-hira ;
+    :familyName "Kori"@en ;
+    :givenName "Arisa"@en ;
     :birthDate "--03-13"^^xsd:gMonthDay ;
-    dbo:hometown "大阪府" ;
+    dbo:hometown <大阪府> ;
     :memberOf <青二プロダクション> ;
     :url <https://www.aoni.co.jp/search/kori-arisa.html> ;
     foaf:account [

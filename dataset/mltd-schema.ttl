@@ -22,6 +22,19 @@ mltd:Idol a rdfs:Class ;
     rdfs:subClassOf mltd:Character .
 
 
+mltd:BloodType a rdfs:Class ;
+    rdfs:label "血液型" ;
+    rdfs:subClassOf dbo:Thing .
+
+mltd:ZodiacSign a rdfs:Class ;
+    rdfs:label "星座" ;
+    rdfs:subClassOf dbo:Thing .
+
+mltd:Handedness a rdfs:Class ;
+    rdfs:label "利き手" ;
+    rdfs:subClassOf dbo:Thing .
+
+
 mltd:Type a rdfs:Class ;
     rdfs:label "タイプ" ;
     rdfs:subClassOf :Enumeration .
@@ -30,41 +43,9 @@ mltd:PrFaAnType a rdfs:Class ;
     rdfs:label "Princess・Fairy・Angel タイプ" ;
     rdfs:subClassOf mltd:Type .
 
-mltd:Princess a rdfs:Class ;
-    rdfs:label "Princess" ;
-    rdfs:subClassOf mltd:PrFaAnType .
-
-mltd:Fairy a rdfs:Class ;
-    rdfs:label "Fairy" ;
-    rdfs:subClassOf mltd:PrFaAnType .
-
-mltd:Angel a rdfs:Class ;
-    rdfs:label "Angel" ;
-    rdfs:subClassOf mltd:PrFaAnType .
-
-mltd:All a rdfs:Class ;
-    rdfs:label "All" ;
-    rdfs:subClassOf mltd:PrFaAnType .
-
-mltd:Ex a rdfs:Class ;
-    rdfs:label "Ex" ;
-    rdfs:subClassOf mltd:PrFaAnType .
-
 mltd:VoDaViType a rdfs:Class ;
     rdfs:label "Vocal・Dance・Visual タイプ" ;
     rdfs:subClassOf mltd:Type .
-
-mltd:Vocal a rdfs:Class ;
-    rdfs:label "Vocal" ;
-    rdfs:subClassOf mltd:VoDaViType .
-
-mltd:Dance a rdfs:Class ;
-    rdfs:label "Dance" ;
-    rdfs:subClassOf mltd:VoDaViType .
-
-mltd:Visual a rdfs:Class ;
-    rdfs:label "Visual" ;
-    rdfs:subClassOf mltd:VoDaViType .
 
 
 mltd:VoiceActor a rdfs:Class ;
@@ -77,10 +58,30 @@ mltd:TalentAgency a rdfs:Class ;
 
 
 # Properties
+mltd:hobby a rdf:Property ;
+    rdfs:label "趣味" ;
+    rdfs:domain mltd:Idol ;
+    rdfs:range xsd:string .
+
+mltd:skill a rdf:Property ;
+    rdfs:label "特技" ;
+    rdfs:domain mltd:Idol ;
+    rdfs:range xsd:string .
+
+mltd:favorite a rdf:Property ;
+    rdfs:label "好きなもの" ;
+    rdfs:domain mltd:Idol ;
+    rdfs:range xsd:string .
+
 mltd:cv a rdf:Property ;
     rdfs:label "キャラクターボイス" ;
     rdfs:domain mltd:Idol ;
     rdfs:range mltd:VoiceActor .
+
+mltd:imageColor a rdf:Property ;
+    rdfs:label "イメージカラー" ;
+    rdfs:domain mltd:Idol ;
+    rdfs:range xsd:string .
 
 mltd:typePrFaAn a rdf:Property ;
     rdfs:label "Princess・Fairy・Angel タイプ" ;
