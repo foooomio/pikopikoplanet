@@ -331,7 +331,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dbo:birthYear "1992"^^xsd:gYear ;
     dbo:hometown <埼玉県> ;
     :memberOf <スペースクラフト> ;
-    :url <http://www.spacecraft.co.jp/kakumoto_asuka/> .
+    :url <http://www.spacecraft.co.jp/kakumoto_asuka/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/asukak_official" ;
+        foaf:accountName "asukak_official" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
 
 <大関英里> a mltd:VoiceActor ;
     :name "大関英里" ;
