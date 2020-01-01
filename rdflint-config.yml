@@ -1,3 +1,11 @@
 targetDir: dataset
 outputDir: .
-baseUri: https://mltd.pikopikopla.net/resource/
+baseUri: https://mltd.pikopikopla.net/
+validation:
+  fileEncoding:
+    - target: "*"
+      charset: utf-8
+      end_of_line: lf
+      indent_style: space
+      insert_final_newline: true
+      trim_trailing_whitespace: true
