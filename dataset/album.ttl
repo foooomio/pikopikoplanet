@@ -68,7 +68,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :recordingOf <Thank_You> ;
         :byArtist <765THEATER_ALLSTARS> ;
         :position 3
-    ];
+    ] ;
     :albumRelease [
         a :MusicRelease ;
         :url <https://www.lantis.jp/imas/release_LACM-14080.html> ;
@@ -4208,6 +4208,49 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :datePublished "2015-06-24"^^xsd:date
     ] .
 
+<LTS> a :MusicAlbum ;
+    :name "THE IDOLM@STER LIVE THE@TER SELECTION" ;
+    :numTracks 6 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Sentimental_Venus> ;
+        :byArtist <望月杏奈> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Blue_Symphony> ;
+        :byArtist <七尾百合子> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <瞳の中のシリウス> ;
+        :byArtist <北沢志保> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Legend_Girls> ;
+        :byArtist <馬場このみ> ;
+        :position 4
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <カワラナイモノ> ;
+        :byArtist <エミリー> ;
+        :position 5
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Thank_You> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <望月杏奈> ,
+                <七尾百合子> ,
+                <北沢志保> ,
+                <馬場このみ> ,
+                <エミリー>
+        ] ;
+        :position 6
+    ] .
+
 # ミリラジ
 <ミリラジ_DJCD_01> a :MusicAlbum ;
     :name "THE IDOLM@STER MILLION RADIO! DJCD Vol.01" ;
@@ -4686,6 +4729,35 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :datePublished "2019-06-27"^^xsd:date
     ] ;
     :isPartOf <BC_CD_Series> .
+
+# BNS_CD
+<BNS_CD_Series> a :CreativeWorkSeries ;
+    :name "THE IDOLM@STER MILLION LIVE! THEATER DAYS Brand New Song CD" ;
+    :startDate "2018-10-31"^^xsd:date ;
+    :hasPart
+        <BNS_CD_01> .
+
+<BNS_CD_01> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION LIVE! THEATER DAYS Brand New Song 1 CD" ;
+    :numTracks 2 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <地球儀にない国> ;
+        :byArtist <七尾百合子> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <瑠璃色金魚と花菖蒲> ;
+        :byArtist <白石紬> ;
+        :position 2
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <http://data.ichijinsha.co.jp/book/booksearch/booksearch_detail.php?i=75801626> ;
+        :image <https://static.ichijinsha.co.jp/data/book/img/book_img/img_75801626.jpg> ;
+        :datePublished "2018-10-31"^^xsd:date
+    ] ;
+    :isPartOf <BNS_CD_Series> .
 
 # etc
 <サンリズム・オーケストラ♪_Brand_New_Ver> a :MusicRecording ;

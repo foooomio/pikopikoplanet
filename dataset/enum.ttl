@@ -92,145 +92,239 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 # 出身地
 <北海道> a :Place ;
-    :name "北海道" .
+    :name "北海道" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C01000-19700401> ;
+    :sameAs <http://geonames.jp/resource/北海道> .
 
 <青森県> a :Place ;
-    :name "青森県" .
+    :name "青森県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C02000-19700401> ;
+    :sameAs <http://geonames.jp/resource/青森県> .
 
 <岩手県> a :Place ;
-    :name "岩手県" .
+    :name "岩手県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C03000-19700401> ;
+    :sameAs <http://geonames.jp/resource/岩手県> .
 
 <宮城県> a :Place ;
-    :name "宮城県" .
+    :name "宮城県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C04000-19700401> ;
+    :sameAs <http://geonames.jp/resource/宮城県> .
 
 <秋田県> a :Place ;
-    :name "秋田県" .
+    :name "秋田県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C05000-19700401> ;
+    :sameAs <http://geonames.jp/resource/秋田県> .
 
 <山形県> a :Place ;
-    :name "山形県" .
+    :name "山形県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C06000-19700401> ;
+    :sameAs <http://geonames.jp/resource/山形県> .
 
 <福島県> a :Place ;
-    :name "福島県" .
+    :name "福島県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C07000-19700401> ;
+    :sameAs <http://geonames.jp/resource/福島県> .
 
 <茨城県> a :Place ;
-    :name "茨城県" .
+    :name "茨城県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C08000-19700401> ;
+    :sameAs <http://geonames.jp/resource/茨城県> .
 
 <栃木県> a :Place ;
-    :name "栃木県" .
+    :name "栃木県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C09000-19700401> ;
+    :sameAs <http://geonames.jp/resource/栃木県> .
 
 <群馬県> a :Place ;
-    :name "群馬県" .
+    :name "群馬県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C10000-19700401> ;
+    :sameAs <http://geonames.jp/resource/群馬県> .
 
 <埼玉県> a :Place ;
-    :name "埼玉県" .
+    :name "埼玉県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C11000-19700401> ;
+    :sameAs <http://geonames.jp/resource/埼玉県> .
 
 <千葉県> a :Place ;
-    :name "千葉県" .
+    :name "千葉県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C12000-19700401> ;
+    :sameAs <http://geonames.jp/resource/千葉県> .
 
 <東京都> a :Place ;
-    :name "東京都" .
+    :name "東京都" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C13000-19700401> ;
+    :sameAs <http://geonames.jp/resource/東京都> .
 
 <神奈川県> a :Place ;
-    :name "神奈川県" .
+    :name "神奈川県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C14000-19700401> ;
+    :sameAs <http://geonames.jp/resource/神奈川県> .
 
 <新潟県> a :Place ;
-    :name "新潟県" .
+    :name "新潟県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C15000-19700401> ;
+    :sameAs <http://geonames.jp/resource/新潟県> .
 
 <富山県> a :Place ;
-    :name "富山県" .
+    :name "富山県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C16000-19700401> ;
+    :sameAs <http://geonames.jp/resource/富山県> .
 
 <石川県> a :Place ;
-    :name "石川県" .
+    :name "石川県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C17000-19700401> ;
+    :sameAs <http://geonames.jp/resource/石川県> .
 
 <福井県> a :Place ;
-    :name "福井県" .
+    :name "福井県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C18000-19700401> ;
+    :sameAs <http://geonames.jp/resource/福井県> .
 
 <山梨県> a :Place ;
-    :name "山梨県" .
+    :name "山梨県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C19000-19700401> ;
+    :sameAs <http://geonames.jp/resource/山梨県> .
 
 <長野県> a :Place ;
-    :name "長野県" .
+    :name "長野県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C20000-19700401> ;
+    :sameAs <http://geonames.jp/resource/長野県> .
 
 <岐阜県> a :Place ;
-    :name "岐阜県" .
+    :name "岐阜県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C21000-19700401> ;
+    :sameAs <http://geonames.jp/resource/岐阜県> .
 
 <静岡県> a :Place ;
-    :name "静岡県" .
+    :name "静岡県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C22000-19700401> ;
+    :sameAs <http://geonames.jp/resource/静岡県> .
 
 <愛知県> a :Place ;
-    :name "愛知県" .
+    :name "愛知県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C23000-19700401> ;
+    :sameAs <http://geonames.jp/resource/愛知県> .
 
 <三重県> a :Place ;
-    :name "三重県" .
+    :name "三重県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C24000-19700401> ;
+    :sameAs <http://geonames.jp/resource/三重県> .
 
 <滋賀県> a :Place ;
-    :name "滋賀県" .
+    :name "滋賀県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C25000-19700401> ;
+    :sameAs <http://geonames.jp/resource/滋賀県> .
 
 <京都府> a :Place ;
-    :name "京都府" .
+    :name "京都府" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C26000-19700401> ;
+    :sameAs <http://geonames.jp/resource/京都府> .
 
 <大阪府> a :Place ;
-    :name "大阪府" .
+    :name "大阪府" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C27000-19700401> ;
+    :sameAs <http://geonames.jp/resource/大阪府> .
 
 <兵庫県> a :Place ;
-    :name "兵庫県" .
+    :name "兵庫県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C28000-19700401> ;
+    :sameAs <http://geonames.jp/resource/兵庫県> .
 
 <奈良県> a :Place ;
-    :name "奈良県" .
+    :name "奈良県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C29000-19700401> ;
+    :sameAs <http://geonames.jp/resource/奈良県> .
 
 <和歌山県> a :Place ;
-    :name "和歌山県" .
+    :name "和歌山県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C30000-19700401> ;
+    :sameAs <http://geonames.jp/resource/和歌山県> .
 
 <鳥取県> a :Place ;
-    :name "鳥取県" .
+    :name "鳥取県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C31000-19700401> ;
+    :sameAs <http://geonames.jp/resource/鳥取県> .
 
 <島根県> a :Place ;
-    :name "島根県" .
+    :name "島根県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C32000-19700401> ;
+    :sameAs <http://geonames.jp/resource/島根県> .
 
 <岡山県> a :Place ;
-    :name "岡山県" .
+    :name "岡山県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C33000-19700401> ;
+    :sameAs <http://geonames.jp/resource/岡山県> .
 
 <広島県> a :Place ;
-    :name "広島県" .
+    :name "広島県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C34000-19700401> ;
+    :sameAs <http://geonames.jp/resource/広島県> .
 
 <山口県> a :Place ;
-    :name "山口県" .
+    :name "山口県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C35000-19700401> ;
+    :sameAs <http://geonames.jp/resource/山口県> .
 
 <徳島県> a :Place ;
-    :name "徳島県" .
+    :name "徳島県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C36000-19700401> ;
+    :sameAs <http://geonames.jp/resource/徳島県> .
 
 <香川県> a :Place ;
-    :name "香川県" .
+    :name "香川県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C37000-19700401> ;
+    :sameAs <http://geonames.jp/resource/香川県> .
 
 <愛媛県> a :Place ;
-    :name "愛媛県" .
+    :name "愛媛県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C38000-19700401> ;
+    :sameAs <http://geonames.jp/resource/愛媛県> .
 
 <高知県> a :Place ;
-    :name "高知県" .
+    :name "高知県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C39000-19700401> ;
+    :sameAs <http://geonames.jp/resource/高知県> .
 
 <福岡県> a :Place ;
-    :name "福岡県" .
+    :name "福岡県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C40000-19700401> ;
+    :sameAs <http://geonames.jp/resource/福岡県> .
 
 <佐賀県> a :Place ;
-    :name "佐賀県" .
+    :name "佐賀県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C41000-19700401> ;
+    :sameAs <http://geonames.jp/resource/佐賀県> .
 
 <長崎県> a :Place ;
-    :name "長崎県" .
+    :name "長崎県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C42000-19700401> ;
+    :sameAs <http://geonames.jp/resource/長崎県> .
 
 <熊本県> a :Place ;
-    :name "熊本県" .
+    :name "熊本県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C43000-19700401> ;
+    :sameAs <http://geonames.jp/resource/熊本県> .
 
 <大分県> a :Place ;
-    :name "大分県" .
+    :name "大分県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C44000-19700401> ;
+    :sameAs <http://geonames.jp/resource/大分県> .
 
 <宮崎県> a :Place ;
-    :name "宮崎県" .
+    :name "宮崎県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C45000-19700401> ;
+    :sameAs <http://geonames.jp/resource/宮崎県> .
 
 <鹿児島県> a :Place ;
-    :name "鹿児島県" .
+    :name "鹿児島県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C46000-19700401> ;
+    :sameAs <http://geonames.jp/resource/鹿児島県> .
 
 <沖縄県> a :Place ;
-    :name "沖縄県" .
+    :name "沖縄県" ;
+    :sameAs <http://data.e-stat.go.jp/lod/sac/C47000-19700401> ;
+    :sameAs <http://geonames.jp/resource/沖縄県> .
 
 <ブラジル> a :Place ;
     :name "ブラジル" .
