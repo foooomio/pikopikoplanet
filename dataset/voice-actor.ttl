@@ -973,7 +973,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "Keiko"@en ;
     :birthDate "--03-29"^^xsd:gMonthDay ;
     dbo:hometown <埼玉県> ;
-    :url <http://crazy-box.co.jp/female/talent65/> .
+    :url <http://crazy-box.co.jp/female/talent65/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/keeeko_watanabe" ;
+        foaf:accountName "keeeko_watanabe" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
 
 <愛美> a mltd:VoiceActor ;
     :name "愛美" ;
