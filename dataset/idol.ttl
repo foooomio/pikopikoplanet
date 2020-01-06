@@ -35,7 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "お菓子作り" ;
     mltd:favorite "歌うこと" ;
     mltd:cv <中村繪里子> ;
-    mltd:imageColor "E22B30" ;
+    mltd:imageColor "E22B30"^^xsd:hexBinary ;
     mltd:typePrFaAn <Princessタイプ> ;
     mltd:typeVoDaVi <Vocalタイプ> ;
     :memberOf <765PRO_ALLSTARS> ;
@@ -65,7 +65,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "歌" ;
     mltd:favorite "トレーニング" ;
     mltd:cv <今井麻美> ;
-    mltd:imageColor "2743D2" ;
+    mltd:imageColor "2743D2"^^xsd:hexBinary ;
     mltd:typePrFaAn <Fairyタイプ> ;
     mltd:typeVoDaVi <Vocalタイプ> ;
     :memberOf <765PRO_ALLSTARS> ;
@@ -95,7 +95,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "寝ること" ;
     mltd:favorite "おにぎり" , "いちごババロア" ;
     mltd:cv <長谷川明子> ;
-    mltd:imageColor "B4E04B" ;
+    mltd:imageColor "B4E04B"^^xsd:hexBinary ;
     mltd:typePrFaAn <Angelタイプ> ;
     mltd:typeVoDaVi <Visualタイプ> ;
     :memberOf <765PRO_ALLSTARS> ;
@@ -125,7 +125,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "日本茶をいれること" ;
     mltd:favorite "ブログ" ;
     mltd:cv <浅倉杏美> ;
-    mltd:imageColor "D3DDE9" ;
+    mltd:imageColor "D3DDE9"^^xsd:hexBinary ;
     mltd:typePrFaAn <Princessタイプ> ;
     mltd:typeVoDaVi <Visualタイプ> ;
     :memberOf <765PRO_ALLSTARS> ;
@@ -155,7 +155,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "節約" , "家庭菜園" ;
     mltd:favorite "家族" ;
     mltd:cv <仁後真耶子> ;
-    mltd:imageColor "F39939" ;
+    mltd:imageColor "F39939"^^xsd:hexBinary ;
     mltd:typePrFaAn <Angelタイプ> ;
     mltd:typeVoDaVi <Danceタイプ> ;
     :memberOf <765PRO_ALLSTARS> ;
@@ -185,7 +185,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "空手" , "ダンス" ;
     mltd:favorite "ぬいぐるみ" ;
     mltd:cv <平田宏美> ;
-    mltd:imageColor "515558" ;
+    mltd:imageColor "515558"^^xsd:hexBinary ;
     mltd:typePrFaAn <Princessタイプ> ;
     mltd:typeVoDaVi <Danceタイプ> ;
     :memberOf <765PRO_ALLSTARS> ;
@@ -215,7 +215,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "ショッピング" ;
     mltd:favorite "果汁100%オレンジジュース" ;
     mltd:cv <釘宮理恵> ;
-    mltd:imageColor "FD99E1" ;
+    mltd:imageColor "FD99E1"^^xsd:hexBinary ;
     mltd:typePrFaAn <Fairyタイプ> ;
     mltd:typeVoDaVi <Vocalタイプ> ;
     :memberOf <765PRO_ALLSTARS> ;
@@ -245,7 +245,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "直感" ;
     mltd:favorite "ラーメン" ;
     mltd:cv <原由実> ;
-    mltd:imageColor "A6126A" ;
+    mltd:imageColor "A6126A"^^xsd:hexBinary ;
     mltd:typePrFaAn <Fairyタイプ> ;
     mltd:typeVoDaVi <Vocalタイプ> ;
     :memberOf <765PRO_ALLSTARS> ;
@@ -275,7 +275,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "分析・実践" ;
     mltd:favorite "ゲーム" , "小説" ;
     mltd:cv <若林直美> ;
-    mltd:imageColor "01A860" ;
+    mltd:imageColor "01A860"^^xsd:hexBinary ;
     mltd:typePrFaAn <Fairyタイプ> ;
     mltd:typeVoDaVi <Visualタイプ> ;
     :memberOf <765PRO_ALLSTARS> ;
@@ -305,7 +305,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "占い" ;
     mltd:favorite "カフェ巡り" ;
     mltd:cv <たかはし智秋> ;
-    mltd:imageColor "9238BE" ;
+    mltd:imageColor "9238BE"^^xsd:hexBinary ;
     mltd:typePrFaAn <Angelタイプ> ;
     mltd:typeVoDaVi <Vocalタイプ> ;
     :memberOf <765PRO_ALLSTARS> ;
@@ -335,7 +335,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "モノマネ" ;
     mltd:favorite "遊ぶこと" ;
     mltd:cv <下田麻美> ;
-    mltd:imageColor "FFE43F" ;
+    mltd:imageColor "FFE43F"^^xsd:hexBinary ;
     mltd:typePrFaAn <Angelタイプ> ;
     mltd:typeVoDaVi <Visualタイプ> ;
     :memberOf <765PRO_ALLSTARS> ;
@@ -365,7 +365,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "モノマネ" ;
     mltd:favorite "遊ぶこと" ;
     mltd:cv <下田麻美> ;
-    mltd:imageColor "FFE43F" ;
+    mltd:imageColor "FFE43F"^^xsd:hexBinary ;
     mltd:typePrFaAn <Angelタイプ> ;
     mltd:typeVoDaVi <Visualタイプ> ;
     :memberOf <765PRO_ALLSTARS> ;
@@ -395,7 +395,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "家事全般" ;
     mltd:favorite "散歩" , "動物" ;
     mltd:cv <沼倉愛美> ;
-    mltd:imageColor "01ADB9" ;
+    mltd:imageColor "01ADB9"^^xsd:hexBinary ;
     mltd:typePrFaAn <Princessタイプ> ;
     mltd:typeVoDaVi <Danceタイプ> ;
     :memberOf <765PRO_ALLSTARS> ;
@@ -425,7 +425,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "歌うこと" ;
     mltd:favorite "ライブ" ;
     mltd:cv <山崎はるか> ;
-    mltd:imageColor "EA5B76" ;
+    mltd:imageColor "EA5B76"^^xsd:hexBinary ;
     mltd:typePrFaAn <Princessタイプ> ;
     mltd:typeVoDaVi <Vocalタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -455,7 +455,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "ピアノ" ;
     mltd:favorite "うどん" ;
     mltd:cv <田所あずさ> ;
-    mltd:imageColor "6495CF" ;
+    mltd:imageColor "6495CF"^^xsd:hexBinary ;
     mltd:typePrFaAn <Fairyタイプ> ;
     mltd:typeVoDaVi <Vocalタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -485,7 +485,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "じゃんけん" ;
     mltd:favorite "ビーフステーキ" ;
     mltd:cv <Machico> ;
-    mltd:imageColor "FED552" ;
+    mltd:imageColor "FED552"^^xsd:hexBinary ;
     mltd:typePrFaAn <Angelタイプ> ;
     mltd:typeVoDaVi <Visualタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -515,7 +515,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "フェンシング" ;
     mltd:favorite "アイス" ;
     mltd:cv <種田梨沙> ;
-    mltd:imageColor "92CFBB" ;
+    mltd:imageColor "92CFBB"^^xsd:hexBinary ;
     mltd:typePrFaAn <Princessタイプ> ;
     mltd:typeVoDaVi <Vocalタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -545,7 +545,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "サンバを踊ること" ;
     mltd:favorite "みんなで騒ぐこと" ;
     mltd:cv <角元明日香> ;
-    mltd:imageColor "9BCE92" ;
+    mltd:imageColor "9BCE92"^^xsd:hexBinary ;
     mltd:typePrFaAn <Angelタイプ> ;
     mltd:typeVoDaVi <Danceタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -575,7 +575,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "料理" ;
     mltd:favorite "友達との長電話" ;
     mltd:cv <大関英里> ;
-    mltd:imageColor "58A6DC" ;
+    mltd:imageColor "58A6DC"^^xsd:hexBinary ;
     mltd:typePrFaAn <Princessタイプ> ;
     mltd:typeVoDaVi <Danceタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -605,7 +605,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "人の誕生日を覚えること" ;
     mltd:favorite "友達" , "ドリンクバー" ;
     mltd:cv <藤井ゆきよ> ;
-    mltd:imageColor "454341" ;
+    mltd:imageColor "454341"^^xsd:hexBinary ;
     mltd:typePrFaAn <Fairyタイプ> ;
     mltd:typeVoDaVi <Visualタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -635,7 +635,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "演技" ;
     mltd:favorite "焼きマシュマロ" , "ウミウシ" ;
     mltd:cv <諏訪彩花> ;
-    mltd:imageColor "5ABFB7" ;
+    mltd:imageColor "5ABFB7"^^xsd:hexBinary ;
     mltd:typePrFaAn <Princessタイプ> ;
     mltd:typeVoDaVi <Visualタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -665,7 +665,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "アジリティのハンドラー" ;
     mltd:favorite "紅茶" , "クッキー" ;
     mltd:cv <麻倉もも> ;
-    mltd:imageColor "EC90BA" ;
+    mltd:imageColor "EC90BA"^^xsd:hexBinary ;
     mltd:typePrFaAn <Angelタイプ> ;
     mltd:typeVoDaVi <Vocalタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -695,7 +695,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "インラインスケート" ;
     mltd:favorite "プリン" ;
     mltd:cv <小笠原早紀> ;
-    mltd:imageColor "EB613F" ;
+    mltd:imageColor "EB613F"^^xsd:hexBinary ;
     mltd:typePrFaAn <Angelタイプ> ;
     mltd:typeVoDaVi <Danceタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -725,7 +725,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "タイピング" ;
     mltd:favorite "かわいいもの" ;
     mltd:cv <夏川椎菜> ;
-    mltd:imageColor "7E6CA8" ;
+    mltd:imageColor "7E6CA8"^^xsd:hexBinary ;
     mltd:typePrFaAn <Angelタイプ> ;
     mltd:typeVoDaVi <Vocalタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -755,7 +755,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "目を閉じたまま歩ける" ;
     mltd:favorite "ハト" ;
     mltd:cv <中村温姫> ;
-    mltd:imageColor "FFF03C" ;
+    mltd:imageColor "FFF03C"^^xsd:hexBinary ;
     mltd:typePrFaAn <Fairyタイプ> ;
     mltd:typeVoDaVi <Visualタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -785,7 +785,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "ペン回し" ;
     mltd:favorite "おはぎ" ;
     mltd:cv <伊藤美来> ;
-    mltd:imageColor "C7B83C" ;
+    mltd:imageColor "C7B83C"^^xsd:hexBinary ;
     mltd:typePrFaAn <Princessタイプ> ;
     mltd:typeVoDaVi <Visualタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -815,7 +815,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "一晩寝ると元気になれる" ;
     mltd:favorite "友達" , "アイドル仲間" , "たい焼き" ;
     mltd:cv <駒形友梨> ;
-    mltd:imageColor "7F6575" ;
+    mltd:imageColor "7F6575"^^xsd:hexBinary ;
     mltd:typePrFaAn <Princessタイプ> ;
     mltd:typeVoDaVi <Vocalタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -845,7 +845,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "アイドルの変装を見破れる" ;
     mltd:favorite "ファミレスのデザート" ;
     mltd:cv <村川梨衣> ;
-    mltd:imageColor "B54461" ;
+    mltd:imageColor "B54461"^^xsd:hexBinary ;
     mltd:typePrFaAn <Princessタイプ> ;
     mltd:typeVoDaVi <Vocalタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -875,7 +875,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "バレエ" ;
     mltd:favorite "女子力！" ;
     mltd:cv <上田麗奈> ;
-    mltd:imageColor "E9739B" ;
+    mltd:imageColor "E9739B"^^xsd:hexBinary ;
     mltd:typePrFaAn <Princessタイプ> ;
     mltd:typeVoDaVi <Danceタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -905,7 +905,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "早起き" ;
     mltd:favorite "おかあさん" ;
     mltd:cv <原嶋あかり> ;
-    mltd:imageColor "F7E78E" ;
+    mltd:imageColor "F7E78E"^^xsd:hexBinary ;
     mltd:typePrFaAn <Princessタイプ> ;
     mltd:typeVoDaVi <Visualタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -935,7 +935,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "口げんか" , "礼儀作法" ;
     mltd:favorite "かわいい扇子" ;
     mltd:cv <小岩井ことり> ;
-    mltd:imageColor "BEE3E3" ;
+    mltd:imageColor "BEE3E3"^^xsd:hexBinary ;
     mltd:typePrFaAn <Fairyタイプ> ;
     mltd:typeVoDaVi <Vocalタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -965,7 +965,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "日本舞踊" ;
     mltd:favorite "抹茶" ;
     mltd:cv <郁原ゆう> ;
-    mltd:imageColor "554171" ;
+    mltd:imageColor "554171"^^xsd:hexBinary ;
     mltd:typePrFaAn <Princessタイプ> ;
     mltd:typeVoDaVi <Danceタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -995,7 +995,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "記憶力" , "集中力が高い" ;
     mltd:favorite "ぬいぐるみ" ;
     mltd:cv <雨宮天> ;
-    mltd:imageColor "AFA690" ;
+    mltd:imageColor "AFA690"^^xsd:hexBinary ;
     mltd:typePrFaAn <Fairyタイプ> ;
     mltd:typeVoDaVi <Visualタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -1025,7 +1025,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "ダンス" ;
     mltd:favorite "わさび" ;
     mltd:cv <戸田めぐみ> ;
-    mltd:imageColor "E25A9B" ;
+    mltd:imageColor "E25A9B"^^xsd:hexBinary ;
     mltd:typePrFaAn <Fairyタイプ> ;
     mltd:typeVoDaVi <Danceタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -1055,7 +1055,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "天気を当てること" ;
     mltd:favorite "おばあちゃん" ;
     mltd:cv <田村奈央> ;
-    mltd:imageColor "D1342C" ;
+    mltd:imageColor "D1342C"^^xsd:hexBinary ;
     mltd:typePrFaAn <Angelタイプ> ;
     mltd:typeVoDaVi <Vocalタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -1085,7 +1085,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "合唱" ;
     mltd:favorite "屋上で歌うこと" ;
     mltd:cv <木戸衣吹> ;
-    mltd:imageColor "F5AD3B" ;
+    mltd:imageColor "F5AD3B"^^xsd:hexBinary ;
     mltd:typePrFaAn <Princessタイプ> ;
     mltd:typeVoDaVi <Vocalタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -1115,7 +1115,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "スタミナがある" ;
     mltd:favorite "友達とおしゃべり" ;
     mltd:cv <渡部優衣> ;
-    mltd:imageColor "788BC5" ;
+    mltd:imageColor "788BC5"^^xsd:hexBinary ;
     mltd:typePrFaAn <Princessタイプ> ;
     mltd:typeVoDaVi <Danceタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -1145,7 +1145,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "人の名前と顔を忘れない" ;
     mltd:favorite "憧れの目で見られること" ;
     mltd:cv <野村香菜子> ;
-    mltd:imageColor "F19557" ;
+    mltd:imageColor "F19557"^^xsd:hexBinary ;
     mltd:typePrFaAn <Fairyタイプ> ;
     mltd:typeVoDaVi <Visualタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -1175,7 +1175,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "麻雀" ;
     mltd:favorite "日本酒" ;
     mltd:cv <高橋未奈美> ;
-    mltd:imageColor "F1BECB" ;
+    mltd:imageColor "F1BECB"^^xsd:hexBinary ;
     mltd:typePrFaAn <Angelタイプ> ;
     mltd:typeVoDaVi <Danceタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -1205,7 +1205,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "石切り" ;
     mltd:favorite "アスレチックランド" ;
     mltd:cv <稲川英里> ;
-    mltd:imageColor "EE762E" ;
+    mltd:imageColor "EE762E"^^xsd:hexBinary ;
     mltd:typePrFaAn <Angelタイプ> ;
     mltd:typeVoDaVi <Danceタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -1235,7 +1235,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "息を止めること" , "注射" ;
     mltd:favorite "猫" ;
     mltd:cv <末柄里恵> ;
-    mltd:imageColor "7278A8" ;
+    mltd:imageColor "7278A8"^^xsd:hexBinary ;
     mltd:typePrFaAn <Angelタイプ> ;
     mltd:typeVoDaVi <Visualタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -1265,7 +1265,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "視力が高い" ;
     mltd:favorite "サンドイッチ" ;
     mltd:cv <桐谷蝶々> ;
-    mltd:imageColor "D7A96B" ;
+    mltd:imageColor "D7A96B"^^xsd:hexBinary ;
     mltd:typePrFaAn <Angelタイプ> ;
     mltd:typeVoDaVi <Visualタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -1295,7 +1295,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "バイクの運転" ;
     mltd:favorite "焼肉" ;
     mltd:cv <浜崎奈々> ;
-    mltd:imageColor "ECEB70" ;
+    mltd:imageColor "ECEB70"^^xsd:hexBinary ;
     mltd:typePrFaAn <Princessタイプ> ;
     mltd:typeVoDaVi <Danceタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -1325,7 +1325,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "バトントワリング" ;
     mltd:favorite "クロスワードパズル" ;
     mltd:cv <阿部里果> ;
-    mltd:imageColor "99B7DC" ;
+    mltd:imageColor "99B7DC"^^xsd:hexBinary ;
     mltd:typePrFaAn <Fairyタイプ> ;
     mltd:typeVoDaVi <Danceタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -1355,7 +1355,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "ポーカーフェイス" ;
     mltd:favorite "お風呂" ;
     mltd:cv <近藤唯> ;
-    mltd:imageColor "B63B40" ;
+    mltd:imageColor "B63B40"^^xsd:hexBinary ;
     mltd:typePrFaAn <Angelタイプ> ;
     mltd:typeVoDaVi <Visualタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -1385,7 +1385,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "メイク" ;
     mltd:favorite "可愛くてセクシーな服" ;
     mltd:cv <山口立花子> ;
-    mltd:imageColor "F19591" ;
+    mltd:imageColor "F19591"^^xsd:hexBinary ;
     mltd:typePrFaAn <Fairyタイプ> ;
     mltd:typeVoDaVi <Danceタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -1415,7 +1415,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "変化球" , "家事全般" ;
     mltd:favorite "アイドル" ;
     mltd:cv <斉藤佑圭> ;
-    mltd:imageColor "AEB49C" ;
+    mltd:imageColor "AEB49C"^^xsd:hexBinary ;
     mltd:typePrFaAn <Fairyタイプ> ;
     mltd:typeVoDaVi <Danceタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -1445,7 +1445,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "肺活量が大きい" ;
     mltd:favorite "ドライブ" ;
     mltd:cv <平山笑美> ;
-    mltd:imageColor "6BB6B0" ;
+    mltd:imageColor "6BB6B0"^^xsd:hexBinary ;
     mltd:typePrFaAn <Angelタイプ> ;
     mltd:typeVoDaVi <Danceタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -1475,7 +1475,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "演技や台詞の暗記" ;
     mltd:favorite "ホットケーキ" ;
     mltd:cv <渡部恵子> ;
-    mltd:imageColor "EFB864" ;
+    mltd:imageColor "EFB864"^^xsd:hexBinary ;
     mltd:typePrFaAn <Fairyタイプ> ;
     mltd:typeVoDaVi <Visualタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -1502,7 +1502,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "ギター" ;
     mltd:favorite "パンクロック" ;
     mltd:cv <愛美> ;
-    mltd:imageColor "D7385F" ;
+    mltd:imageColor "D7385F"^^xsd:hexBinary ;
     mltd:typePrFaAn <Fairyタイプ> ;
     mltd:typeVoDaVi <Vocalタイプ> ;
     :memberOf <39プロジェクト> ;
@@ -1532,7 +1532,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "着物の着付け" , "三味線" ;
     mltd:favorite "和スイーツ" ;
     mltd:cv <南早紀> ;
-    mltd:imageColor "EBE1FE" ;
+    mltd:imageColor "EBE1FE"^^xsd:hexBinary ;
     mltd:typePrFaAn <Fairyタイプ> ;
     :memberOf <39プロジェクト> ;
     :position 51 ;
@@ -1561,7 +1561,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:skill "合唱" , "ゴルフ" ;
     mltd:favorite "子ども" , "洋菓子" ;
     mltd:cv <香里有佐> ;
-    mltd:imageColor "274079" ;
+    mltd:imageColor "274079"^^xsd:hexBinary ;
     mltd:typePrFaAn <Angelタイプ> ;
     :memberOf <39プロジェクト> ;
     :position 52 ;
