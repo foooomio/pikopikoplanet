@@ -1,4 +1,4 @@
-BASE <https://mltd.pikopikopla.net/resource/>
+PREFIX mltd-shape: <https://mltd.pikopikopla.net/shape/>
 PREFIX mltd: <https://mltd.pikopikopla.net/mltd-schema#>
 PREFIX : <http://schema.org/>
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -9,7 +9,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 
-mltd:IdolShape a sh:NodeShape;
+mltd-shape:IdolShape a sh:NodeShape;
     sh:targetClass mltd:Idol;
     sh:closed true;
     sh:property [
