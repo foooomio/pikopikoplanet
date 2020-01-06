@@ -134,7 +134,7 @@ mltd:IdolShape a sh:NodeShape;
     ];
     sh:property [
         sh:path mltd:imageColor;
-        sh:datatype xsd:string;
+        sh:datatype xsd:hexBinary;
         sh:minCount 1;
         sh:maxCount 1;
     ];
