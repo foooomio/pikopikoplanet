@@ -35,6 +35,7 @@ app.use(((err, req, res, next) => {
   const statusText = getStatusText(statusCode);
 
   res.status(statusCode);
+  res.render('error', { statusCode, statusText });
 }) as ErrorRequestHandler);
 
 export default app;

@@ -6,7 +6,7 @@ import { FUSEKI_HOST, FUSEKI_PATH } from '../config';
 
 const router = Router();
 
-router.get('/sparql', proxy({
+router.use('/sparql', proxy({
   target: FUSEKI_HOST,
   pathRewrite: {
     '^/sparql': FUSEKI_PATH
