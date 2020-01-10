@@ -1,0 +1,168 @@
+PREFIX mltd-shape: <https://mltd.pikopikopla.net/shape/>
+PREFIX mltd: <https://mltd.pikopikopla.net/mltd-schema#>
+PREFIX : <http://schema.org/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+mltd-shape:IdolShape a sh:NodeShape;
+    sh:targetClass mltd:Idol;
+    sh:closed true;
+    sh:property [
+        sh:path rdf:type;
+        sh:class rdfs:Class;
+        sh:minCount 1;
+        sh:maxCount 1;
+    ];
+    sh:property [
+        sh:path :name;
+        sh:datatype xsd:string;
+        sh:minCount 1;
+        sh:maxCount 1;
+    ];
+    sh:property [
+        sh:path :familyName;
+        sh:datatype rdf:langString;
+        sh:uniqLang true;
+    ];
+    sh:property [
+        sh:path :givenName;
+        sh:datatype rdf:langString;
+        sh:uniqLang true;
+    ];
+    sh:property [
+        sh:path :height;
+        sh:datatype xsd:decimal;
+        sh:minExclusive 0.0;
+        sh:minCount 1;
+        sh:maxCount 1;
+    ];
+    sh:property [
+        sh:path :weight;
+        sh:datatype xsd:decimal;
+        sh:minExclusive 0.0;
+        sh:minCount 1;
+        sh:maxCount 1;
+    ];
+    sh:property [
+        sh:path dbo:bloodType;
+        sh:class mltd:BloodType;
+        sh:minCount 1;
+        sh:maxCount 1;
+    ];
+    sh:property [
+        sh:path dbo:bustSize;
+        sh:datatype xsd:decimal;
+        sh:minExclusive 0.0;
+        sh:minCount 1;
+        sh:maxCount 1;
+    ];
+    sh:property [
+        sh:path dbo:waistSize;
+        sh:datatype xsd:decimal;
+        sh:minExclusive 0.0;
+        sh:minCount 1;
+        sh:maxCount 1;
+    ];
+    sh:property [
+        sh:path dbo:hipSize;
+        sh:datatype xsd:decimal;
+        sh:minExclusive 0.0;
+        sh:minCount 1;
+        sh:maxCount 1;
+    ];
+    sh:property [
+        sh:path dbo:age;
+        sh:datatype xsd:integer;
+        sh:minInclusive 0;
+        sh:minCount 1;
+        sh:maxCount 1;
+    ];
+    sh:property [
+        sh:path :birthDate;
+        sh:datatype xsd:gMonthDay;
+        sh:minCount 1;
+        sh:maxCount 1;
+    ];
+    sh:property [
+        sh:path dbo:handedness;
+        sh:class mltd:Handedness;
+        sh:minCount 1;
+        sh:maxCount 1;
+    ];
+    sh:property [
+        sh:path dbo:zodiacSign;
+        sh:class mltd:ZodiacSign;
+        sh:minCount 1;
+        sh:maxCount 1;
+    ];
+    sh:property [
+        sh:path dbo:hometown;
+        sh:class :Place;
+        sh:minCount 1;
+        sh:maxCount 1;
+    ];
+    sh:property [
+        sh:path mltd:hobby;
+        sh:datatype xsd:string;
+        sh:minCount 1;
+    ];
+    sh:property [
+        sh:path mltd:skill;
+        sh:datatype xsd:string;
+        sh:minCount 1;
+    ];
+    sh:property [
+        sh:path mltd:favorite;
+        sh:datatype xsd:string;
+        sh:minCount 1;
+    ];
+    sh:property [
+        sh:path mltd:favorite;
+        sh:datatype xsd:string;
+        sh:minCount 1;
+    ];
+    sh:property [
+        sh:path mltd:cv;
+        sh:class mltd:VoiceActor;
+        sh:minCount 1;
+        sh:maxCount 1;
+    ];
+    sh:property [
+        sh:path mltd:imageColor;
+        sh:datatype xsd:hexBinary;
+        sh:minCount 1;
+        sh:maxCount 1;
+    ];
+    sh:property [
+        sh:path mltd:typePrFaAn;
+        sh:class mltd:PrFaAnType;
+        sh:minCount 1;
+        sh:maxCount 1;
+    ];
+    sh:property [
+        sh:path mltd:typeVoDaVi;
+        sh:class mltd:VoDaViType;
+        sh:maxCount 1;
+    ];
+    sh:property [
+        sh:path :memberOf;
+        sh:class :MusicGroup ;
+    ];
+    sh:property [
+        sh:path :position;
+        sh:datatype xsd:integer;
+        sh:minInclusive 1;
+        sh:minCount 1;
+        sh:maxCount 1;
+    ];
+    sh:property [
+        sh:path :sameAs;
+        sh:nodeKind sh:IRI;
+        sh:minCount 1;
+        sh:maxCount 1;
+    ].
