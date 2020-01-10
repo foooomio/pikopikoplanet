@@ -810,6 +810,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <菊地真> ,
         <水瀬伊織> .
 
+# MTW_04
+<Sherry_n_Cherry> a :MusicGroup ;
+    :name "Sherry 'n Cherry" ;
+    :member
+        <馬場このみ> ,
+        <百瀬莉緒> .
+
 # BC_CD
 <ダブルエース> a :MusicGroup ;
     :name "ダブルエース" ;
