@@ -2733,7 +2733,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :hasPart
         <MTW_01> ,
         <MTW_02> ,
-        <MTW_03> .
+        <MTW_03> ,
+        <MTW_04> .
 
 <MTW_01> a :MusicAlbum ;
     :name "THE IDOLM@STER MILLION THE@TER WAVE 01 Flyers!!!" ;
@@ -2768,7 +2769,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :catalogNumber "LACM-14891" ;
         :datePublished "2019-07-24"^^xsd:date
     ] ;
-    :isPartOf <MTG_Series> .
+    :isPartOf <MTW_Series> .
 
 <MTW_02> a :MusicAlbum ;
     :name "THE IDOLM@STER MILLION THE@TER WAVE 02 Chrono-Lexica" ;
@@ -2791,7 +2792,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :catalogNumber "LACM-14892" ;
         :datePublished "2019-08-28"^^xsd:date
     ] ;
-    :isPartOf <MTG_Series> .
+    :isPartOf <MTW_Series> .
 
 <MTW_03> a :MusicAlbum ;
     :name "THE IDOLM@STER MILLION THE@TER WAVE 03 Xs" ;
@@ -2799,11 +2800,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :track [
         a :MusicRecording ;
         :recordingOf <ラビットファー> ;
-        :byArtist <Xs>
+        :byArtist <Xs> ;
+        :position 2
     ] , [
         a :MusicRecording ;
         :recordingOf <Dreamy_Dream> ;
-        :byArtist <Xs>
+        :byArtist <Xs> ;
+        :position 6
     ] ;
     :albumRelease [
         a :MusicRelease ;
@@ -2812,7 +2815,115 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :catalogNumber "LACM-14893" ;
         :datePublished "2019-09-25"^^xsd:date
     ] ;
-    :isPartOf <MTG_Series> .
+    :isPartOf <MTW_Series> .
+
+<MTW_04> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER WAVE 04 Sherry 'n Cherry" ;
+    :numTracks 9 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Cherry_Colored_Love> ;
+        :byArtist <Sherry_n_Cherry> ;
+        :position 3
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <夜と、明かりと。> ;
+        :byArtist <Sherry_n_Cherry> ;
+        :position 6
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14894.html> ;
+        :image <https://www.lantis.jp/imas/img/MTW04_H1.jpg> ;
+        :catalogNumber "LACM-14894" ;
+        :datePublished "2019-12-25"^^xsd:date
+    ] ;
+    :isPartOf <MTW_Series> .
+
+<TC_Series> a :CreativeWorkSeries ;
+    :name "THE IDOLM@STER THE@TER CHALLENGE" ;
+    :startDate "2019-10-30"^^xsd:date ;
+    :hasPart
+        <TC_01> ,
+        <TC_02> .
+
+<TC_01> a :MusicAlbum ;
+    :name "THE IDOLM@STER THE@TER CHALLENGE 01" ;
+    :numTracks 7 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Girl_meets_Wonder> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <箱崎星梨花> ,
+                <周防桃子> ,
+                <徳川まつり> ,
+                <我那覇響> ,
+                <永吉昴>
+        ] ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <DIAMOND_DAYS> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <箱崎星梨花> ,
+                <周防桃子> ,
+                <徳川まつり> ,
+                <我那覇響> ,
+                <永吉昴>
+        ] ;
+        :position 6
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_TC01.html> ;
+        :image <https://www.lantis.jp/imas/img/TC01_H1.jpg> ;
+        :catalogNumber "LACM-14947" ;
+        :datePublished "2019-10-30"^^xsd:date
+    ] ;
+    :isPartOf <TC_Series> .
+
+<TC_02> a :MusicAlbum ;
+    :name "THE IDOLM@STER THE@TER CHALLENGE 02" ;
+    :numTracks 6 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <World_Changer> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <如月千早> ,
+                <星井美希> ,
+                <エミリー> ,
+                <菊地真> ,
+                <天海春香>
+        ] ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <DIAMOND_DAYS> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <如月千早> ,
+                <星井美希> ,
+                <エミリー> ,
+                <菊地真> ,
+                <天海春香>
+        ] ;
+        :position 6
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_TC02.html> ;
+        :image <https://www.lantis.jp/imas/img/TC02_H1.jpg> ;
+        :catalogNumber "LACM-14948" ;
+        :datePublished "2019-11-27"^^xsd:date
+    ] ;
+    :isPartOf <TC_Series> .
 
 # SOLO COLLECTION
 <LTSC_Series> a :CreativeWorkSeries ;

@@ -1601,6 +1601,34 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :composer "OSTER project" ;
     :editor "OSTER project" .
 
+# MTW_04
+<Cherry_Colored_Love> a :MusicComposition ;
+    :name "Cherry Colored Love" ;
+    :lyricist "櫻澤ヒカル" ;
+    :composer "櫻澤ヒカル" ;
+    :editor "櫻澤ヒカル" .
+
+<夜と、明かりと。> a :MusicComposition ;
+    :name "夜と、明かりと。" ;
+    :lyricist "櫻澤ヒカル" ;
+    :composer "櫻澤ヒカル" ;
+    :editor "白戸佑輔" .
+
+# TC_01
+<Girl_meets_Wonder> a :MusicComposition ;
+    :name "Girl meets Wonder" ;
+    :lyricist "藤本記子" ;
+    :composer "藤本記子" ;
+    :editor "福富雅之" .
+
+# TC_02
+<World_Changer> a :MusicComposition ;
+    :name "World Changer" ;
+    :lyricist "半田翼" ;
+    :lyricist "新田目翔" ;
+    :composer "半田翼" ;
+    :editor "半田翼" .
+
 # ミリラジ
 <Welcome_-MR_remix-> a :MusicComposition ;
     :name "Welcome!! -MR remix-" ;
