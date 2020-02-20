@@ -27,12 +27,12 @@ mltd-shape:IdolShape a sh:NodeShape;
     sh:property [
         sh:path :familyName;
         sh:datatype rdf:langString;
-        sh:uniqLang true;
+        sh:uniqueLang true;
     ];
     sh:property [
         sh:path :givenName;
         sh:datatype rdf:langString;
-        sh:uniqLang true;
+        sh:uniqueLang true;
     ];
     sh:property [
         sh:path :height;

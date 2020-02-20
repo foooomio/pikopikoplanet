@@ -2,6 +2,10 @@ targetDir: dataset
 outputDir: .
 baseUri: https://mltd.pikopikopla.net/
 validation:
+  undefinedSubject:
+    - url: https://www.w3.org/2002/07/owl
+      startswith: http://www.w3.org/2002/07/owl#
+      langtype: turtle
   fileEncoding:
     - target: "*"
       charset: utf-8
