@@ -317,7 +317,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :birthDate "--07-12"^^xsd:gMonthDay ;
     dbo:hometown <東京都> ;
     :memberOf <大沢事務所> ;
-    :url <https://osawa-inc.co.jp/women/tanedarisa/> .
+    :url <https://osawa-inc.co.jp/women/tanedarisa/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Instagram" ;
+        foaf:page "https://www.instagram.com/tane_da_dayo/" ;
+        foaf:accountName "tane_da_dayo" ;
+        foaf:accountServiceHomepage <https://www.instagram.com/>
+    ] .
 
 <角元明日香> a mltd:VoiceActor ;
     :name "角元明日香" ;
