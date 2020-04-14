@@ -414,6 +414,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         foaf:page "https://twitter.com/Suwa_Ayaka" ;
         foaf:accountName "Suwa_Ayaka" ;
         foaf:accountServiceHomepage <https://twitter.com/>
+    ] ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Instagram" ;
+        foaf:page "https://www.instagram.com/suwa_ayaka/" ;
+        foaf:accountName "suwa_ayaka" ;
+        foaf:accountServiceHomepage <https://www.instagram.com/>
     ] .
 
 <麻倉もも> a mltd:VoiceActor ;
