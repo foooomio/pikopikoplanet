@@ -659,7 +659,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :memberOf <ミュージックレイン> ;
     :url <https://musicrayn.com/amamiya_sora> ;
     foaf:homepage <https://www.amamiyasora.jp/> ;
-    foaf:weblog <https://ameblo.jp/amamiyasorablog/> .
+    foaf:weblog <https://ameblo.jp/amamiyasorablog/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page "https://twitter.com/sora_haruyasumi" ;
+        foaf:accountName "sora_haruyasumi" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
 
 <戸田めぐみ> a mltd:VoiceActor ;
     :name "戸田めぐみ" ;
