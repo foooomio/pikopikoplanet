@@ -437,7 +437,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :memberOf <ミュージックレイン> ;
     :url <https://musicrayn.com/asakura_momo> ;
     foaf:homepage <https://www.sonymusic.co.jp/artist/asakuramomo/> ;
-    foaf:weblog <https://ameblo.jp/asakuramomoblog/> .
+    foaf:weblog <https://ameblo.jp/asakuramomoblog/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Instagram" ;
+        foaf:page "https://www.instagram.com/mocho_10sec/" ;
+        foaf:accountName "mocho_10sec" ;
+        foaf:accountServiceHomepage <https://www.instagram.com/>
+    ] .
 
 <小笠原早紀> a mltd:VoiceActor ;
     :name "小笠原早紀" ;
