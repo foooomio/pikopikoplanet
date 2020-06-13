@@ -767,13 +767,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dbo:birthYear "1989"^^xsd:gYear ;
     dbo:hometown <東京都> ;
     :memberOf <Rush_Style> ;
-    :url <http://rushstyle.net/?talent=%E7%A7%8B%E6%B2%B3%E3%81%82%E3%82%86%E3%82%80%EF%BC%88%E9%A0%90%E3%81%8B%E3%82%8A%EF%BC%89> ; # なにこのURL・・・
+    :url <http://rushstyle.net/?talent=%E9%87%8E%E6%9D%91%E3%80%80%E9%A6%99%E8%8F%9C%E5%AD%90> ;
     foaf:weblog <https://ameblo.jp/kanako-nomura/> ;
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/watanabeyui_Ton" ;
-        foaf:accountName "watanabeyui_Ton" ;
+        foaf:page "https://twitter.com/kanako_nomura" ;
+        foaf:accountName "kanako_nomura" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
 
