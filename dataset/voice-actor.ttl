@@ -1001,7 +1001,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "Keiko"@en ;
     :birthDate "--03-29"^^xsd:gMonthDay ;
     dbo:hometown <埼玉県> ;
-    :url <http://crazy-box.co.jp/female/talent65/> ;
+    :url <https://keiko-nabenabe.com/profile/> ;
+    foaf:homepage <https://keiko-nabenabe.com/> ;
+    foaf:weblog <https://keiko-nabenabe.com/post-list/> ;
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
