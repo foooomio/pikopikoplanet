@@ -1,4 +1,4 @@
-def JENA_VERSION='3.13.0'
+def JENA_VERSION='3.16.0'
 def DATASET_FILES='$(find dataset/* -type f)'
 def TDB_LOCATION='fuseki/run/databases/dataset'
 
