@@ -647,8 +647,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/yk_yu002" ;
-        foaf:accountName "yk_yu002" ;
+        foaf:page "https://twitter.com/yu_kahara219" ;
+        foaf:accountName "yu_kahara219" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
 
