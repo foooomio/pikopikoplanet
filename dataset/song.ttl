@@ -1614,6 +1614,46 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :composer "櫻澤ヒカル" ;
     :editor "白戸佑輔" .
 
+# MTW_05
+<Fermata_in_Rapsodia> a :MusicComposition ;
+    :name "Fermata in Rapsodia" ;
+    :lyricist "モリタコータ" ;
+    :composer "小高光太郎" ;
+    :editor "小高光太郎" .
+
+<DEpArture_from_THe_life> a :MusicComposition ;
+    :name "DEpArture from THe life" ;
+    :lyricist "モリタコータ" ;
+    :composer "小高光太郎" ;
+    :editor "小高光太郎" .
+
+# MTW_06
+<百花は月下に散りぬるを> a :MusicComposition ;
+    :name "百花は月下に散りぬるを" ;
+    :lyricist "藤本記子" ;
+    :composer "藤本記子" ;
+    :editor "福富雅之" .
+
+<矛盾の月> a :MusicComposition ;
+    :name "矛盾の月" ;
+    :lyricist "藤本記子" ;
+    :composer "藤本記子" ;
+    :editor "福富雅之" .
+
+# MTW_07
+<Super_Duper> a :MusicComposition ;
+    :name "Super Duper" ;
+    :lyricist "MEG.ME" ;
+    :composer "GRP" ;
+    :composer "NIYA" ;
+    :editor "GRP" .
+
+<Hang_In_There> a :MusicComposition ;
+    :name "Hang In There!" ;
+    :lyricist "MEG.ME" ;
+    :composer "塚田耕平" ;
+    :editor "塚田耕平" .
+
 # TC_01
 <Girl_meets_Wonder> a :MusicComposition ;
     :name "Girl meets Wonder" ;
@@ -1628,6 +1668,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :lyricist "新田目翔" ;
     :composer "半田翼" ;
     :editor "半田翼" .
+
+# TC_03
+<クルリウタ> a :MusicComposition ;
+    :name "クルリウタ" ;
+    :lyricist "藤本記子" ;
+    :composer "daph" ;
+    :editor "福富雅之" .
 
 # ミリラジ
 <Welcome_-MR_remix-> a :MusicComposition ;
@@ -1661,6 +1708,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :lyricist "真崎エリカ" ;
     :composer "BNSI (佐藤貴文)" ;
     :editor "KOH" .
+
+<ENDLESS_TOUR> a :MusicComposition ;
+    :name "ENDLESS TOUR" ;
+    :lyricist "伊福部崇" ;
+    :composer "田中俊亮" ;
+    :editor "酒井拓也 (Arte Refact)" .
+
+<Flyers_-MR_remix-> a :MusicComposition ;
+    :name "Flyers!!! -MR remix-" ;
+    :isBasedOn <Flyers> ;
+    :lyricist "唐沢美帆" ;
+    :composer "新田目翔" ;
+    :editor "白戸佑輔" .
 
 # ゲッサン_CD_01
 <青い鳥> a :MusicComposition ;
@@ -1805,6 +1865,26 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :lyricist "yura" ;
     :composer "Funta" ;
     :editor "Funta" .
+
+# BC_CD_05
+<自転車> a :MusicComposition ;
+    :name "自転車" ;
+    :lyricist "白瀬彩" ;
+    :composer "伊藤心太郎" ;
+    :editor "伊藤心太郎" .
+
+<チクタク> a :MusicComposition ;
+    :name "チクタク" ;
+    :lyricist "白瀬彩" ;
+    :composer "Asu" ;
+    :editor "関淳二郎" .
+
+# BNS_CD_03
+<Large_Size_Party> a :MusicComposition ;
+    :name "Large Size Party" ;
+    :lyricist "瀬良羽美" ;
+    :composer "宮島律子" ;
+    :editor "草野よしひろ" .
 
 # etc
 <MUSIC_JOURNEY> a :MusicComposition ;

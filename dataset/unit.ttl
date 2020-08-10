@@ -817,6 +817,29 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <馬場このみ> ,
         <百瀬莉緒> .
 
+# MTW_05
+<ARCANA> a :MusicGroup ;
+    :name "ARCANA" ;
+    :member
+        <三浦あずさ> ,
+        <如月千早> ,
+        <四条貴音> .
+
+# MTW_06
+<花咲夜> a :MusicGroup ;
+    :name "花咲夜" ;
+    :member
+        <エミリー> ,
+        <白石紬> ,
+        <天空橋朋花> .
+
+# MTW_07
+<Jus-2-Mint> a :MusicGroup ;
+    :name "Jus-2-Mint" ;
+    :member
+        <佐竹美奈子> ,
+        <横山奈緒> .
+
 # BC_CD
 <ダブルエース> a :MusicGroup ;
     :name "ダブルエース" ;

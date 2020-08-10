@@ -2840,6 +2840,75 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     ] ;
     :isPartOf <MTW_Series> .
 
+<MTW_05> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER WAVE 05 ARCANA" ;
+    :numTracks 7 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Fermata_in_Rapsodia> ;
+        :byArtist <ARCANA> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <DEpArture_from_THe_life> ;
+        :byArtist <ARCANA> ;
+        :position 6
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14895.html> ;
+        :image <https://www.lantis.jp/imas/img/MTW05_H1.jpg> ;
+        :catalogNumber "LACM-14895" ;
+        :datePublished "2020-01-29"^^xsd:date
+    ] ;
+    :isPartOf <MTW_Series> .
+
+<MTW_06> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER WAVE 06 花咲夜" ;
+    :numTracks 6 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <百花は月下に散りぬるを> ;
+        :byArtist <花咲夜> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <矛盾の月> ;
+        :byArtist <花咲夜> ;
+        :position 6
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14896.html> ;
+        :image <https://www.lantis.jp/imas/img/MTW06_H1.jpg> ;
+        :catalogNumber "LACM-14896" ;
+        :datePublished "2020-02-26"^^xsd:date
+    ] ;
+    :isPartOf <MTW_Series> .
+
+<MTW_07> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION THE@TER WAVE 07 Jus-2-Mint" ;
+    :numTracks 7 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Super_Duper> ;
+        :byArtist <Jus-2-Mint> ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Hang_In_There> ;
+        :byArtist <Jus-2-Mint> ;
+        :position 6
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14897.html> ;
+        :image <https://www.lantis.jp/imas/img/MTW07_H1.jpg> ;
+        :catalogNumber "LACM-14897" ;
+        :datePublished "2020-03-25"^^xsd:date
+    ] ;
+    :isPartOf <MTW_Series> .
+
 <TC_Series> a :CreativeWorkSeries ;
     :name "THE IDOLM@STER THE@TER CHALLENGE" ;
     :startDate "2019-10-30"^^xsd:date ;
@@ -2922,6 +2991,45 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :image <https://www.lantis.jp/imas/img/TC02_H1.jpg> ;
         :catalogNumber "LACM-14948" ;
         :datePublished "2019-11-27"^^xsd:date
+    ] ;
+    :isPartOf <TC_Series> .
+
+<TC_03> a :MusicAlbum ;
+    :name "THE IDOLM@STER THE@TER CHALLENGE 03" ;
+    :numTracks 7 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <クルリウタ> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <野々原茜> ,
+                <島原エレナ> ,
+                <桜守歌織> ,
+                <二階堂千鶴> ,
+                <北沢志保>
+        ] ;
+        :position 2
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <DIAMOND_DAYS> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <野々原茜> ,
+                <島原エレナ> ,
+                <桜守歌織> ,
+                <二階堂千鶴> ,
+                <北沢志保>
+        ] ;
+        :position 7
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_TC03.html> ;
+        :image <https://www.lantis.jp/imas/img/TC03_H1.jpg> ;
+        :catalogNumber "LACM-14949" ;
+        :datePublished "2020-07-29"^^xsd:date
     ] ;
     :isPartOf <TC_Series> .
 
@@ -4484,6 +4592,40 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :datePublished "2016-08-10"^^xsd:date
     ] .
 
+<ミリラジ_03> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION RADIO! ENDLESS TOUR" ;
+    :numTracks 2 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <ENDLESS_TOUR> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <春日未来> ,
+                <最上静香> ,
+                <箱崎星梨花>
+        ] ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <Flyers_-MR_remix-> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <春日未来> ,
+                <最上静香> ,
+                <箱崎星梨花>
+        ] ;
+        :position 2
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.lantis.jp/imas/release_LACM-14961.html> ;
+        :image <https://www.lantis.jp/imas/img/LACM-14961.jpg> ;
+        :catalogNumber "LACM-14961" ;
+        :datePublished "2020-04-29"^^xsd:date
+    ] .
+
 # ゲッサン_CD
 <ゲッサン_CD_Series> a :CreativeWorkSeries ;
     :name "アイドルマスター ミリオンライブ！ オリジナル CD" ;
@@ -4841,6 +4983,28 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     ] ;
     :isPartOf <BC_CD_Series> .
 
+<BC_CD_06> a :MusicAlbum ;
+    :name "アイドルマスター ミリオンライブ！ Blooming Clover 6 オリジナル CD" ;
+    :numTracks 3 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <自転車> ;
+        :byArtist <矢吹可奈> ;
+        :position 1
+    ] , [
+        a :MusicRecording ;
+        :recordingOf <チクタク> ;
+        :byArtist <木下ひなた> ;
+        :position 2
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <https://www.kadokawa.co.jp/product/321908000466/> ;
+        :image <https://cdn.kdkw.jp/cover_1000/321908/321908000466.jpg> ;
+        :datePublished "2020-03-27"^^xsd:date
+    ] ;
+    :isPartOf <BC_CD_Series> .
+
 # BNS_CD
 <BNS_CD_Series> a :CreativeWorkSeries ;
     :name "THE IDOLM@STER MILLION LIVE! THEATER DAYS Brand New Song CD" ;
@@ -4867,6 +5031,28 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :url <http://data.ichijinsha.co.jp/book/booksearch/booksearch_detail.php?i=75801626> ;
         :image <https://static.ichijinsha.co.jp/data/book/img/book_img/img_75801626.jpg> ;
         :datePublished "2018-10-31"^^xsd:date
+    ] ;
+    :isPartOf <BNS_CD_Series> .
+
+<BNS_CD_03> a :MusicAlbum ;
+    :name "THE IDOLM@STER MILLION LIVE! THEATER DAYS Brand New Song 3 CD" ;
+    :numTracks 3 ;
+    :track [
+        a :MusicRecording ;
+        :recordingOf <Large_Size_Party> ;
+        :byArtist [
+            a :MusicGroup ;
+            :member
+                <七尾百合子> ,
+                <望月杏奈>
+        ] ;
+        :position 1
+    ] ;
+    :albumRelease [
+        a :MusicRelease ;
+        :url <http://data.ichijinsha.co.jp/book/booksearch/booksearch_detail.php?i=75801698> ;
+        :image <https://static.ichijinsha.co.jp/data/book/img/book_img/img_75801698.jpg> ;
+        :datePublished "2020-07-02"^^xsd:date
     ] ;
     :isPartOf <BNS_CD_Series> .
 
