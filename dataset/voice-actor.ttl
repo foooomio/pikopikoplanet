@@ -980,6 +980,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "Emi"@en ;
     :birthDate "--09-24"^^xsd:gMonthDay ;
     dbo:hometown <東京都> ;
+    :memberOf <フラクタルスタジオ> ;
     :url <https://www.pirami.online/profile> ;
     foaf:homepage <https://www.pirami.online/> ;
     foaf:weblog <https://ameblo.jp/emi-3kan-1128/> ;

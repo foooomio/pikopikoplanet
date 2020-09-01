@@ -103,6 +103,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :legalName "株式会社サンミュージックプロダクション" ;
     :url <https://www.sunmusic.org/> .
 
+<フラクタルスタジオ> a mltd:TalentAgency ;
+    :name "フラクタルスタジオ" ;
+    :legalName "株式会社フラクタルスタジオ" ;
+    :url <http://www.fractal-st.com/> .
+
 <響> a mltd:TalentAgency ;
     :name "響" ;
     :legalName "株式会社響" ;
