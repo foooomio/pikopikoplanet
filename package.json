@@ -21,7 +21,7 @@
     "http-proxy-middleware": "^0.20.0",
     "http-status-codes": "^1.4.0",
     "morgan": "^1.9.1",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "xml2js": "^0.4.22"
