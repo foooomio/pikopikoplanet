@@ -34,7 +34,6 @@ WHERE {
     styleActiveLine: true,
   });
   editor.setValue(Settings.defaultQuery);
-  patchCodeMirrorIM(editor);
 
   const output = CodeMirror.fromTextArea($('result'), {
     mode: 'application/json',
