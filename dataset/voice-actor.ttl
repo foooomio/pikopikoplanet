@@ -558,8 +558,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "Rie"@en ;
     :birthDate "--06-01"^^xsd:gMonthDay ;
     dbo:hometown <東京都> ;
-    :memberOf <俳協> ;
-    :url <https://haikyo.co.jp/profile/profile.php?ActorID=12498> ;
+    :memberOf <ステイラック> ;
+    :url <http://stay-luck.com/rie-murakawa> ;
     foaf:homepage <https://columbia.jp/murakawarie/> ;
     foaf:weblog <https://ameblo.jp/6riemagic6> ;
     foaf:account [

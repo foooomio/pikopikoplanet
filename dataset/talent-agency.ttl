@@ -63,15 +63,20 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :legalName "株式会社スタイルキューブ" ;
     :url <http://stylecube.jp/> .
 
-<俳協> a mltd:TalentAgency ;
-    :name "俳協" ;
-    :legalName "東京俳優生活協同組合" ;
-    :url <https://haikyo.co.jp/> .
+<ステイラック> a mltd:TalentAgency ;
+    :name "ステイラック" ;
+    :legalName "株式会社ステイラック" ;
+    :url <http://stay-luck.com/> .
 
 <81プロデュース> a mltd:TalentAgency ;
     :name "81プロデュース" ;
     :legalName "株式会社エイティワンプロデュース" ;
     :url <https://www.81produce.co.jp/> .
+
+<俳協> a mltd:TalentAgency ;
+    :name "俳協" ;
+    :legalName "東京俳優生活協同組合" ;
+    :url <https://haikyo.co.jp/> .
 
 <ピアレスガーベラ> a mltd:TalentAgency ;
     :name "ピアレスガーベラ" ;
