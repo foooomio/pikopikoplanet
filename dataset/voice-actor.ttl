@@ -33,7 +33,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/eriko_co_log" ;
+        foaf:page <https://twitter.com/eriko_co_log> ;
         foaf:accountName "eriko_co_log" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -55,7 +55,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/asamingosu" ;
+        foaf:page <https://twitter.com/asamingosu> ;
         foaf:accountName "asamingosu" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -174,14 +174,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/chiaking58" ;
+        foaf:page <https://twitter.com/chiaking58> ;
         foaf:accountName "chiaking58" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] ;
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Instagram" ;
-        foaf:page "https://www.instagram.com/juicy.chiaking/" ;
+        foaf:page <https://www.instagram.com/juicy.chiaking/> ;
         foaf:accountName "juicy.chiaking" ;
         foaf:accountServiceHomepage <https://www.instagram.com/>
     ] .
@@ -202,7 +202,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/shimoda_asami" ;
+        foaf:page <https://twitter.com/shimoda_asami> ;
         foaf:accountName "shimoda_asami" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -224,7 +224,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/numakura_manami" ;
+        foaf:page <https://twitter.com/numakura_manami> ;
         foaf:accountName "numakura_manami" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -245,14 +245,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/yamazaki_haruka" ;
+        foaf:page <https://twitter.com/yamazaki_haruka> ;
         foaf:accountName "yamazaki_haruka" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] ;
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Instagram" ;
-        foaf:page "https://www.instagram.com/pyon.haruka.y/" ;
+        foaf:page <https://www.instagram.com/pyon.haruka.y/> ;
         foaf:accountName "pyon.haruka.y" ;
         foaf:accountServiceHomepage <https://www.instagram.com/>
     ] .
@@ -275,14 +275,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/AzusaTadokoro" ;
+        foaf:page <https://twitter.com/AzusaTadokoro> ;
         foaf:accountName "AzusaTadokoro" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] ;
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Instagram" ;
-        foaf:page "https://www.instagram.com/azusa_tadokoro/" ;
+        foaf:page <https://www.instagram.com/azusa_tadokoro/> ;
         foaf:accountName "azusa_tadokoro" ;
         foaf:accountServiceHomepage <https://www.instagram.com/>
     ] .
@@ -301,14 +301,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/MachicoOfficial" ;
+        foaf:page <https://twitter.com/MachicoOfficial> ;
         foaf:accountName "MachicoOfficial" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] ;
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Instagram" ;
-        foaf:page "https://www.instagram.com/machico_3s25/" ;
+        foaf:page <https://www.instagram.com/machico_3s25/> ;
         foaf:accountName "machico_3s25" ;
         foaf:accountServiceHomepage <https://www.instagram.com/>
     ] .
@@ -328,7 +328,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Instagram" ;
-        foaf:page "https://www.instagram.com/tane_da_dayo/" ;
+        foaf:page <https://www.instagram.com/tane_da_dayo/> ;
         foaf:accountName "tane_da_dayo" ;
         foaf:accountServiceHomepage <https://www.instagram.com/>
     ] .
@@ -349,7 +349,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/asukak_official" ;
+        foaf:page <https://twitter.com/asukak_official> ;
         foaf:accountName "asukak_official" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -369,7 +369,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/zekieri818" ;
+        foaf:page <https://twitter.com/zekieri818> ;
         foaf:accountName "zekieri818" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -390,14 +390,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/yukiyofujii0508" ;
+        foaf:page <https://twitter.com/yukiyofujii0508> ;
         foaf:accountName "yukiyofujii0508" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] ;
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Instagram" ;
-        foaf:page "https://www.instagram.com/yukiyo0508/" ;
+        foaf:page <https://www.instagram.com/yukiyo0508/> ;
         foaf:accountName "yukiyo0508" ;
         foaf:accountServiceHomepage <https://www.instagram.com/>
     ] .
@@ -418,14 +418,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/Suwa_Ayaka" ;
+        foaf:page <https://twitter.com/Suwa_Ayaka> ;
         foaf:accountName "Suwa_Ayaka" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] ;
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Instagram" ;
-        foaf:page "https://www.instagram.com/suwa_ayaka/" ;
+        foaf:page <https://www.instagram.com/suwa_ayaka/> ;
         foaf:accountName "suwa_ayaka" ;
         foaf:accountServiceHomepage <https://www.instagram.com/>
     ] .
@@ -448,7 +448,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Instagram" ;
-        foaf:page "https://www.instagram.com/mocho_10sec/" ;
+        foaf:page <https://www.instagram.com/mocho_10sec/> ;
         foaf:accountName "mocho_10sec" ;
         foaf:accountServiceHomepage <https://www.instagram.com/>
     ] .
@@ -469,7 +469,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/sachi_oga" ;
+        foaf:page <https://twitter.com/sachi_oga> ;
         foaf:accountName "sachi_oga" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -505,7 +505,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/7330615nayg" ;
+        foaf:page <https://twitter.com/7330615nayg> ;
         foaf:accountName "7330615nayg" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -528,7 +528,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/InfoItomiku" ;
+        foaf:page <https://twitter.com/InfoItomiku> ;
         foaf:accountName "InfoItomiku" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -550,7 +550,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/KomagataYuri" ;
+        foaf:page <https://twitter.com/KomagataYuri> ;
         foaf:accountName "KomagataYuri" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -572,7 +572,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/RiEmagic" ;
+        foaf:page <https://twitter.com/RiEmagic> ;
         foaf:accountName "RiEmagic" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -592,7 +592,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/ReinaUeda_Staff" ;
+        foaf:page <https://twitter.com/ReinaUeda_Staff> ;
         foaf:accountName "ReinaUeda_Staff" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -613,7 +613,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/0309akari" ;
+        foaf:page <https://twitter.com/0309akari> ;
         foaf:accountName "0309akari" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -634,7 +634,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/koiwai_kotori" ;
+        foaf:page <https://twitter.com/koiwai_kotori> ;
         foaf:accountName "koiwai_kotori" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -654,7 +654,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/yu_kahara219" ;
+        foaf:page <https://twitter.com/yu_kahara219> ;
         foaf:accountName "yu_kahara219" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -677,7 +677,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/sora_haruyasumi" ;
+        foaf:page <https://twitter.com/sora_haruyasumi> ;
         foaf:accountName "sora_haruyasumi" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -698,14 +698,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/todamegumi" ;
+        foaf:page <https://twitter.com/todamegumi> ;
         foaf:accountName "todamegumi" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] ;
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Instagram" ;
-        foaf:page "https://www.instagram.com/todamegumi/" ;
+        foaf:page <https://www.instagram.com/todamegumi/> ;
         foaf:accountName "todamegumi" ;
         foaf:accountServiceHomepage <https://www.instagram.com/>
     ] .
@@ -726,7 +726,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/tamunao10" ;
+        foaf:page <https://twitter.com/tamunao10> ;
         foaf:accountName "tamunao10" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -748,7 +748,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/ibuking_1114" ;
+        foaf:page <https://twitter.com/ibuking_1114> ;
         foaf:accountName "ibuking_1114" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -771,7 +771,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/watanabeyui_Ton" ;
+        foaf:page <https://twitter.com/watanabeyui_Ton> ;
         foaf:accountName "watanabeyui_Ton" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -793,7 +793,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/kanako_nomura" ;
+        foaf:page <https://twitter.com/kanako_nomura> ;
         foaf:accountName "kanako_nomura" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -813,7 +813,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/miiiiiina_cat" ;
+        foaf:page <https://twitter.com/miiiiiina_cat> ;
         foaf:accountName "miiiiiina_cat" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -834,7 +834,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/greentea_senbei" ;
+        foaf:page <https://twitter.com/greentea_senbei> ;
         foaf:accountName "greentea_senbei" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -855,7 +855,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/suzygara" ;
+        foaf:page <https://twitter.com/suzygara> ;
         foaf:accountName "suzygara" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -876,7 +876,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/choucho0115" ;
+        foaf:page <https://twitter.com/choucho0115> ;
         foaf:accountName "choucho0115" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -897,7 +897,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/7NanaHamasaki7" ;
+        foaf:page <https://twitter.com/7NanaHamasaki7> ;
         foaf:accountName "7NanaHamasaki7" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -930,7 +930,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/yun_yk28" ;
+        foaf:page <https://twitter.com/yun_yk28> ;
         foaf:accountName "yun_yk28" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -951,7 +951,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/YamaguchiRikako" ;
+        foaf:page <https://twitter.com/YamaguchiRikako> ;
         foaf:accountName "YamaguchiRikako" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -972,7 +972,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/yuka_s1113" ;
+        foaf:page <https://twitter.com/yuka_s1113> ;
         foaf:accountName "yuka_s1113" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -994,7 +994,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/hirayama8emi" ;
+        foaf:page <https://twitter.com/hirayama8emi> ;
         foaf:accountName "hirayama8emi" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -1015,7 +1015,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/keeeko_watanabe" ;
+        foaf:page <https://twitter.com/keeeko_watanabe> ;
         foaf:accountName "keeeko_watanabe" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
@@ -1034,14 +1034,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/aimi_sound" ;
+        foaf:page <https://twitter.com/aimi_sound> ;
         foaf:accountName "aimi_sound" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] ;
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Instagram" ;
-        foaf:page "https://www.instagram.com/aimin_official/" ;
+        foaf:page <https://www.instagram.com/aimin_official/> ;
         foaf:accountName "aimin_official" ;
         foaf:accountServiceHomepage <https://www.instagram.com/>
     ] .
@@ -1061,14 +1061,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/minamisaki_81" ;
+        foaf:page <https://twitter.com/minamisaki_81> ;
         foaf:accountName "minamisaki_81" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] ;
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Instagram" ;
-        foaf:page "https://www.instagram.com/minamisaki1119/" ;
+        foaf:page <https://www.instagram.com/minamisaki1119/> ;
         foaf:accountName "minamisaki1119" ;
         foaf:accountServiceHomepage <https://www.instagram.com/>
     ] .
@@ -1088,7 +1088,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page "https://twitter.com/arisa_kori" ;
+        foaf:page <https://twitter.com/arisa_kori> ;
         foaf:accountName "arisa_kori" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
