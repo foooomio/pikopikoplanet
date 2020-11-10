@@ -278,6 +278,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         foaf:page "https://twitter.com/AzusaTadokoro" ;
         foaf:accountName "AzusaTadokoro" ;
         foaf:accountServiceHomepage <https://twitter.com/>
+    ] ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Instagram" ;
+        foaf:page "https://www.instagram.com/azusa_tadokoro/" ;
+        foaf:accountName "azusa_tadokoro" ;
+        foaf:accountServiceHomepage <https://www.instagram.com/>
     ] .
 
 <Machico> a mltd:VoiceActor ;
