@@ -544,9 +544,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :birthDate "--08-25"^^xsd:gMonthDay ;
     dbo:birthYear "1991"^^xsd:gYear ;
     dbo:hometown <東京都> ;
-    :memberOf <スペースクラフト> ;
-    :url <http://spacecraft.co.jp/komagata_yuri/> ;
-    foaf:weblog <https://ameblo.jp/komagata-yuri/> ;
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
