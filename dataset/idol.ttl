@@ -1174,7 +1174,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     mltd:hobby "北米ドラマ鑑賞" ;
     mltd:skill "麻雀" ;
     mltd:favorite "日本酒" ;
-    mltd:cv <高橋未奈美> ;
+    mltd:cv <髙橋ミナミ> ;
     mltd:imageColor "F1BECB"^^xsd:hexBinary ;
     mltd:typePrFaAn <Angelタイプ> ;
     mltd:typeVoDaVi <Danceタイプ> ;

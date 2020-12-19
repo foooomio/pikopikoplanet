@@ -795,10 +795,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
 
-<高橋未奈美> a mltd:VoiceActor ;
-    :name "高橋未奈美" ;
-    :familyName "高橋"@ja ;
-    :givenName "未奈美"@ja ;
+<髙橋ミナミ> a mltd:VoiceActor ;
+    :name "髙橋ミナミ" ;
+    :familyName "髙橋"@ja ;
+    :givenName "ミナミ"@ja ;
     :familyName "たかはし"@ja-hira ;
     :givenName "みなみ"@ja-hira ;
     :familyName "Takahashi"@en ;
