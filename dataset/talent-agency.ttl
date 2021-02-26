@@ -38,6 +38,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :legalName "株式会社大沢事務所" ;
     :url <https://osawa-inc.co.jp/> .
 
+<Apollo_Bay> a mltd:TalentAgency ;
+    :name "Apollo Bay" ;
+    :legalName "株式会社ライブ・ビューイング・ジャパン" ;
+    :url <https://apollobay.jp/> .
+
 <スペースクラフト> a mltd:TalentAgency ;
     :name "スペースクラフト" ;
     :legalName "株式会社スペースクラフト" ;

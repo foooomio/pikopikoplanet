@@ -344,8 +344,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :birthDate "--04-08"^^xsd:gMonthDay ;
     dbo:birthYear "1992"^^xsd:gYear ;
     dbo:hometown <埼玉県> ;
-    :memberOf <スペースクラフト> ;
-    :url <http://www.spacecraft.co.jp/kakumoto_asuka/> ;
+    :memberOf <Apollo_Bay> ;
+    :url <https://apollobay.jp/talent/角元明日香/> ;
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
