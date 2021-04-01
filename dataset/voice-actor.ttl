@@ -544,12 +544,21 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :birthDate "--08-25"^^xsd:gMonthDay ;
     dbo:birthYear "1991"^^xsd:gYear ;
     dbo:hometown <東京都> ;
+    :memberOf <Apollo_Bay> ;
+    :url <https://apollobay.jp/talent/駒形友梨/> ;
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page <https://twitter.com/KomagataYuri> ;
-        foaf:accountName "KomagataYuri" ;
+        foaf:page <https://twitter.com/komagatayuri825> ;
+        foaf:accountName "komagatayuri825" ;
         foaf:accountServiceHomepage <https://twitter.com/>
+    ] ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Instagram" ;
+        foaf:page <https://www.instagram.com/yuri_komagata825/> ;
+        foaf:accountName "yuri_komagata825" ;
+        foaf:accountServiceHomepage <https://www.instagram.com/>
     ] .
 
 <村川梨衣> a mltd:VoiceActor ;
