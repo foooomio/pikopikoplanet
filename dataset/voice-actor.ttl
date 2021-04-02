@@ -364,7 +364,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :givenName "Eri"@en ;
     :birthDate "--08-18"^^xsd:gMonthDay ;
     dbo:hometown <神奈川県> ;
-    :url <http://very-diary.jugem.jp/?pid=1> ;
+    :memberOf <エルアンドエル・ビクターエンタテインメント> ;
+    :url <https://llvictor.com/talentprofile/大関-英里%EF%BC%88業務提携%EF%BC%89/> ;
     foaf:weblog <http://very-diary.jugem.jp/> ;
     foaf:account [
         a foaf:OnlineAccount ;

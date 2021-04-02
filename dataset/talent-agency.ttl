@@ -43,6 +43,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :legalName "株式会社ライブ・ビューイング・ジャパン" ;
     :url <https://apollobay.jp/> .
 
+<エルアンドエル・ビクターエンタテインメント> a mltd:TalentAgency ;
+    :name "エルアンドエル・ビクターエンタテインメント" ;
+    :legalName "エルアンドエル・ビクターエンタテインメント株式会社" ;
+    :url <https://llvictor.com/> .
+
 <スペースクラフト> a mltd:TalentAgency ;
     :name "スペースクラフト" ;
     :legalName "株式会社スペースクラフト" ;
