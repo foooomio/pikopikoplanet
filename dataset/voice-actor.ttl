@@ -448,6 +448,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:weblog <https://ameblo.jp/asakuramomoblog/> ;
     foaf:account [
         a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page <https://twitter.com/Asakura_Staff> ;
+        foaf:accountName "Asakura_Staff" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] ;
+    foaf:account [
+        a foaf:OnlineAccount ;
         foaf:name "Instagram" ;
         foaf:page <https://www.instagram.com/mocho_10sec/> ;
         foaf:accountName "mocho_10sec" ;
@@ -489,7 +496,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     :memberOf <ミュージックレイン> ;
     :url <https://musicrayn.com/natsukawa_shiina> ;
     foaf:homepage <https://www.natsukawashiina.jp/> ;
-    foaf:weblog <https://ameblo.jp/natsukawashiinablog/> .
+    foaf:weblog <https://ameblo.jp/natsukawashiinablog/> ;
+    foaf:account [
+        a foaf:OnlineAccount ;
+        foaf:name "Twitter" ;
+        foaf:page <https://twitter.com/Natsukawa_Staff> ;
+        foaf:accountName "Natsukawa_Staff" ;
+        foaf:accountServiceHomepage <https://twitter.com/>
+    ] .
 
 <中村温姫> a mltd:VoiceActor ;
     :name "中村温姫" ;
@@ -684,8 +698,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     foaf:account [
         a foaf:OnlineAccount ;
         foaf:name "Twitter" ;
-        foaf:page <https://twitter.com/sora_haruyasumi> ;
-        foaf:accountName "sora_haruyasumi" ;
+        foaf:page <https://twitter.com/Amamiyastaff> ;
+        foaf:accountName "Amamiyastaff" ;
         foaf:accountServiceHomepage <https://twitter.com/>
     ] .
 
